@@ -17,16 +17,15 @@
 }) }}
 
 
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
 
 
 {% endblock %}
 
 {% block content %}
 
-<div class="govuk-width-container">
-  <a href="#" class="govuk-back-link">Back</a>
 
-  <main class="govuk-main-wrapper">
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
@@ -35,9 +34,32 @@
       </div>
 
       <div class="govuk-grid-column-one-third">
-        <h2 class="govuk-heading-m">One-third column</h2>
-        <p class="govuk-body">This is a paragraph inside a one-third wide column</p>
-      </div>
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">Get more advice and guidance</h1>
+    <ul class="govuk-list">
+      <li>
+        <p>
+          <a href="./vignette-career">Speak to a careers adviser</a>
+        </p>
+
+<div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">If you have a code to resume a previous visit, enter it here</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+    Enter your reference
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+
+</div>
+<button type="submit" class="govuk-button">
+  Continue
+</button>
+
+      </li>
+    </ul>
+
+</div>
     </div>
 
   </main>
