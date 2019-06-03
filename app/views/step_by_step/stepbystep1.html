@@ -5,30 +5,33 @@
   Get help to retrain: step by step
 {% endblock %}
 
-{% block content %}
-<div class="govuk-width-container">
-<div class="govuk-phase-banner">
-  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
-  beta
-</strong>
-<span class="govuk-phase-banner__text">
-      This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.
-    </span>
-  </p>
-</div>
+{% block beforeContent %}
 
-<div class="govuk-breadcrumbs">
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
   <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link">Get help to retrain</a>
-    </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          Get help to retrain
+      </li>
   </ol>
 </div>
 
-        <main class="govuk-main-wrapper " id="main-content" role="main">
+{% endblock %}
+
+{% block content %}
+
+<main class="govuk-main-wrapper " id="main-content" role="main">
 
 
 <div class="govuk-grid-row">
@@ -45,75 +48,91 @@
       Check what you need to do.
     </p>
 
-  <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
-    <ol class="app-step-nav__steps">
-      <li class="app-step-nav__step js-step" id="define_which_jobs_might_suit_you" >
-        <div class="app-step-nav__header js-toggle-panel" data-position="1">
-          <h2 class="app-step-nav__title">
-            <span class="app-step-nav__circle app-step-nav__circle--number">
-              <span class="app-step-nav__circle-inner">
-                <span class="app-step-nav__circle-background">
-                  <span class="govuk-visually-hidden">Step</span> 1
+    <div id="step-by-step-navigation" class="app-step-nav app-step-nav--large app-step-nav--active" data-show-text="Show" data-hide-text="Hide" data-show-all-text="Show all" data-hide-all-text="Hide all">
+      <ol class="app-step-nav__steps">
+        <li class="app-step-nav__step js-step" id="define-which-jobs-might-suit-you" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="1">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 1
+                  </span>
                 </span>
               </span>
-            </span>
 
-            <span class="js-step-title">
-              Define which jobs might suit you
-            </span>
-          </h2>
-        </div>
+              <span class="js-step-title">
+                Define which jobs might suit you
+              </span>
+            </h2>
+          </div>
 
-        <div class="app-step-nav__panel js-panel js-hidden" id="define_which_jobs_might_suit_you-1">
+          <div class="app-step-nav__panel js-panel js-hidden" id="answer-questions-to-filter-job-opportunities">
+            <ol class="app-step-nav__list " data-length="3">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="1.1" class="app-step-nav__link js-link" href="#">Answer questions to filter job opportunities according to what you like and know about</a>
+              </li>
+            </ol>
+          </div>
 
-          <ol class="app-step-nav__list " data-length="3">
-            <li class="app-step-nav__list-item js-list-item ">
-              <a data-position="1.1" class="app-step-nav__link js-link" href="#">Answer questions to filter job opportunities according to what you like and know about</a>
-            </li>
-          </ol>
-        </div>
+        </li>
 
-      </li>
-
-      <li class="app-step-nav__step js-step" id="find_out_which_job_opportunities_are_growing_locally" >
-        <div class="app-step-nav__header js-toggle-panel" data-position="2">
-          <h2 class="app-step-nav__title">
-            <span class="app-step-nav__circle app-step-nav__circle--number">
-              <span class="app-step-nav__circle-inner">
-                <span class="app-step-nav__circle-background">
-                  <span class="govuk-visually-hidden">Step</span> 2
+        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="2">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 2
+                  </span>
                 </span>
               </span>
-            </span>
 
-            <span class="js-step-title">
-              Find out which job opportunities are growing locally
-            </span>
-          </h2>
-        </div>
+              <span class="js-step-title">
+                Find out which job opportunities are growing locally
+              </span>
+            </h2>
+          </div>
 
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
+            <ol class="app-step-nav__list " data-length="1">
+              <li class="app-step-nav__list-item js-list-item ">
+                <a data-position="2.1" class="app-step-nav__link js-link" href="#">Apply for your first provisional driving licence <span class="app-step-nav__context">£34 to £43</span></a>
+              </li>
+            </ol>
+          </div>
 
+        </li>
 
-      </li>
-
-      <li class="app-step-nav__step js-step" id="look_for_training_courses_in_selected_job_areas" >
-        <div class="app-step-nav__header js-toggle-panel" data-position="3">
-          <h2 class="app-step-nav__title">
-            <span class="app-step-nav__circle app-step-nav__circle--number">
-              <span class="app-step-nav__circle-inner">
-                <span class="app-step-nav__circle-background">
-                  <span class="govuk-visually-hidden">Step</span> 3
+        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+          <div class="app-step-nav__header js-toggle-panel" data-position="3">
+            <h2 class="app-step-nav__title">
+              <span class="app-step-nav__circle app-step-nav__circle--number">
+                <span class="app-step-nav__circle-inner">
+                  <span class="app-step-nav__circle-background">
+                    <span class="govuk-visually-hidden">Step</span> 3
+                  </span>
                 </span>
               </span>
-            </span>
 
-            <span class="js-step-title">
-              Look for training courses in selected job areas
-            </span>
-          </h2>
-        </div>
+              <span class="js-step-title">
+                Look for training courses in selected job areas
+              </span>
+            </h2>
+          </div>
 
-        </div>
+
+        </li>
+      </ol>
+    </div>
+
+  </div>
+</div>
+
+
+        </main>
+      </div>
+
 
 
 {% endblock %}
