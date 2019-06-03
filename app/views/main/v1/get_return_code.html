@@ -1,0 +1,38 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+  <a href="#" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get a code to return another time</h1>
+        <p class="govuk-body">This is your code</p>
+      </div>
+
+     
+
+{% endblock %}
