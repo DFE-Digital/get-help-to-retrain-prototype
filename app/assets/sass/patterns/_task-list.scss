@@ -64,3 +64,46 @@
     margin-bottom: 0;
   }
 }
+
+@media (min-width: 641px) {
+  .task-unavailable {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media (min-width: 769px) {
+  li.task-item .task-item-header .heading-medium {
+    float: left;
+    width: 65%;
+    margin-top: 0;
+  }
+}
+
+li.task-item .task-item-header .heading-medium .task-list-section-number {
+  float: left;
+}
+
+li.task-unavailable {
+background-color: #bfc1c3;
+color: #0b0c0c;
+float: left;
+margin-bottom: 10px;
+text-transform: none;
+letter-spacing: 0;
+}
+
+@media (min-width: 641px) {
+li.task-unavailable {
+  margin-left: 35px;
+  margin-bottom: 15px;
+  float: left;
+}
+}
+
+@media (min-width: 769px) {
+li.task-unavailable {
+  float: right;
+  margin-left: 0;
+}
+}

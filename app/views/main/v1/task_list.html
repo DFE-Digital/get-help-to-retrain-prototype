@@ -1,0 +1,176 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get help to retrain: step by step
+{% endblock %}
+
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          Get help to retrain
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Get help to retrain
+    </h1>
+
+    <p>
+      Check what you need to do to retrain for another job. You might qualify for free training if you don’t have a degree.
+    </p>
+    <p>
+      How long it takes you to complete the following steps will depend on your situation. You will be able to save your progress and come back to this service at another time if you need to.
+    </p>
+    <p style="color:#ffffff">Lorem ipsum</p>
+
+    <ol class="app-task-list">
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">1. </span> Check what you’re good at and enjoy doing
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <a class="app-task-list__task-name" href="#" aria-describedby="eligibility-completed">
+              Check your current occupation <span class="app-step-nav__context">5 minutes</span>
+            </a>
+          </li>
+          <li class="app-task-list__item">
+            <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
+              Check what skills you already have <span class="app-step-nav__context">30 minutes</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">2. </span> Check the type of jobs you could do
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <a class="app-task-list__task-name" href="#" aria-describedby="company-information-completed">
+              Check the type of jobs you could retrain to do <span class="app-step-nav__context">10 minutes</span>
+            </a>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">3. </span> Apply for a training course
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+              <div class="app-task-list__task-name">
+                Find and apply to training courses near you <span class="app-step-nav__context">10 minutes</span>
+              </div>
+                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
+                  Can’t start yet
+                </strong>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">4. </span> Complete your training course
+        </h2>
+        <p style="color:#ffffff; font-size:8px;">Lorem ipsum</p>
+      </li>
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">5. </span> Apply for a job
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+              <div class="app-task-list__task-name">
+                Check and apply for jobs that require your new training<span style="color:#ffffff">Lo</span>
+              </div>
+                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
+                  Can’t start yet
+                </strong>
+          </li>
+        </ul>
+      </li>
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">6. </span> Help improve this service
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+              <div class="app-task-list__task-name">
+                Take a survey to help improve this service
+              </div>
+                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
+                  Can’t start yet
+                </strong>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+  </div>
+  <div class="govuk-grid-column-one-third">
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">Want to speak with an advisor?</h1>
+    <ul class="govuk-list">
+      <li>
+        <p>
+          Call <a href="tel:+442079476330">020 7947 6330</a>
+        </p>
+
+<div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">If you have a code to resume a previous visit, enter it here</h1>
+
+<div class="govuk-form-group">
+  <label class="govuk-label" for="event-name">
+    Enter your reference
+  </label>
+  <input class="govuk-input" id="event-name" name="event-name" type="text">
+
+</div>
+<button type="submit" class="govuk-button govuk-button--secondary">
+  Resume
+</button>
+
+      </li>
+    </ul>
+
+</div>
+    </div>
+</div>
+
+
+
+
+
+
+{% endblock %}
