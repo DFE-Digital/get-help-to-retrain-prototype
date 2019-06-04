@@ -5,6 +5,15 @@
   Get help to retrain: step by step
 {% endblock %}
 
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+  </script>
+{% endblock %}
+
 {% block beforeContent %}
 
 {% from 'phase-banner/macro.njk' import govukPhaseBanner %}
@@ -30,9 +39,6 @@
 {% endblock %}
 
 {% block content %}
-
-<main class="govuk-main-wrapper " id="main-content" role="main">
-
 
 <div class="govuk-grid-row">
   <div class="govuk-grid-column-two-thirds">
@@ -67,17 +73,18 @@
             </h2>
           </div>
 
-          <div class="app-step-nav__panel js-panel js-hidden" id="answer-questions-to-filter-job-opportunities">
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-define-which-jobs-might-suit-you">
+
             <ol class="app-step-nav__list " data-length="3">
               <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="1.1" class="app-step-nav__link js-link" href="#">Answer questions to filter job opportunities according to what you like and know about</a>
+                <a data-position="1.1" class="app-step-nav__link js-link" href="#">Answer questions to filter job opportunities according to what you like and know about <span class="app-step-nav__context">5 to 10 minutes</span></a>
               </li>
             </ol>
           </div>
 
         </li>
 
-        <li class="app-step-nav__step js-step" id="get-a-provisional-licence" >
+        <li class="app-step-nav__step js-step" id="find-out-which-job-opportunities-are-growing-locally" >
           <div class="app-step-nav__header js-toggle-panel" data-position="2">
             <h2 class="app-step-nav__title">
               <span class="app-step-nav__circle app-step-nav__circle--number">
@@ -94,17 +101,17 @@
             </h2>
           </div>
 
-          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-get-a-provisional-licence-2">
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-find-out-which-job-opportunities-are-growing-locally">
             <ol class="app-step-nav__list " data-length="1">
               <li class="app-step-nav__list-item js-list-item ">
-                <a data-position="2.1" class="app-step-nav__link js-link" href="#">Apply for your first provisional driving licence <span class="app-step-nav__context">£34 to £43</span></a>
+                <a data-position="2.1" class="app-step-nav__link js-link" href="#"></a>
               </li>
             </ol>
           </div>
 
         </li>
 
-        <li class="app-step-nav__step js-step" id="driving-lessons-and-practice" >
+        <li class="app-step-nav__step js-step" id="look-for-training-courses-in-selected-job-areas" >
           <div class="app-step-nav__header js-toggle-panel" data-position="3">
             <h2 class="app-step-nav__title">
               <span class="app-step-nav__circle app-step-nav__circle--number">
@@ -121,8 +128,12 @@
             </h2>
           </div>
 
+          <div class="app-step-nav__panel js-panel js-hidden" id="step-panel-look-for-training-courses-in-selected-job-areas">
+
+          </div>
 
         </li>
+
       </ol>
     </div>
 
@@ -130,7 +141,6 @@
 </div>
 
 
-        </main>
       </div>
 
 
