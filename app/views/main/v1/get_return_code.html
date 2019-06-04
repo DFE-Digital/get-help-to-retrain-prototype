@@ -1,4 +1,4 @@
-
+ 
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -29,8 +29,39 @@
 
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Get a code to return another time</h1>
-        <p class="govuk-body">This is your code</p>
+        <h2 class="govuk-heading-l">Your reference</h2>
+       <div style="border-left:10px solid #005ea5;" class="govuk-!-padding-4">
+        <div>
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-0">8YZ3 55RE 4YE2 78</h1>
+        <span class="govuk-caption-l">12th June</span>
+      </div>
+      </div>
+
+<h2 class="govuk-heading-m govuk-!-padding-top-5">What to do with your reference</h2>
+<p class="govuk-body">The code above is your unique reference. You can use this to:</p>
+<ul class="govuk-list govuk-list--bullet">
+        <li>return to the service and continue</li>
+
+        <li>see your results, if you have finished the assessment</li>
+
+      </ul>
+
+<h2 class="govuk-heading-m">Send in a text message</h2>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="telephone-number">
+    UK mobile telephone number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+</div>
+<button type="submit" class="govuk-button">
+  Send code
+</button>
+<p><a href="#">Return to service</a></p>
+
+
+</div>
+</div>
+
       </div>
 
      
