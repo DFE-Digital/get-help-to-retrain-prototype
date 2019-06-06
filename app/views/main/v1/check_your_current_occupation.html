@@ -31,11 +31,14 @@
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <h1 class="govuk-heading-xl">Check your current occupation</h1>
-
+        <form action="task_list" method="post" class="form">
+          <div class="govuk-form-group">
+            <input type="hidden" name="task-1" value="complete">
+          </div>
           <button type="submit" class="govuk-button">
             Complete this section
           </button>
-
+        </form>
       </div>
 
 
@@ -56,5 +59,4 @@
     </div>
 
 </div>
-
 {% endblock %}
