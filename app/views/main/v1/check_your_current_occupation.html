@@ -16,7 +16,7 @@
   html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
-
+<a href="#" class="govuk-back-link">Back</a>
 
 
 
@@ -26,17 +26,24 @@
 {% block content %}
 
 
- 
+
+
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Step by step placeholder</h1>
-	<p><a href="">Section 1 </a></p>
-	<p><a href="">Section 2 </a></p>
+        <h1 class="govuk-heading-xl">Check your current occupation</h1>
+        <form action="task_list" method="post" class="form">
+          <div class="govuk-form-group">
+            <input type="hidden" name="task-1" value="complete">
+          </div>
+          <button type="submit" class="govuk-button">
+            Complete this section
+          </button>
+        </form>
+      </div>
 
-        </div>
-    
 
-        <div class="govuk-grid-column-one-third">
+
+ <div class="govuk-grid-column-one-third">
     <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
     <h1 class="govuk-heading-m">Want to speak with an adviser?</h1>
     <ul class="govuk-list">
@@ -47,11 +54,9 @@
 <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
     <h1 class="govuk-heading-m">Return to this later</h1>
     <p>
-      <a href="get_return_code">Save my progress</a>
+      <a href="get_return_code">save my progress</a>
     </p>
     </div>
 
 </div>
-
-
-        {% endblock %}
+{% endblock %}

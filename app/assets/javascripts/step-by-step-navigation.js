@@ -354,4 +354,31 @@ window.GOVUK.getCurrentLocation = function () {
       history.replaceState({}, '', newLocation)
     }
   }
+
+  Modules.TaskListCompletion = function () {
+    var hiddenClass = 'govuk-tag app-task-list__task-not-active--hidden'
+    var completedClass = 'govuk-tag app-task-list__task-completed'
+
+    this.start = function ($session) {
+      showCompleted ()
+      function showCompleted () {
+        if ($session['task_1'] == 'complete' && $session['task_2'] == 'complete') {
+          $("#task-list-tag-1").attr('class', completedClass)
+          $("#task-list-tag-2").attr('class', hiddenClass)
+          $("#task-link-2").replaceWith($('<a class="app-task-list__task-name" href="check_type_jobs_retrain_to_do">' + $("#task-link-2").html() + '</a>'));
+        }
+
+        if ($session['task_3'] == 'complete') {
+          $("#task-list-tag-2").attr('class', completedClass)
+          $('#task-list-tag-2').html('Completed')
+          $("#task-list-tag-3, #task-list-tag-5, #task-list-tag-6").attr('class', hiddenClass)
+
+          $("#task-link-3").replaceWith($('<a class="app-task-list__task-name" href="#">' + $("#task-link-3").html() + '</a>'));
+          $("#task-link-5").replaceWith($('<a class="app-task-list__task-name" href="#">' + $("#task-link-5").html() + '</a>'));
+          $("#task-link-6").replaceWith($('<a class="app-task-list__task-name" href="#">' + $("#task-link-6").html() + '</a>'));
+        }
+      }
+    }
+
+  }
 })(window.GOVUK.Modules)

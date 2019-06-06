@@ -4,13 +4,20 @@
 {% block pageTitle %}
   Get help to retrain: step by step
 {% endblock %}
-
 {% block pageScripts %}
   <script src="/public/javascripts/step-by-step-navigation.js"></script>
   <script type="text/javascript">
     var $element = $('#step-by-step-navigation')
     var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
     stepByStepNavigation.start($element)
+    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
+    var $session =
+    {
+      task_1: '{{ data['task-1'] }}',
+      task_2: '{{ data['task-2'] }}',
+      task_3: '{{ data['task-3'] }}'
+    }
+    taskListCompletion.start($session)
   </script>
 {% endblock %}
 
@@ -45,7 +52,6 @@
     <h1 class="govuk-heading-xl">
       Get help to retrain
     </h1>
-
     <p>
       Check what you need to do to retrain for another job. You might qualify for free training if you don’t have a degree.
     </p>
@@ -57,66 +63,90 @@
     <ol class="app-task-list">
       <li>
         <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">1. </span> Check what you’re good at and enjoy doing
+            <span class="app-task-list__section-number">1. </span> Check what you’re good at and enjoy doing
         </h2>
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
-            <a class="app-task-list__task-name" href="#" aria-describedby="eligibility-completed">
+            <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+            <a href="check_your_current_occupation" aria-describedby="eligibility-completed">
               Check your current occupation <span class="app-step-nav__context">5 minutes</span>
             </a>
+          </div>
           </li>
           <li class="app-task-list__item">
-            <a class="app-task-list__task-name" href="#" aria-describedby="read-declaration-completed">
+            <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+            <a href="check_what_skills_you_already_have" aria-describedby="read-declaration-completed">
               Check what skills you already have <span class="app-step-nav__context">30 minutes</span>
             </a>
+          </div>
+          <strong class="govuk-tag app-task-list__task-completed--hidden" id="task-list-tag-1">
+            Completed
+          </strong>
           </li>
         </ul>
       </li>
       <li>
+
+
         <h2 class="app-task-list__section">
           <span class="app-task-list__section-number">2. </span> Check the type of jobs you could do
         </h2>
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
-            <a class="app-task-list__task-name" href="#" aria-describedby="company-information-completed">
-              Check the type of jobs you could retrain to do <span class="app-step-nav__context">10 minutes</span>
-            </a>
+            <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+            <p id="task-link-2">
+            Check the type of jobs you could retrain to do <span class="app-step-nav__context">10 minutes</span>
+            </p>
+          </div>
+          <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-2">
+            Can’t start yet
+          </strong>
           </li>
         </ul>
       </li>
       <li>
+
+
         <h2 class="app-task-list__section">
           <span class="app-task-list__section-number">3. </span> Apply for a training course
         </h2>
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
-              <div class="app-task-list__task-name">
+            <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+              <p id="task-link-3">
                 Find and apply to training courses near you <span class="app-step-nav__context">10 minutes</span>
-              </div>
-                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
-                  Can’t start yet
-                </strong>
+              </p>
+            </div>
+            <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-3">
+              Can’t start yet
+            </strong>
           </li>
         </ul>
       </li>
       <li>
+
+
         <h2 class="app-task-list__section">
           <span class="app-task-list__section-number">4. </span> Complete your training course
         </h2>
         <p style="color:#ffffff; font-size:8px;">Lorem ipsum</p>
       </li>
       <li>
+
+
         <h2 class="app-task-list__section">
           <span class="app-task-list__section-number">5. </span> Apply for a job
         </h2>
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
-              <div class="app-task-list__task-name">
-                Check and apply for jobs that require your new training<span style="color:#ffffff">Lo</span>
-              </div>
-                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
-                  Can’t start yet
-                </strong>
+              <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+                <p id="task-link-5">
+                  Check and apply for jobs that require your new training
+                </p>
+            </div>
+            <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-5">
+              Can’t start yet
+            </strong>
           </li>
         </ul>
       </li>
@@ -126,18 +156,22 @@
         </h2>
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
-              <div class="app-task-list__task-name">
-                Take a survey to help improve this service
-              </div>
-                <strong class=task-unavailable" style="background-color: #bfc1c3; color: #0b0c0c; padding:5px;">
-                  Can’t start yet
-                </strong>
+              <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
+                <p id="task-link-6">
+                  Take a survey to help improve this service
+                </p>
+            </div>
+            <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-6">
+              Can’t start yet
+            </strong>
           </li>
         </ul>
       </li>
     </ol>
 
   </div>
+
+
   <div class="govuk-grid-column-one-third">
     <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
     <h1 class="govuk-heading-m">Want to speak with an advisor?</h1>
@@ -167,10 +201,4 @@
 </div>
     </div>
 </div>
-
-
-
-
-
-
 {% endblock %}
