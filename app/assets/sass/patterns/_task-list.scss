@@ -126,3 +126,25 @@ li.task-unavailable {
   margin-left: 0;
 }
 }
+
+// Classes Nick has added
+
+h1.search_title_nick {
+@include govuk-font($size:26, $weight: bold);
+}
+
+h2.govuk-heading-1 {
+@include govuk-font($size:24, $weight: bold);
+}
+
+a.category_links {
+  text-decoration: none;
+  font-size: 32;
+  font-weight: bold;
+  line-height: 1.8;
+}
+
+.result-count {
+  @include govuk-font()
+  padding:0
+}
