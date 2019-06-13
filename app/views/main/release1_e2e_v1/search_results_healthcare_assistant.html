@@ -50,7 +50,8 @@
   </ol>
 </div>
 <main role="main">
-
+<div class="govuk-grid-row">
+<div class="govuk-grid-column-two-thirds">
 <div class="sfPublicWrapper" id="PublicWrapper">
   <div class="content-container">
     <div id="MainContent_T8848A91A001_Col00" class="sf_colsIn" data-sf-element="Container" data-placeholder-label="Full Width Container"><form action="/search-results/Search/" class="js-live-search-form" id="header-search" method="post">
@@ -59,14 +60,12 @@
             <div class="search-input ui-front">
                <form>
                 <label for="search-main">
-                    <h1 class="govuk-heading-m">
+                    <h1 class="govuk-heading-m govuk-!-padding-top-8 govuk-!-padding-bottom-3">
                         Search results for
                     </h1>
                 </label>
                <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter a job title" style="width:550px" value="healthcare assistant" />
-               <div style="text-align:right;">
-                 <img src="{{ asset_path }}images/search_icon2.gif">
-               </div>
+               <span style="width:15px; height:15px; background:url('{{ asset_path }}images/search_icon.svg'); background-position: center; display: flex; background-repeat: no-repeat; background-color: #2b8cc4;" class="govuk-!-padding-top-5 govuk-!-padding-bottom-5 govuk-!-padding-left-5 govuk-!-padding-right-5"></span>
                </form>
             </div>
         </div>
@@ -77,32 +76,28 @@
 <div id="results">
     <div class="results-block">
         <div class="inner-block">
-            <div class="govuk-body">
+            <div class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-5">
                 10 results found
             </div>
                 <ul class="govuk-list">
-                    <li class="dfc-code-search-resultitem" data-ga-rank="1">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Healthcare assistant</a></h3>
-                              <p class="govuk-body-s" style="color:#6f777b">Support worker, nursing assistant, nursing auxiliary</p>
-                              <p class="result-description dfc-code-search-jpOverview">Healthcare assistants look after patients in hospitals or in patients’ own homes.</p>
-                              <p class="govuk-body-s" style="font-weight:bold">Salary:
-                                <span class="dfc-code-search-jpSalary">
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="1">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Healthcare assistant</a></h3>
+                              <p class="govuk-body-s govuk-!-margin-bottom-3 govuk-!-margin-top-1" style="color:#6f777b">Support worker, nursing assistant, nursing auxiliary</p>
+                              <p class="result-description govuk-!-margin-bottom-3">Healthcare assistants look after patients in hospitals or in patients’ own homes.</p>
+                              <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">Salary:
                                   &#163;15,000 to &#163;20,000
-                                </span>
                               </p>
                               <p class="govuk-body-s" style="color:#6f777b">
                                 Found in:
                                 <a href="healthcare.html">Healthcare</a>
                               </p>
                     </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="2">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Healthcare science assistant</a></h3>
-                            <p class="govuk-body-s" style="color:#6f777b">Assistant technical officer</p>
-                            <p class="result-description dfc-code-search-jpOverview">Healthcare science assistants support healthcare professionals.</p>
-                            <p class="govuk-body-s" style="font-weight:bold">Salary:
-                              <span class="dfc-code-search-jpSalary">
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="2">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Healthcare science assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-3 govuk-!-margin-top-1" style="color:#6f777b">Assistant technical officer</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Healthcare science assistants support healthcare professionals.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">Salary:
                                 &#163;17,652 to &#163;23,761
-                              </span>
                             </p>
                             <p class="govuk-body-s" style="color:#6f777b">
                               Found in:
@@ -110,11 +105,11 @@
                                 <a href="#">Science and research</a>
                             </p>
                     </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="3">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Palliative care assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="3">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Palliative care assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Specialist healthcare assistant</p>
-                            <p class="result-description dfc-code-search-jpOverview">Palliative care assistants provide specialist end of life care and support to patients and their families.</p>
-                            <p class="govuk-body-s" style="font-weight:bold">Salary:
+                            <p class="result-description govuk-!-margin-bottom-3">Palliative care assistants provide specialist end of life care and support to patients and their families.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">Salary:
                           <span class="dfc-code-search-jpSalary">
                             &#163;17,652 to &#163;20,795
                           </span>
@@ -125,11 +120,11 @@
                             <a href="#">Social care</a>
                         </p>
                     </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="4">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Radiography assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="4">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Radiography assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Imaging support worker</p>
-                            <p class="result-description dfc-code-search-jpOverview">Radiography assistants help radiographers with their day-to-day duties.</p>
-                            <p class="govuk-body-s" style="font-weight:bold">Salary:
+                            <p class="result-description govuk-!-margin-bottom-3">Radiography assistants help radiographers with their day-to-day duties.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">Salary:
                               <span class="dfc-code-search-jpSalary">
                                 &#163;18,813 to &#163;23,761
                               </span>
@@ -139,11 +134,11 @@
                                 <a href="healthcare.html">Healthcare</a>
                             </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="5">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Podiatry assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="5">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Podiatry assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Chiropody assistant, footcare assistant</p>
-                        <p class="result-description dfc-code-search-jpOverview">Podiatry assistants provide general foot treatments and nail care under the supervision of a podiatrist.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
+                        <p class="result-description govuk-!-margin-bottom-3">Podiatry assistants provide general foot treatments and nail care under the supervision of a podiatrist.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
                             Salary: <span class="dfc-code-search-jpSalary">
 &#163;17,652 to &#163;20,795                        </span>
                     </p>
@@ -152,11 +147,11 @@
                                 <a href="healthcare.html">Healthcare</a>
                         </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="6" style="text-decoration:none">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Pharmacy assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="6" style="text-decoration:none">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Pharmacy assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Chemist’s assistant, dispensing assistant</p>
-                        <p class="result-description dfc-code-search-jpOverview">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
+                        <p class="result-description govuk-!-margin-bottom-3">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
                             Salary: <span class="dfc-code-search-jpSalary">
 &#163;17,250 to &#163;21,000                        </span>
                     </p>
@@ -165,24 +160,23 @@
                                 <a href="healthcare.html">Healthcare</a>
                         </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="7">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Physiotherapy assistant/a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="7">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Physiotherapy assistant/a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Physiotherapy support worker</p>
-                        <p class="result-description dfc-code-search-jpOverview">Physiotherapy assistants help physiotherapists work with patients to restore or improve movement.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
-                            Salary: <span class="dfc-code-search-jpSalary">
-&#163;17,652 to &#163;23,761                        </span>
+                        <p class="result-description govuk-!-margin-bottom-3">Physiotherapy assistants help physiotherapists work with patients to restore or improve movement.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
+                            Salary: &#163;17,652 to &#163;23,761
                     </p>
 <p class="govuk-body-s" style="color:#6f777b">
                             Found in:
                                 <a href="healthcare.html">Healthcare</a>
                         </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="8">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Clinical scientist</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="8">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Clinical scientist</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Healthcare scientist</p>
-                        <p class="result-description dfc-code-search-jpOverview">Clinical scientists research and develop techniques and equipment to help prevent, diagnose and treat illness.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
+                        <p class="result-description govuk-!-margin-bottom-3">Clinical scientists research and develop techniques and equipment to help prevent, diagnose and treat illness.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
                             Salary: <span class="dfc-code-search-jpSalary">
 &#163;30,401 to &#163;50,819                        </span>
                     </p>
@@ -192,11 +186,11 @@
                                 <a href="#">Science and research</a>
                         </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="9">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Speech and language therapy assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="9">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Speech and language therapy assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Speech and language therapy support worker</p>
-                        <p class="result-description dfc-code-search-jpOverview">Speech and language therapy assistants help support people who have difficulties with communication, or with eating, drinking or swallowing.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
+                        <p class="result-description govuk-!-margin-bottom-3">Speech and language therapy assistants help support people who have difficulties with communication, or with eating, drinking or swallowing.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
                             Salary: <span class="dfc-code-search-jpSalary">
 &#163;17,652 to &#163;23,761                        </span>
                     </p>
@@ -205,11 +199,11 @@
                                 <a href="healthcare.html">Healthcare</a>
                         </p>
                                         </li>
-                    <li class="dfc-code-search-resultitem" data-ga-rank="10">
-                        <h3><a class="dfc-code-search-jpTitle" href="#" style="text-decoration:none">Ambulance care assistant</a></h3>
+                    <li class="govuk-!-padding-bottom-1" data-ga-rank="10">
+                        <h3 class="govuk-!-margin-bottom-1"><a href="#" style="text-decoration:none">Ambulance care assistant</a></h3>
                             <p class="govuk-body-s" style="color:#6f777b">Patient transport service driver, ambulance staff</p>
-                        <p class="result-description dfc-code-search-jpOverview">Ambulance care assistants take patients to and from hospital for appointments.</p>
-                        <p class="govuk-body-s" style="font-weight:bold">
+                        <p class="result-description govuk-!-margin-bottom-3">Ambulance care assistants take patients to and from hospital for appointments.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-3" style="font-weight:bold">
                             Salary: <span class="dfc-code-search-jpSalary">
 &#163;17,652 to &#163;20,795                        </span>
                     </p>
@@ -223,6 +217,9 @@
 
         </div>
     </div>
+</div>
+</div>
+{% include "main/release1_e2e_v1/contact_us.html"%}
 </div>
 <div class="content-container">
     <div class="grid-row" data-sf-element="Row">
