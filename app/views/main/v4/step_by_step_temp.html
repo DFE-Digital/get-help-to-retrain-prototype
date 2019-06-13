@@ -1,0 +1,57 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+ 
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Step by step placeholder</h1>
+	<p><a href="">Section 1 </a></p>
+	<p><a href="">Section 2 </a></p>
+
+        </div>
+    
+
+        <div class="govuk-grid-column-one-third">
+    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">Want to speak with an adviser?</h1>
+    <ul class="govuk-list">
+      <li>
+        <p>
+          Call <a href="tel:+442079476330" class="govuk-!-padding-left-1">020 7947 6330</a>        </p>
+
+<div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4"></div>
+    <h1 class="govuk-heading-m">Return to this later</h1>
+    <p>
+      <a href="get_return_code">Save my progress</a>
+    </p>
+    </div>
+
+</div>
+
+
+        {% endblock %}

@@ -1,0 +1,250 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Get help to retrain: step by step
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
+    var $session =
+    {
+      task_1: '{{ data['task-1'] }}',
+      task_2: '{{ data['task-2'] }}',
+      task_3: '{{ data['task-3'] }}'
+    }
+    taskListCompletion.start($session)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore careers</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Search results
+      </li>
+  </ol>
+</div>
+<main role="main">
+
+<div class="sfPublicWrapper" id="PublicWrapper">
+  <div class="content-container">
+    <div id="MainContent_T8848A91A001_Col00" class="sf_colsIn" data-sf-element="Container" data-placeholder-label="Full Width Container"><form action="/search-results/Search/" class="js-live-search-form" id="header-search" method="post">
+      <div class="search-header">
+        <div class="searchfield">
+            <div class="search-input ui-front">
+               <form>
+                <label for="search-main">
+                    <h1 class="govuk-heading-m">
+                        Search results for
+                    </h1>
+                </label>
+               <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter a job title" style="width:550px" value="food factory worker" />
+               <div style="text-align:right;">
+                 <img src="{{ asset_path }}images/search_icon2.gif" />
+               </div>
+               </form>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="results">
+    <div class="results-block">
+        <div class="inner-block">
+            <div class="govuk-body">
+                10 results found
+            </div>
+                <ul class="govuk-list">
+                    <li class="dfc-code-search-resultitem" data-ga-rank="1">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/food-factory-worker" style="text-decoration:none">Food factory worker</a></h3>
+                              <p class="govuk-body-s" style="color:#6f777b">Food process operative, food processing worker</p>
+                              <p class="result-description dfc-code-search-jpOverview">Food factory workers make frozen, tinned, baked and dried products.</p>
+                              <p class="govuk-body-s" style="font-weight:bold">Salary:
+                                <span class="dfc-code-search-jpSalary">
+                                  &#163;12,000 to &#163;20,000
+                                </span>
+                              </p>
+                              <p class="govuk-body-s" style="color:#6f777b">
+                                Found in:
+                                <a href="/job-categories/engineering-and-maintenance">Engineering and maintenance</a>
+                                <a href="/job-categories/hospitality-and-food">Hospitality and food</a>
+                              </p>
+                    </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="2">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/meat-process-worker" style="text-decoration:none">Meat process worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Meat factory worker, abattoir worker, slaughterhouse worker</p>
+                            <p class="result-description dfc-code-search-jpOverview">Meat process workers produce meat products for the food manufacturing, catering and food retail industries.</p>
+                            <p class="govuk-body-s" style="font-weight:bold">Salary:
+                              <span class="dfc-code-search-jpSalary">
+                                &#163;13,500 to &#163;21,000
+                              </span>
+                            </p>
+                            <p class="govuk-body-s" style="color:#6f777b">
+                              Found in:
+                                <a href="/job-categories/hospitality-and-food">Hospitality and food</a>
+                                <a href="/job-categories/manufacturing">Manufacturing</a>
+                            </p>
+                    </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="3">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/production-worker-(manufacturing)" style="text-decoration:none">Production worker (manufacturing)</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Process operative, factory worker</p>
+                            <p class="result-description dfc-code-search-jpOverview">Production workers manufacture goods and parts in industries like pharmaceuticals, food and drink, construction and engineering.</p>
+                            <p class="govuk-body-s" style="font-weight:bold">Salary:
+                          <span class="dfc-code-search-jpSalary">
+                            &#163;14,000 to &#163;20,000
+                          </span>
+                        </p>
+                        <p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/manufacturing">Manufacturing</a>
+                        </p>
+                    </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="4">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/food-scientist" style="text-decoration:none">Food scientist</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Food technologist</p>
+                            <p class="result-description dfc-code-search-jpOverview">Food scientists and food technologists develop food and drink products, making sure they are safe to consume.</p>
+                            <p class="govuk-body-s" style="font-weight:bold">Salary:
+                              <span class="dfc-code-search-jpSalary">
+                                &#163;20,000 to &#163;45,000
+                              </span>
+                            </p>
+                            <p class="govuk-body-s" style="color:#6f777b">
+                              Found in:
+                                <a href="/job-categories/hospitality-and-food">Hospitality and food</a>
+                                <a href="/job-categories/manufacturing">Manufacturing</a>
+                                <a href="/job-categories/science-and-research">Science and research</a>
+                            </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="5">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/care-worker" style="text-decoration:none">Care worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Care assistant, support worker, nursing home assistant</p>
+                        <p class="result-description dfc-code-search-jpOverview">Care workers help vulnerable people to manage their daily activities and to live as independently as possible.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;12,500 to &#163;25,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/healthcare">Healthcare</a>
+                                <a href="/job-categories/home-services">Home services</a>
+                                <a href="/job-categories/social-care">Social care</a>
+                        </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="6" style="text-decoration:none">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/food-manufacturing-inspector" style="text-decoration:none">Food manufacturing inspector</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Food quality control inspector, food safety officer</p>
+                        <p class="result-description dfc-code-search-jpOverview">Food manufacturing inspectors make sure companies meet hygiene and safety standards, and that products are safe to eat.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;15,500 to &#163;30,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/environment-and-land">Environment and land</a>
+                                <a href="/job-categories/government-services">Government services</a>
+                                <a href="/job-categories/hospitality-and-food">Hospitality and food</a>
+                        </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="7">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/rail-track-maintenance-worker" style="text-decoration:none">Rail track maintenance worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Railway worker</p>
+                        <p class="result-description dfc-code-search-jpOverview">Rail track maintenance workers inspect and repair railway tracks, bridges, tunnels and viaducts.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;18,000 to &#163;34,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/engineering-and-maintenance">Engineering and maintenance</a>
+                                <a href="/job-categories/transport">Transport</a>
+                        </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="8">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/electricity-generation-worker" style="text-decoration:none">Electricity generation worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Power station worker</p>
+                        <p class="result-description dfc-code-search-jpOverview">Electricity generation workers operate and maintain equipment in power stations.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;18,000 to &#163;35,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/engineering-and-maintenance">Engineering and maintenance</a>
+                        </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="9">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/quarry-worker" style="text-decoration:none">Quarry worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Quarry operative, opencast mine worker, opencast miner</p>
+                        <p class="result-description dfc-code-search-jpOverview">Quarry workers dig out and process rock, slate, gravel and sand from quarries or mines.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;16,000 to &#163;25,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/construction-and-trades">Construction and trades</a>
+                                <a href="/job-categories/engineering-and-maintenance">Engineering and maintenance</a>
+                                <a href="/job-categories/manufacturing">Manufacturing</a>
+                        </p>
+                                        </li>
+                    <li class="dfc-code-search-resultitem" data-ga-rank="10">
+                        <h3><a class="dfc-code-search-jpTitle" href="/job-profiles/electricity-distribution-worker" style="text-decoration:none">Electricity distribution worker</a></h3>
+                            <p class="govuk-body-s" style="color:#6f777b">Transmission worker</p>
+                        <p class="result-description dfc-code-search-jpOverview">Electricity distribution workers maintain and repair the power lines that connect homes and businesses to the national grid.</p>
+                        <p class="govuk-body-s" style="font-weight:bold">
+                            Salary: <span class="dfc-code-search-jpSalary">
+&#163;16,000 to &#163;35,000                        </span>
+                    </p>
+<p class="govuk-body-s" style="color:#6f777b">
+                            Found in:
+                                <a href="/job-categories/construction-and-trades">Construction and trades</a>
+                                <a href="/job-categories/engineering-and-maintenance">Engineering and maintenance</a>
+                        </p>
+                                        </li>
+                </ul>
+
+        </div>
+    </div>
+</div>
+<div class="content-container">
+    <div class="grid-row" data-sf-element="Row">
+        <div id="MainContentBottom_C002_Col00" class="sf_colsIn column-desktop-two-thirds" data-sf-element="Column 1" data-placeholder-label="Left Two Third Column">
+        </div>
+        <div id="MainContentBottom_C002_Col01" class="sf_colsIn column-desktop-third" data-sf-element="Column 2" data-placeholder-label="Right One Third Column">
+        </div>
+    </div></main>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+{% endblock %}
