@@ -33,6 +33,7 @@
   html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
+
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
@@ -46,88 +47,72 @@
       </li>
   </ol>
 </div>
-<main role="main"> <div class="content-container">
- </div> <div class="sfPublicWrapper" id="PublicWrapper">
-<header class="homepage-top">
-    <div class="content-container">
-        <div class="grid-row" data-sf-element="Row">
-            <div id="MainContentTop_T945D82B6001_Col00" class="sf_colsIn  column-two-thirds" data-sf-element="Container" data-placeholder-label="Home banner Full Width Container">
-              <div class="govuk-panel govuk-panel--confirmation" style="padding-bottom: 0px">
-                <h1 class="govuk-panel__title" style="text-align:left;">Explore careers</h1>
-                  <div class="govuk-panel__body" style="text-align:left; font-size:24px">
-                    Find out what a job involves and if it's right for you.
-                    <br /><br />
-                  </div>
-                  <form action="/home/Search/" class="site-search ui-front" id="header-search" method="post">
-                    <div class="govuk-form-group" style="text-align:left">
-                      <input class="govuk-input" id="event-name" name="event-name" type="text" placeholder="Enter a job title" style="width:550px">
-                        <div style="text-align:right;">
-                            <a href="search_results_healthcare_assistant">
-                              <span style="width:15px; height:15px; background:url('{{ asset_path }}images/search_icon.svg'); background-position: center; display: flex; background-repeat: no-repeat; background-color: #000000;" class="govuk-!-padding-top-5 govuk-!-padding-bottom-5 govuk-!-padding-left-5 govuk-!-padding-right-5"></span>
-                            </a>
-                        </div>
-                    </div>
-                  </form>
-              </div>
-            </div>
-        </div>
-    </div>
-</header>
-              <div class="content-container">
-                <div id="MainContentTop_T945D82B6002_Col00" class="sf_colsIn" data-sf-element="Container" data-placeholder-label="Full Width Container">
-                  <div style="padding-top:10px">
-                      <h2 class="govuk-heading-m">
-                            Explore by job category
-                      </h2>
-                  </div>
-                  <div class="govuk-grid-row">
-                    <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list">
-            <li><a href="#" class="category_links">Administration</a></li>
-            <li><a href="#" class="category_links">Animal care</a></li>
-            <li><a href="#" class="category_links">Beauty and wellbeing</a></li>
-            <li><a href="#" class="category_links">Business and finance</a></li>
-            <li><a href="#" class="category_links">Computing, technology and digital</a></li>
-            <li><a href="#" class="category_links">Construction and trades</a></li>
-            <li><a href="#" class="category_links">Creative and media</a></li>
-            <li><a href="#" class="category_links">Delivery and storage</a></li>
-          </ul>
-        </div>
-        <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list">
-            <li><a href="#" class="category_links">Emergency and uniform services</a></li>
-            <li><a href="#" class="category_links">Engineering and maintenance</a></li>
-            <li><a href="#" class="category_links">Environment and land</a></li>
-            <li><a href="#" class="category_links">Government services</a></li>
-            <li><a href="healthcare.html" class="category_links">Healthcare</a></li>
-            <li><a href="#" class="category_links">Home services</a></li>
-            <li><a href="#" class="category_links">Hospitality and food</a></li>
-            <li><a href="#" class="category_links">Law and legal</a></li>
-          </ul>
-          </div>
-          <div class="govuk-grid-column-one-third">
-          <ul class="govuk-list">
-            <li><a href="#" class="category_links">Managerial</a></li>
-            <li><a href="#" class="category_links">Manufacturing</a></li>
-            <li><a href="#" class="category_links">Retail and sales</a></li>
-            <li><a href="#" class="category_links">Science and research</a></li>
-            <li><a href="#" class="category_links">Social care</a></li>
-            <li><a href="#" class="category_links">Sports and leisure</a></li>
-            <li><a href="#" class="category_links">Teaching and education</a></li>
-            <li><a href="#" class="category_links">Transport</a></li>
-            <li><a href="#" class="category_links">Travel and tourism</a></li>
-          </ul>
-        </div>
 
+
+<div class="govuk-grid-row govuk-!-margin-left-0 ">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0" >
+
+    <div class="govuk-grid-column-full govuk-!-padding-top-5 govuk-!-padding-bottom-0 govuk-!-margin-bottom-5" style="background-color: #005ea5">
+      <h1 class="govuk-heading-xl" style="color: #FFFFFF">Explore careers</h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          <p class="govuk-body-l" style="color: #FFFFFF">Find out what a job involves and if it's right for you.</p>
+        </label>
+      </div>
+
+      <form method="post">
+        <div class="govuk-form-group">
+          <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text">
+          <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #000000;" type="submit" href="search_results_healthcare_assistant">
+          </button>
+        </div>
+      </form>
     </div>
+
+
+    <div class="govuk-!-padding-left-3">
+      <h2 class="govuk-heading-m">Explore by job category</h2>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <ul class="govuk-list">
+        <li><a href="#" class="category_links">Administration</a></li>
+        <li><a href="#" class="category_links">Animal care</a></li>
+        <li><a href="#" class="category_links">Beauty and wellbeing</a></li>
+        <li><a href="#" class="category_links">Business and finance</a></li>
+        <li><a href="#" class="category_links">Computing, technology and digital</a></li>
+        <li><a href="#" class="category_links">Construction and trades</a></li>
+        <li><a href="#" class="category_links">Creative and media</a></li>
+        <li><a href="#" class="category_links">Delivery and storage</a></li>
+        <li><a href="#" class="category_links">Emergency and uniform services</a></li>
+        <li><a href="#" class="category_links">Engineering and maintenance</a></li>
+        <li><a href="#" class="category_links">Environment and land</a></li>
+        <li><a href="#" class="category_links">Government services</a></li>
+        <li><a href="healthcare.html" class="category_links">Healthcare</a></li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <ul class="govuk-list">
+
+        <li><a href="#" class="category_links">Home services</a></li>
+        <li><a href="#" class="category_links">Hospitality and food</a></li>
+        <li><a href="#" class="category_links">Law and legal</a></li>
+        <li><a href="#" class="category_links">Managerial</a></li>
+        <li><a href="#" class="category_links">Manufacturing</a></li>
+        <li><a href="#" class="category_links">Retail and sales</a></li>
+        <li><a href="#" class="category_links">Science and research</a></li>
+        <li><a href="#" class="category_links">Social care</a></li>
+        <li><a href="#" class="category_links">Sports and leisure</a></li>
+        <li><a href="#" class="category_links">Teaching and education</a></li>
+        <li><a href="#" class="category_links">Transport</a></li>
+        <li><a href="#" class="category_links">Travel and tourism</a></li>
+      </ul>
+    </div>
+  </div>
+
+  {% include "main/release1_e2e_v1/contact_us.html"%}
 </div>
-
- </div> </main>
-
-
-{% endblock %}
-
-{% block content %}
-
-
 {% endblock %}

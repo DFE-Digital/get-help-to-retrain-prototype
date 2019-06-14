@@ -4,22 +4,7 @@
 {% block pageTitle %}
   Get help to retrain: step by step
 {% endblock %}
-{% block pageScripts %}
-  <script src="/public/javascripts/step-by-step-navigation.js"></script>
-  <script type="text/javascript">
-    var $element = $('#step-by-step-navigation')
-    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
-    stepByStepNavigation.start($element)
-    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
-    var $session =
-    {
-      task_1: '{{ data['task-1'] }}',
-      task_2: '{{ data['task-2'] }}',
-      task_3: '{{ data['task-3'] }}'
-    }
-    taskListCompletion.start($session)
-  </script>
-{% endblock %}
+
 
 {% block beforeContent %}
 
@@ -68,7 +53,7 @@
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
             <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
-            <a href="check_your_current_occupation" aria-describedby="eligibility-completed">
+            <a href="check_your_current_occupation">
               Check your current occupation <span class="app-step-nav__context">5 minutes</span>
             </a>
           </div>
@@ -78,7 +63,7 @@
           </li>
           <li class="app-task-list__item">
             <div class="app-task-list__task-name govuk-!-width-two-thirds app-task-list__task-name">
-            <a href="check_what_skills_you_already_have" aria-describedby="read-declaration-completed">
+            <a href="check_what_skills_you_already_have">
               Check what skills you already have <span class="app-step-nav__context">30 minutes</span>
             </a>
           </div>
