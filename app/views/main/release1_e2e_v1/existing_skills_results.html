@@ -16,7 +16,7 @@
   html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
-<a href="task_list" class="govuk-back-link">Back</a>
+
 
 
 
@@ -27,21 +27,17 @@
 
 
 
-
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">Check what skills you already have</h1>
-        <form action="task_list" method="post" class="form">
-          <div class="govuk-form-group">
-            <input type="hidden" name="task-2" value="complete">
-          </div>
-          <button type="submit" class="govuk-button">
-            Complete this section
-          </button>
-        </form>
-      </div>
-{% include "main/v1/return_later.html"%}
+        <h1 class="govuk-heading-xl">The skills you have already</h1>
+        
 
-</div>
+
+
+      </div>
+      {% include "main/release1_e2e_v1/contact_us.html"%}
+    </div>
+
+
 
 {% endblock %}

@@ -1,8 +1,10 @@
  
 {% extends "layout.html" %}
 
+{% set mainClasses = "govuk-!-padding-top-1" %}
+
 {% block pageTitle %}
-  Get Help To Retrain
+Get Help To Retrain
 {% endblock %}
 
 {% block beforeContent %}
@@ -11,14 +13,13 @@
 
 {{ govukPhaseBanner({
   tag: {
-    text: "beta"
-  },
-  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
-<div class="govuk-width-container">
 
-  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<a href="javascript:history.back()" class="govuk-back-link">Back</a>
 
 
 
@@ -27,30 +28,33 @@
 {% block content %}
 
 
-<div class="govuk-grid-row">
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
 
-    <div class="govuk-grid-column-full  govuk-!-padding-top-7 govuk-!-padding-bottom-0" style="background-color: #005ea5">
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0" >
+
+    <div class="govuk-grid-column-full govuk-!-padding-top-5 govuk-!-padding-bottom-0 govuk-!-margin-bottom-5" style="background-color: #005ea5">
       <h1 class="govuk-heading-xl" style="color: #FFFFFF">Check your existing skills</h1>
 
       <div class="govuk-form-group">
         <label class="govuk-label" for="width-20">
           <p class="govuk-body-l" style="color: #FFFFFF">Search for the job that you currently do</p>
         </label>
-        <input class="govuk-input govuk-input--width-20" id="width-20" name="width-20" type="search">
-        <button type="submit" class="govuk-button">
-  Search
-</button>
       </div>
 
-
-
-
-
-
-
+      <form method="post">
+        <div class="govuk-form-group">
+          <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text">
+          <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #000000;" type="submit" href="existing_skills_search_results">
+          </button>
+        </div>
+      </form>
     </div>
-</div>
-</div>
-     
 
+
+
+
+  </div>
+
+  {% include "main/release1_e2e_v1/contact_us.html"%}
+</div>
 {% endblock %}
