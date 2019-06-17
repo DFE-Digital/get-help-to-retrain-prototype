@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -18,7 +18,25 @@
 
 <div class="govuk-width-container">
 
-  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+      </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore occupations</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          <a class="govuk-breadcrumbs__link" href="#">Search results</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Job profile details
+        </li>
+    </ol>
+  </div>
 
 
 
@@ -110,6 +128,10 @@
              <li>customer service skills</li>
            </ul>
 
+           <button type="submit" class="govuk-button govuk-!-margin-top-6  govuk-!-margin-bottom-9">
+             Continue
+           </button>
+
         </div>
 
         <div class="govuk-grid-column-one-third">
@@ -129,6 +151,6 @@
     </div>
 
 
-     
+
 
 {% endblock %}
