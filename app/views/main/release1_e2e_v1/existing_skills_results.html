@@ -16,7 +16,25 @@
   html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
-
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="existing_skills_search.html">Check your existing skills</a>
+      </li>
+        <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="existing_skills_search_results.html">Search results</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Your occupation skills
+      </li>
+  </ol>
+</div>
 
 
 
@@ -26,26 +44,39 @@
 {% block content %}
 
 
+<div class="govuk-grid-row">
 
-    <div class="govuk-grid-row">
-      <div class="govuk-grid-column-two-thirds">
-        <h1 class="govuk-heading-xl">The skills you have already as a Healthcare worker</h1>
-        
-        <p class="govuk-body-l">Some general text to go here about the skills results</p>
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-2" >Skills that a Sales assistant may have</h1>
+       <p class="govuk-body-l" style="color: #6f777b">Shop assistant, sales person, store assistant, retail assistant, retail sales assistant</p>
+            <h2 class="govuk-heading-m">Skills you may have:</h2>
 
-        <ul class="govuk-list govuk-list--bullet">
-          <li>Skill 1</li>
-          <li>Skill 2</li>
-          <li>Skill 3</li>
-          <li>Skill 4</li>
-          <li>Skill 5</li>
-        </ul>
+          <ul class="govuk-list govuk-list--bullet">
+             <li>customer service skills</li>
+             <li>the ability to work well with others</li>
+             <li>patience and the ability to remain calm in stressful situations</li>
+             <li>to be thorough and pay attention to detail</li>
+             <li>sensitivity and understanding</li>
+             <li>the ability to use your initiative</li>
+             <li>excellent verbal communication skills</li>
+             <li>the ability to sell products and services</li>
+             <li>to be able to use a computer and the main software packages competently</li>
+
+           </ul>
+
+      <a href="task_list"><button type="submit" class="govuk-button">
+            Continue
+      </button></a>
+
 
 
 
       </div>
       {% include "main/release1_e2e_v1/contact_us.html"%}
     </div>
+
+
+
 
 
 
