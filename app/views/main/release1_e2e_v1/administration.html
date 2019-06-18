@@ -1,0 +1,395 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Get help to retrain: step by step
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
+    var $session =
+    {
+      task_1: '{{ data['task-1'] }}',
+      task_2: '{{ data['task-2'] }}',
+      task_3: '{{ data['task-3'] }}'
+    }
+    taskListCompletion.start($session)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore occupations</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Job category
+      </li>
+  </ol>
+</div>
+<main class="govuk-main-wrapper">
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Administration</h1>
+          <ul class="govuk-list govuk-!-padding-top-1">
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Accounting technician</a></h3>
+                <p>Accounting technicians handle day-to-day financial matters in all types of business.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="job_details_retraining_admin_assistant.html">Admin assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p>
+                <p>Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Arts administrator</a></h3>
+                <p>Arts administrators help to organise events and exhibitions, manage staff, and look after buildings like theatres or museums.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Assistant immigration officer</a></h3>
+                <p>Assistant immigration officers check that people have the right to visit or stay in the UK</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Auditor</a></h3>
+                <p>Internal and external auditors check organisations' financial records and procedures to make sure they are accurate and efficient.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Bid writer</a></h3>
+                <p>Bid writers prepare documents used to pitch for contracts to provide services, or to apply for project funding.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Bilingual secretary</a></h3>
+                <p>Bilingual secretaries provide administrative services in English and one or more foreign languages.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Bookkeeper</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Accounts clerk</p>
+                <p>Bookkeepers keep financial records up to date and help prepare accounts.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Border Force officer</a></h3>
+                <p>Border Force officers protect UK border entry points like ports and airports, by enforcing immigration and customs regulations.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Car rental agent</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Car rental assistant, vehicle reservation agent</p>
+                <p>Car rental agents hire out and lease vehicles to businesses and the public.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Charity fundraiser</a></h3>
+                <p>Charity fundraisers organise events and activities to encourage people to donate to causes and organisations.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Civil Service administrative officer</a></h3>
+                <p>Civil Service administrative officers work in government departments, carrying out policies and running services for the public.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Civil Service executive officer</a></h3>
+                <p>Civil Service executive officers manage departments that develop government policies and provide services to the public.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Conference and exhibition manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Conference organiser</p>
+                <p>Conference and exhibition managers plan and run events like trade shows, conferences and exhibitions.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Credit controller</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Debt collection agent</p>
+                <p>Credit controllers help firms get the money they are owed from businesses and individuals.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Data entry clerk</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Audio typist, copy typist</p>
+                <p>Data entry clerks type information into databases and systems and create letters, reports and other documents.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Diplomatic service officer</a></h3>
+                <p>Diplomatic service officers help to promote and protect British interests, businesses and citizens overseas.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Estates officer</a></h3>
+                <p>Estates officers are responsible for the management and upkeep of land and property belonging to local councils and public bodies.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">European Union official</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">EU official</p>
+                <p>European Union (EU) officials work for institutions like the European Commission or the European Parliament.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Farm secretary</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Agricultural business administrator, rural business administrator</p>
+                <p>Farm secretaries are responsible for the day-to-day running of the business side of farms.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Finance officer</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Financial officer, finance clerk, treasurer</p>
+                <p>Finance officers help to manage the finances of an organisation by keeping track of its income and controlling its spending.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Financial services customer adviser</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales adviser, contact centre agent</p>
+                <p>Financial services customer advisers work in contact centres for banks, insurance, investment and credit companies.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">GP practice manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">GP surgery manager, general practitioner practice manager</p>
+                <p>GP practice managers run the business side of doctors&#39; surgeries and health centres.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Health and safety adviser</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Health and safety officer</p>
+                <p>Health and safety advisers work to reduce accidents, injury and health problems in the workplace.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Health records clerk</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Medical records clerk</p>
+                <p>Health records clerks keep people&#39;s medical records up to date.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Health service manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Hospital manager, NHS hospital manager</p>
+                <p>Health service managers run local healthcare services like hospitals, GP practices and community health services.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Hotel receptionist</a></h3>
+                <p>Hotel receptionists make guests feel welcome, manage new room bookings and reservations, and deal with requests from guests.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Human resources assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">HR assistant, personnel assistant</p>
+                <p>Human resources (HR) assistants provide admin support to the HR team in a company or organisation.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Human resources manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">HR manager, personnel manager, HR director</p>
+                <p>Human resources (HR) managers develop, deliver and manage HR policies and plans.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Human resources officer</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Personnel officer, HR officer</p>
+                <p>Human resources (HR) officers hire employees and help develop their careers, and look after employee relations, benefits and welfare.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Immigration officer</a></h3>
+                <p>Immigration officers make decisions on whether people have the right to visit or stay in the UK.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Import-export clerk</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Shipping agent, freight forwarder, import-export agent</p>
+                <p>Import-export clerks ship goods to and from the UK by road, rail, air and sea.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Insurance broker</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Insurance agent</p>
+                <p>Insurance brokers use their knowledge of the insurance market to help find the right cover, at the best price, for their customers.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Insurance technician</a></h3>
+                <p>Insurance technicians give administrative support in all types of insurance work.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Interpreter</a></h3>
+                <p>Interpreters convert the spoken word from one language into another, either face-to-face or remotely.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Local government administrative assistant</a></h3>
+                <p>Local government administrative assistants provide clerical support in council departments and give information to the public.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Local government officer</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Best value officer, external funding officer, policy officer, democratic services officer</h3>
+                <p>Local government officers put council policies into practice and deliver local services.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Local government revenues officer</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Benefits officer</p>
+                <p>Revenues and benefits officers work for local councils and deal with housing benefits, rents, council tax and business rates.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">MP</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Member of Parliament, elected representative, constituency representative, politician</p>
+                <p>MPs represent people&#39;s concerns and interests in the House of Commons.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Medical secretary</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Medical personal assistant</p>
+                <p>Medical secretaries provide office support in hospitals, GP surgeries, private clinics and universities.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Office manager</a></h3>
+                <p>Office managers oversee the day-to-day running of an office or department.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Payroll administrator</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Payroll clerk</p>
+                <p>Payroll administrators make sure employees get paid the right amount on the right date.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Personal assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">PA, executive secretary, executive assistant</p>
+                <p>Personal assistants carry out support tasks for individuals and managers including administration, diary management and event planning.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Post Office customer service assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Post Office counter clerk</p>
+                <p>Post Office customer service assistants help customers in post offices and at counters in shops.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Proofreader</a></h3>
+                <p>Proofreaders check text before it&#39;s printed or published to make sure it&#39;s correct and complete.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Purchasing manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Procurement manager</p>
+                <p>Purchasing managers buy equipment, goods and services for their company.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Quality control assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Quality control technician, quality assurance inspector</p>
+                <p>Quality control assistants check that control systems and products meet recognised standards.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Receptionist</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Medical receptionist, front of house, doctor&#39;s receptionist</p>
+                <p>Receptionists are the first point of contact for visitors to organisations.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Recruitment consultant</a></h3>
+                <p>Recruitment consultants help employers find suitable staff, and match people to permanent and temporary jobs.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Registrar of births, deaths, marriages and civil partnerships</a></h3>
+                <p>Registrars collect and record details of all births, deaths, marriages and civil partnerships.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Reprographic assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Print room operator</p>
+                <p>Reprographic assistants use photocopiers and printers to make documents, brochures, leaflets and pictures.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Sales administrator</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales administration assistant, sales office clerk</p>
+                <p>Sales administrators process sales orders and payments, arrange deliveries and offer after-sales support.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">School business manager</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">School business professional</p>
+                <p>School business managers are responsible for both the day-to-day and strategic running of a school.  </p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">School secretary</a></h3>
+                <p>School secretaries provide administrative support in schools.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Secretary</a></h3>
+                <p>Secretaries provide administrative support for all types of organisations.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Security Service personnel</a></h3>
+                <p>Security Service personnel protect the UK against threats to national security.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Sports development officer</a></h3>
+                <p>Sports development officers organise projects and training to encourage people to take part in sport and have a healthier lifestyle.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Supervisor</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Team leader, first line manager</p>
+                <p>Supervisors manage teams of staff and organise their workload.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Telephonist</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Switchboard operator</p>
+                <p>Telephonists, or switchboard operators, answer and connect calls and take messages.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Town planning assistant</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Town planning technician</p>
+                <p>Town planning assistants process applications, give advice about regulations and carry out design work and office administration.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Trade union official</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Trade union officer</p>
+                <p>Trade union officials represent, train and advise union members, carry out research and develop policy.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-0"><a style="text-decoration:none" href="#">Trading standards officer</a></h3>
+                <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">TSO</p>
+                <p>Trading standards officers (TSOs) protect consumers and businesses by promoting a safe and fair trading environment.</p>
+            </li>
+            <li class="govuk-!-padding-bottom-1">
+                <h3 class="govuk-!-margin-bottom-2"><a style="text-decoration:none" href="#">Typist</a></h3>
+                <p>Typists use a computer to produce letters, reports and other documents.</p>
+            </li>
+
+    </ul>
+        </div>
+<div id="MainContent_T447555DF001_Col01" class="sf_colsIn column-desktop-third" data-sf-element="Column 2" data-placeholder-label="Right One Third Column">
+  <aside class="govuk-related-items job-categories_list">
+    {% include "main/release1_e2e_v1/contact_us.html"%}
+    <div class="govuk-grid-column-one-third">
+      <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4">
+      </div>
+      <h2 class="govuk-heading-m">Other job categories</h2>
+        <ul class="govuk-list">
+            <li><a href="#" class="govuk-body-s">Animal care</a></li>
+            <li><a href="#" class="govuk-body-s">Beauty and wellbeing</a></li>
+            <li><a href="#" class="govuk-body-s">Business and finance</a></li>
+            <li><a href="#" class="govuk-body-s">Computing, technology and digital</a></li>
+            <li><a href="#" class="govuk-body-s">Construction and trades</a></li>
+            <li><a href="#" class="govuk-body-s">Creative and media</a></li>
+            <li><a href="#" class="govuk-body-s">Delivery and storage</a></li>
+            <li><a href="#" class="govuk-body-s">Emergency and uniform services</a></li>
+            <li><a href="#" class="govuk-body-s">Engineering and maintenance</a></li>
+            <li><a href="#" class="govuk-body-s">Environment and land</a></li>
+            <li><a href="#" class="govuk-body-s">Government services</a></li>
+            <li><a href="healthcare.html" class="govuk-body-s">Healthcare</a></li>
+            <li><a href="#" class="govuk-body-s">Home services</a></li>
+            <li><a href="#" class="govuk-body-s">Hospitality and food</a></li>
+            <li><a href="#" class="govuk-body-s">Law and legal</a></li>
+            <li><a href="#" class="govuk-body-s">Managerial</a></li>
+            <li><a href="#" class="govuk-body-s">Manufacturing</a></li>
+            <li><a href="#" class="govuk-body-s">Retail and sales</a></li>
+            <li><a href="#" class="govuk-body-s">Science and research</a></li>
+            <li><a href="#" class="govuk-body-s">Social care</a></li>
+            <li><a href="#" class="govuk-body-s">Sports and leisure</a></li>
+            <li><a href="#" class="govuk-body-s">Teaching and education</a></li>
+            <li><a href="#" class="govuk-body-s">Transport</a></li>
+            <li><a href="#" class="govuk-body-s">Travel and tourism</a></li>
+          </ul>
+          </div>
+        </aside>
+    </div>
+  </div>
+</main>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+{% endblock %}
