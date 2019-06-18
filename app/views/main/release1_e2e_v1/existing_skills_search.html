@@ -19,7 +19,20 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 }) }}
 
 
-<a href="javascript:history.back()" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Check your existing skills
+      </li>
+  </ol>
+</div>
 
 
 
@@ -37,7 +50,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
       <div class="govuk-form-group">
         <label class="govuk-label" for="width-20">
-          <p class="govuk-body-l" style="color: #FFFFFF">Search for the job that you currently do</p>
+          <p class="govuk-body-l" style="color: #FFFFFF">Search for the job that you currently do to see what to skills you already have</p>
         </label>
       </div>
 
