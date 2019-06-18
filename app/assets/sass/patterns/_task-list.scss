@@ -130,7 +130,7 @@ li.task-unavailable {
 // Classes Nick has added
 
 h1.search_title_nick {
-@include govuk-font($size:26, $weight: bold);
+@include govuk-font($size: 24, $weight: bold);
 }
 
 h2.govuk-heading-1 {
@@ -145,6 +145,27 @@ a.category_links {
 }
 
 .result-count {
-  @include govuk-font()
-  padding:0
+  @include govuk-font($size: 24)
+  padding: 0;
+}
+
+.search-button {
+  border: 0;
+  width:40px;
+  height:40px;
+  float: left;
+  background-color: govuk-colour("black");
+  background-image: url("../images/search_icon.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 20px;
+}
+
+.search-input {
+  float: left;
+  @include govuk-media-query($from: mobile, $until: desktop) {
+    width: calc(100% - 40px) !important;
+  }
+  position: relative;
+  z-index: 10;
 }
