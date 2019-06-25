@@ -1,0 +1,181 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+              <a class="govuk-breadcrumbs__link" href="existing_skills_search.html">Check your existing skills</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Search results
+      </li>
+  </ol>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h3 class="govuk-heading-l">Search results for</h3>
+
+         <form method="post">
+            <div class="govuk-form-group">
+                <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="Sales assistant">
+                <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #005ea5;" type="submit">
+                </button>
+             </div>
+          </form>
+
+            <div class="govuk-body govuk-!-margin-bottom-4 govuk-!-margin-top-2">
+                10 results found
+
+
+            </div>
+
+              <p class="govuk-body-l">Select a job from results below to see the related skills.</p>
+
+                <ul class="govuk-list">
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="existing_skills_results" style="text-decoration:none">Sales assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Shop assistant, sales person, store assistant, retail assistant, retail sales assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Sales assistants sell products and help customers.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Sales administrator</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales administration assistant, sales office clerk</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Sales administrators process sales orders and payments, arrange deliveries and offer after-sales support.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Sales representative</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Salesperson, sales rep, sales executive, field sales executive</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Sales representatives meet or ring customers to persuade them to buy products or services.</p>
+                        </p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Petrol station sales assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Garage assistant, garage shop assistant, petrol station attendant, filling station attendant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Petrol station sales assistants sell fuel and other items to customers in garage forecourt shops.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Pharmacy assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chemist’s assistant, dispensing assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Stock control assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Stores assistant, stock supervisor, supply chain assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Stock control assistants keep track of stock levels and make sure there are enough supplies to meet customer demand.</p>
+                     </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Museum assistant</h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Visitor experience assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Museum assistants take care of customers and security in museums and galleries.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Leisure centre assistant</a></h3>
+
+                        <p class="result-description govuk-!-margin-bottom-3">Leisure centre assistants help and supervise visitors using leisure centre facilities</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Garden nursery assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Horticultural assistant, garden centre worker</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Garden nursery assistants grow plants in nurseries and garden centres, and advise and serve customers.</p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-3">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Tourist information centre assistant</a></h3>
+                        <p class="result-description govuk-!-margin-bottom-3">Tourist information centre assistants give information to visitors about transport, tourist attractions and local services and activities.</p>
+                    </li>
+                </ul>
+                <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+                <div style="margin: 0 auto; width: 200px">
+                  <div style="float:left" class="govuk-body">
+                    <span class="govuk-!-margin-right-4" style="color:#6f777b">
+                      1
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        2
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        3
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        ...
+                      </a>
+                    </span>
+                    <span>
+                      <a href="#" style="text-decoration:none">
+                        10
+                      </a>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="govuk-body" style="text-align:right">
+                    <a href="#" style="text-decoration:none">
+                      Next page &nbsp;
+                      <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;""/>
+                    </a>
+                  </div>
+
+
+
+
+
+
+
+
+
+      </div>
+      {% include "main/release1_e2e_v1/contact_us.html"%}
+      </div>
+
+    </div>
+            </div>
+
+
+
+{% endblock %}

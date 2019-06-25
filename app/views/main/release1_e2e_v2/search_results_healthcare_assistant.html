@@ -1,0 +1,158 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore occupations</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Search results
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h3 class="govuk-heading-l">Search results for</h3>
+
+         <form method="post">
+            <div class="govuk-form-group">
+                <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text">
+                <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #005ea5;" type="submit">
+                </button>
+             </div>
+          </form>
+
+            <div class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-5">
+                10 results found
+            </div>
+                <p class="govuk-body-l">Select a job profile from the results below to find out what the role involves, and what skills and training are required.</p>
+                <ul class="govuk-list">
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_healthcare_assistant" style="text-decoration:none">Healthcare assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Support worker, nursing assistant, nursing auxiliary</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Healthcare assistants look after patients in hospitals or in patients’ own homes.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;15,000 to &#163;20,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Healthcare science assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Assistant technical officer</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Healthcare science assistants support healthcare professionals.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;23,761</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare </a><a href="#">Science and research</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Palliative care assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Specialist healthcare assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Palliative care assistants provide specialist end of life care and support to patients and their families.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;20,795</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare</a><a href="#">Social care</a>
+                        </p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Radiography assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Imaging support worker</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Radiography assistants help radiographers with their day-to-day duties.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;18,813 to &#163;23,761</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Podiatry assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chiropody assistant, footcare assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Podiatry assistants provide general foot treatments and nail care under the supervision of a podiatrist.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;20,795</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Pharmacy assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chemist’s assistant, dispensing assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">
+                            Salary: &#163;17,250 to &#163;21,000</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare</a></p>
+                     </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Physiotherapy assistant</h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Physiotherapy support worker</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Physiotherapy assistants help physiotherapists work with patients to restore or improve movement.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;23,761</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Clinical scientist</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Healthcare scientist</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Clinical scientists research and develop techniques and equipment to help prevent, diagnose and treat illness.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;30,401 to &#163;50,819</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a><a href="#">Science and research</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Speech and language therapy assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Speech and language therapy support worker</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Speech and language therapy assistants help support people who have difficulties with communication, or with eating, drinking or swallowing.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;23,761</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Ambulance care assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Patient transport service driver, ambulance staff</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Ambulance care assistants take patients to and from hospital for appointments.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;20,795</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a><a href="#">Transport</a></p>
+                    </li>
+                </ul>
+
+
+
+
+
+
+
+
+
+      </div>
+      {% include "main/release1_e2e_v1/contact_us.html"%}
+      </div>
+
+    </div>
+            </div>
+
+
+
+{% endblock %}
