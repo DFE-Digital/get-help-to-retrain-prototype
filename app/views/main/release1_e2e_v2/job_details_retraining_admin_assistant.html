@@ -1,0 +1,230 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+      </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore occupations</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          <a class="govuk-breadcrumbs__link" href="search_results_healthcare_assistant.html">Search results</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Job profile details
+        </li>
+    </ol>
+  </div>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+  <div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-2" >Admin assistant</h1>
+       <p class="govuk-body-l" style="color: #6f777b">Office administrator, clerical assistant, administrative assistant</p>
+
+       <p class="govuk-body-l">Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+
+   </div>
+
+       <div>{% include "main/release1_e2e_v1/contact_us.html"%}
+
+
+   </div>
+
+    </div>
+
+    <div class="govuk-grid-column-one-third govuk-!-margin-bottom-6">
+        <div class="govuk-grid-row">
+              <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+                <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/pound.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+              </div>
+              <div class="govuk-grid-column-three-quarters">
+                <h4 class="govuk-heading-s govuk-!-margin-top-5">Average Salary</h4>
+                <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3">
+
+                <ul class="govuk-list">
+                  <li>
+                    £<span id="traineeSalary">14,000</span> – £<span id="salary">30,000</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+          <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/time.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+          <h4 class="govuk-heading-s govuk-!-margin-top-5">Typical hours</h4>
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3">
+          <p class="govuk-body"><span id="hours">38-40</span> a week</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="govuk-grid-column-one-third">
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-one-quarter govuk-!-margin-top-9 govuk-!-margin-bottom-6">
+          <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/cal.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+        </div>
+        <div class="govuk-grid-column-three-quarters">
+          <h4 class="govuk-heading-s govuk-!-margin-top-5">You could work</h4>
+          <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-3">
+          <p id="lifestyle" class="govuk-body">Between 8am and 6pm</p>
+        </div>
+      </div>
+    </div>
+
+
+
+<div class="govuk-grid-row">
+        <div class="govuk-grid-column-two-thirds">
+          <h2 class="govuk-heading-m">Skills and knowledge</h2>
+          <p class="govuk-body-m">You'll need:
+          </p>
+            <ul class="govuk-list govuk-list--bullet">
+              <li>administration skills</li>
+              <li>to be thorough and pay attention to detail</li>
+              <li>the ability to work well with others</li>
+              <li>the ability to work on your own</li>
+              <li>sensitivity and understanding</li>
+              <li>to be flexible and open to change</li>
+              <li>excellent verbal communication skills</li>
+              <li>customer service skills</li>
+              <li>to be able to use a computer and the main software packages competently</li>
+            </ul>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        <h2 class="govuk-heading-m">Day-to-day tasks</h2>
+          <p class="govuk-body-m">In this role you could be:</p>
+          <ul class="govuk-list govuk-list--bullet">
+            
+             <li>dealing with queries on the phone, by email and social media</li>
+             <li>greeting visitors at reception</li>
+             <li>typing letters and reports</li>
+             <li>updating computer records</li>
+             <li>printing and photocopying</li>
+             <li>ordering supplies</li>
+             <li>setting up meetings and taking notes during them</li>
+             <li>making travel arrangements for staff</li>
+           </ul>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Working environment</h2>
+
+          
+             <p class="govuk-body-m">You could work in an office.</p>
+          
+
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Direct application</h2>
+
+        <p class="govuk-body-m">You could apply directly to become an admin assistant.</p>
+
+        <p class="govuk-body-m">Some employers may expect you to have:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+             <li>GCSEs at grades 9 to 4 (A* to C) or equivalent, including English and maths
+             </li>
+             <li>telephone, typing or IT skills
+             </li>
+          </ul>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Apprenticeship</h2>
+
+        <p class="govuk-body-m">You could get into this job through an intermediate apprenticeship in business administration or a business administrator advanced apprenticeship.</p>
+
+        <h3 class="govuk-heading-s">Entry requirements</h3>
+
+        <p class="govuk-body-m"> You'll usually need:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+             <li>some GCSEs, usually including English and maths, for an intermediate apprenticeship
+             </li>
+
+              <li>5 GCSEs at grades 9 to 4 (A* to C), including English and maths, for an advanced apprenticeship
+
+             </li>
+          </ul>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m">Career path and progression</h2>
+
+        <p class="govuk-body-m">With experience, you could progress from admin assistant to supervisor or office manager. You could also move into other departments such as IT or accounting.</p>
+
+        <p class="govuk-body-m">With further training, you could specialise in an area like legal, financial or medical administration.</p>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+
+           <a href="task_list.html">
+             <button type="submit" class="govuk-button govuk-!-margin-top-6  govuk-!-margin-bottom-9">
+               Continue
+             </button>
+            </a>
+        </div>
+
+        <div class="govuk-grid-column-one-third">
+            
+
+
+        </div>
+</div>
+
+
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+{% endblock %}

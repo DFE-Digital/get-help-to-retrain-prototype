@@ -1,0 +1,118 @@
+
+{% extends "layout.html" %}
+
+
+{% block pageTitle %}
+  Get help to retrain: step by step
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
+    var $session =
+    {
+      task_1: '{{ data['task-1'] }}',
+      task_2: '{{ data['task-2'] }}',
+      task_3: '{{ data['task-3'] }}'
+    }
+    taskListCompletion.start($session)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Explore occupations
+      </li>
+  </ol>
+</div>
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 ">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0" >
+
+    <div class="govuk-grid-column-full govuk-!-padding-top-5 govuk-!-padding-bottom-5 govuk-!-margin-bottom-7" style="background-color: #005ea5">
+      <h1 class="govuk-heading-xl" style="color: #FFFFFF">Explore occupations</h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          <p class="govuk-body-l" style="color: #FFFFFF">Explore the type of jobs you could retrain to do</p>
+        </label>
+      </div>
+
+
+           <form method="post" action="search_results_admin_assistant">
+        <div class="govuk-form-group govuk-!-margin-bottom-0" >
+          <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter a job title">
+          <button class="search-button" type="submit"></button>
+        </div>
+      </form>
+    </div>
+
+
+    <div class="govuk-!-padding-left-3">
+      <h2 class="govuk-heading-m">Explore by job category</h2>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <ul class="govuk-list">
+        <li><a href="administration.html" class="category_links">Administration</a></li>
+        <li><a href="#" class="category_links">Animal care</a></li>
+        <li><a href="#" class="category_links">Beauty and wellbeing</a></li>
+        <li><a href="#" class="category_links">Business and finance</a></li>
+        <li><a href="#" class="category_links">Computing, technology and digital</a></li>
+        <li><a href="#" class="category_links">Construction and trades</a></li>
+        <li><a href="#" class="category_links">Creative and media</a></li>
+        <li><a href="#" class="category_links">Delivery and storage</a></li>
+        <li><a href="#" class="category_links">Emergency and uniform services</a></li>
+        <li><a href="#" class="category_links">Engineering and maintenance</a></li>
+        <li><a href="#" class="category_links">Environment and land</a></li>
+        <li><a href="#" class="category_links">Government services</a></li>
+        <li><a href="healthcare.html" class="category_links">Healthcare</a></li>
+      </ul>
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <ul class="govuk-list">
+
+        <li><a href="#" class="category_links">Home services</a></li>
+        <li><a href="#" class="category_links">Hospitality and food</a></li>
+        <li><a href="#" class="category_links">Law and legal</a></li>
+        <li><a href="#" class="category_links">Managerial</a></li>
+        <li><a href="#" class="category_links">Manufacturing</a></li>
+        <li><a href="#" class="category_links">Retail and sales</a></li>
+        <li><a href="#" class="category_links">Science and research</a></li>
+        <li><a href="#" class="category_links">Social care</a></li>
+        <li><a href="#" class="category_links">Sports and leisure</a></li>
+        <li><a href="#" class="category_links">Teaching and education</a></li>
+        <li><a href="#" class="category_links">Transport</a></li>
+        <li><a href="#" class="category_links">Travel and tourism</a></li>
+      </ul>
+    </div>
+  </div>
+
+  {% include "main/release1_e2e_v1/contact_us.html"%}
+</div>
+{% endblock %}

@@ -1,0 +1,68 @@
+ 
+{% extends "layout.html" %}
+
+{% set mainClasses = "govuk-!-padding-top-1" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+    </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Get help to retrain</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Check your existing skills
+      </li>
+  </ol>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row govuk-!-margin-left-0 govuk-!-margin-right-0">
+
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0" >
+
+    <div class="govuk-grid-column-full govuk-!-padding-top-5 govuk-!-padding-bottom-4 govuk-!-margin-bottom-7" style="background-color: #005ea5">
+      <h1 class="govuk-heading-xl" style="color: #FFFFFF">Check your existing skills</h1>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="width-20">
+          <p class="govuk-body-l" style="color: #FFFFFF">Search for the job that you currently do to see what skills you already have </p>
+        </label>
+      </div>
+
+      <form method="post" action="existing_skills_search_results">
+        <div class="govuk-form-group govuk-!-margin-bottom-0">
+          <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter your job title">
+          <button class="search-button" type="submit"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  {% include "main/release1_e2e_v1/contact_us.html"%}
+</div>
+{% endblock %}
