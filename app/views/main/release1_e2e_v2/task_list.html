@@ -4,22 +4,7 @@
 {% block pageTitle %}
   Get help to retrain: step by step
 {% endblock %}
-{% block pageScripts %}
-  <script src="/public/javascripts/step-by-step-navigation.js"></script>
-  <script type="text/javascript">
-    var $element = $('#step-by-step-navigation')
-    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
-    stepByStepNavigation.start($element)
-    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
-    var $session =
-    {
-      task_1: '{{ data['task-1'] }}',
-      task_2: '{{ data['task-2'] }}',
-      task_3: '{{ data['task-3'] }}'
-    }
-    taskListCompletion.start($session)
-  </script>
-{% endblock %}
+
 
 {% block beforeContent %}
 
@@ -70,6 +55,7 @@
               <a href="existing_skills_search">
               Check your existing skills <span class="app-step-nav__context">5 minutes</span>
               </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">You’ll be surprised at what you already know</p>
             </div>
 
           </li>
@@ -88,6 +74,7 @@
               <a href="explore_careers">
               Search for the types of jobs you could retrain to do <span class="app-step-nav__context">5 to 20 minutes</span>
               </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">These are not live jobs you can apply to – they’re the type of jobs you’ll be able to apply to if you do some training.</p>
             </div>
 
           </li>
@@ -107,8 +94,9 @@
           <li class="app-task-list__item">
             <div class="app-task-list__task-name app-task-list__task-name">
               <a href="training_hub">
-                Find and apply to training courses near you <span class="app-step-nav__context">10 to 20 minutes</span>
+                Talk to a training adviser and find and apply to a training course near you <span class="app-step-nav__context">10 to 20 minutes</span>
               </a>
+
             </div>
 
           </li>
@@ -124,8 +112,9 @@
           <li class="app-task-list__item">
               <div class="app-task-list__task-name app-task-list__task-name">
                 <a href="next_steps">
-                  Find out what you can do next
+                  Get more support to help you on your new career path
                 </a>
+                <p class="govuk-body govuk-!-margin-bottom-0">For example, advice on how to look and apply for jobs, or help with childcare options</p>
               </div>
      
           </li>
