@@ -1,0 +1,125 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Survey</a>
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+      <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <span class="govuk-caption-xl">Question 5 of 7</span>
+                <h1 class="govuk-heading-l">
+                How likely are you to use the phone line to get additional support and advice?
+                </h1>
+              </legend>
+
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="very-likely">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Very likely
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="moderately-likely">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Moderately likely
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="Neither-likely-nor-unlikely">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Neither likely nor unlikely
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="moderately-unlikely">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Moderately unlikely
+                  </label> </div>
+     
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="very-unlikely">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Very unlikely
+                  </label> </div>
+
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="didnt-see-the-phone-number">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    I didn't see the phone number
+                  </label> </div>
+
+              </div>
+
+            </fieldset>
+          </div>
+
+          <div class="govuk-form-group">
+            <label class="govuk-label" for="more-detail">
+             Can you provide more detail of your answer?
+            </label>
+            <span id="more-detail-hint" class="govuk-hint">
+            Some explanation text to go here, maybe. Some explanation text to go here, maybe. Some explanation text to go here, maybe.
+            </span>
+            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          </div>
+
+
+        </form>
+
+          <a href="survey_question6"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+
+
+</div>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+     
+
+{% endblock %}
+
