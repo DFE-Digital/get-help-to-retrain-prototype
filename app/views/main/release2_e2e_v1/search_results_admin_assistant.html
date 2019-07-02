@@ -1,0 +1,189 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="explore_careers.html">Explore occupations</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Search results
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h3 class="govuk-heading-l">Search results for</h3>
+
+         <form method="post">
+            <div class="govuk-form-group">
+                <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="Admin assistant">
+                <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #005ea5;" type="submit">
+                </button>
+             </div>
+          </form>
+
+            <div class="govuk-body govuk-!-margin-bottom-5 govuk-!-margin-top-5">
+                10 results found
+            </div>
+
+
+
+                <div class="govuk-inset-text">
+                  Select a role from the results below to find out what it involves, and what skills and training are required. These are job profiles, not live jobs you can apply for.
+
+              
+                </div>
+
+                  
+                <ul class="govuk-list">
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_assistant" style="text-decoration:none">Admin assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;14,000 to &#163;30,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="administration.html">Administration</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Human resources assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">HR assistant, personnel assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Human resources (HR) assistants provide admin support to the HR team in a company or organisation.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;15,000 to &#163;22,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="administration.html">Administration</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Sales administrator</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales administration assistant, sales office clerk</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Sales administrators process sales orders and payments, arrange deliveries and offer after-sales support.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;15,000 to &#163;24,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="administration.html">Administration</a><a href="#">Retail and sales</a>
+                        </p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Editorial assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Publishing assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Editorial assistants provide support at all stages of the publication process for books, journals, magazines and online content.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;15,000 to &#163;40,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="#">Creative and media</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Teaching assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Classroom assistant, learning support assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Teaching assistants support teachers and help children with reading, writing and learning activities</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;11,500 to &#163;23,000</p>
+                            <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="#">Teaching and education</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Radiography assistant</h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Imaging support worker</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Radiography assistants help radiographers with their day-to-day duties.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;18,813 to &#163;23,761</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Personal assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">PA, executive secretary, executive assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Personal assistants carry out support tasks for individuals and managers including administration, diary management and event planning.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;18,000 to &#163;50,000</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="administration">Administration</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Pharmacy assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chemist’s assistant, dispensing assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">
+                            Salary: &#163;17,250 to &#163;21,000</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in:<a href="healthcare.html">Healthcare</a><a href="#">Retail and sales</a></p>
+                     </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Podiatry assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chiropody assistant, footcare assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Podiatry assistants provide general foot treatments and nail care under the supervision of a podiatrist.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;17,652 to &#163;20,795</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="healthcare.html">Healthcare</a></p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-3">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Local government administrative assistant</a></h3>
+                        <p class="result-description govuk-!-margin-bottom-3">Local government administrative assistants provide clerical support in council departments and give information to the public.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">Salary: &#163;15,500 to &#163;21,000</p>
+                        <p class="govuk-body-s" style="color:#6f777b">Found in: <a href="administration">Administration</a></p>
+                    </li>
+                </ul>
+                <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+                <div style="margin: 0 auto; width: 200px">
+                  <div style="float:left" class="govuk-body">
+                    <span class="govuk-!-margin-right-4" style="color:#6f777b">
+                      1
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        2
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        3
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        ...
+                      </a>
+                    </span>
+                    <span>
+                      <a href="#" style="text-decoration:none">
+                        10
+                      </a>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="govuk-body" style="text-align:right">
+                    <a href="#" style="text-decoration:none">
+                      Next page &nbsp;
+                      <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;"/>
+                    </a>
+                  </div>
+
+      </div>
+      {% include "main/release1_e2e_v2/contact_us.html"%}
+      </div>
+
+    </div>
+            </div>
+
+
+
+{% endblock %}
