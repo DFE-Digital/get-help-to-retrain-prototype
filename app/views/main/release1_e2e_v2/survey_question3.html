@@ -57,21 +57,21 @@
                   </label> </div>
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="moderately-likely">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="relatively-likely">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Moderately likely
+                    Relatively likely
                   </label> </div>
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="Neither-likely-nor-unlikely">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="Neither-likely-or-unlikely">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Neither likely nor unlikely
+                    Neither likely or unlikely
                   </label> </div>
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="moderately-unlikely">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="relatively-unlikely">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Moderately unlikely
+                    Relatively unlikely
                   </label> </div>
      
 
@@ -85,15 +85,21 @@
             </fieldset>
           </div>
 
-          <div class="govuk-form-group">
+
+
+      <div class="govuk-form-group">
+
             <label class="govuk-label" for="more-detail">
-             Can you provide more detail of your answer?
+             Can you tell us more about your answer
             </label>
-            <span id="more-detail-hint" class="govuk-hint">
-            Some explanation text to go here, maybe. Some explanation text to go here, maybe. Some explanation text to go here, maybe.
-            </span>
-            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          <div class="govuk-character-count" data-module="character-count" data-maxlength="1500">
+            <textarea class="govuk-textarea js-character-count " id="label-as-page-heading" name="label-as-page-heading" rows="5"></textarea>
           </div>
+
+          <span id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+          You can enter up to 1500 characters
+          </span>
+      </div>
 
 
         </form>

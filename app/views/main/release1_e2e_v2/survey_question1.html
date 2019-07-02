@@ -45,7 +45,7 @@
               <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
                 <span class="govuk-caption-xl">Question 1 of 7</span>
                 <h1 class="govuk-heading-l">
-                How important is retraining to help you to find a better and more secure job?
+                How important is retraining in helping you to find a better and more secure job?
                 </h1>
               </legend>
 
@@ -63,37 +63,41 @@
                   </label> </div>
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="moderately-important">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="relatively-important">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Moderately important
+                    Relatively important
                   </label> </div>
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="of-little-importance">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="not-very-importance">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Of little importance
+                    Not very important
                   </label> </div>
      
 
                 <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="unimportant">
+                  <input class="govuk-radios__input" id="" name="" type="radio" value="not-important-at-all">
                   <label class="govuk-label govuk-radios__label" for="">
-                    Unimportant
+                    Not important at all
                   </label> </div>
               </div>
 
             </fieldset>
           </div>
 
-          <div class="govuk-form-group">
+      <div class="govuk-form-group">
+
             <label class="govuk-label" for="more-detail">
-             Can you provide more detail of your answer?
+             Can you tell us more about your answer
             </label>
-            <span id="more-detail-hint" class="govuk-hint">
-            Some explanation text to go here, maybe. Some explanation text to go here, maybe. Some explanation text to go here, maybe.w
-            </span>
-            <textarea class="govuk-textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+          <div class="govuk-character-count" data-module="character-count" data-maxlength="1500">
+            <textarea class="govuk-textarea js-character-count " id="label-as-page-heading" name="label-as-page-heading" rows="5"></textarea>
           </div>
+
+          <span id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+          You can enter up to 1500 characters
+          </span>
+      </div>
 
 
         </form>
