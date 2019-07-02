@@ -1,0 +1,69 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h2 class="govuk-heading-l">Your reference</h2>
+       <div style="border-left:10px solid #005ea5; background-color: #f8f8f8;" class="govuk-!-padding-4">
+        <div style="">
+        <h1 class="govuk-heading-xl govuk-!-margin-bottom-0">8YZ3 55RE 4YE2 78</h1>
+        <span class="govuk-caption-l">12th June</span>
+      </div>
+      </div>
+
+<h2 class="govuk-heading-m govuk-!-padding-top-5">What to do with your reference</h2>
+<p class="govuk-body">The code above is your unique reference. You can use this to:</p>
+<ul class="govuk-list govuk-list--bullet">
+        <li>return to the service and continue</li>
+
+        <li>see your results, if you have finished the assessment</li>
+
+      </ul>
+
+<h2 class="govuk-heading-m">Send in a text message</h2>
+<div class="govuk-form-group">
+  <label class="govuk-label" for="telephone-number">
+    UK mobile telephone number
+  </label>
+  <input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+</div>
+<button type="submit" class="govuk-button">
+  Send code
+</button>
+<p><a href="#">Return to service</a></p>
+
+
+</div>
+</div>
+
+      </div>
+
+     
+
+{% endblock %}

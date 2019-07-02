@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">Get help to retrain</h1>
+        <p class="govuk-body">Use this service to discover your skills, explore jobs you could do and check training courses that will help you find a better job.</p>
+
+        <p class="govuk-body">This service will help you find a job that you can keep in the future, when technology might change the kinds of jobs available.</p>
+
+          <div class="govuk-inset-text">You might find that you can apply to a different type of job than the one you have now with the skills you already have, or that you can retrain to do something else.</div>
+
+
+
+        <a href="task_list" role="button" draggable="false" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">
+          Start now
+        </a>
+
+        <h2 class="govuk-heading-m">Before you start</h2>
+
+                <p class="govuk-body">You’ll get the most out of this service if all of the following apply to you:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+        <li>you're employed</li>
+
+        <li>you do not have a degree</li>
+
+        <li>you’re based in the Liverpool area</li>
+
+        <li>you're aged 24 or over</li>
+
+        <li>you're earning below £35,000 per year</li>
+
+      </ul>
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}

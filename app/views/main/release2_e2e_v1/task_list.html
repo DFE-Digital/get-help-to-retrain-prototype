@@ -1,0 +1,159 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get help to retrain: step by step
+{% endblock %}
+
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="false">
+          Get help to retrain
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Get help to retrain
+    </h1>
+    <p class="govuk-!-margin-bottom-9">
+      Check what you need to do to retrain for another job. How long it takes you to complete the following steps will depend on your situation.
+    </p>
+    
+
+    <ol class="app-task-list">
+    <li>
+
+        <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">1. </span> Check what you are good at 
+        </h2>
+
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <div class="app-task-list__task-name app-task-list__task-name">
+              <a href="existing_skills_search">
+              Check your existing skills <span class="app-step-nav__context">5 minutes</span>
+              </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">You’ll be surprised at what you already know</p>
+            </div>
+
+          </li>
+        </ul>
+
+
+
+
+      <li>
+          <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">2. </span> Explore the types of jobs you could do
+          </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <div class="app-task-list__task-name app-task-list__task-name">
+              <a href="explore_careers">
+              Search for the types of jobs you could retrain to do <span class="app-step-nav__context">5 to 20 minutes</span>
+              </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">These are not live jobs you can apply to – they’re the types of jobs you’ll be able to do with your existing skills or once you do some training</p>
+            </div>
+
+          </li>
+        </ul>
+      </li>
+
+
+
+
+
+
+      <li>
+          <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">3. </span> Apply for a training course
+          </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <div class="app-task-list__task-name app-task-list__task-name">
+              <a href="training_hub">
+                Talk to an adviser to find and apply to a training course near you <span class="app-step-nav__context">10 to 20 minutes</span>
+              </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">Training can help you access a broader range of jobs</p>
+
+            </div>
+
+          </li>
+        </ul>
+      </li>
+
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">4. </span>Find out what you can do next
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+              <div class="app-task-list__task-name app-task-list__task-name">
+                <a href="next_steps">
+                  Get more support to help you on your new career path
+                </a>
+                <p class="govuk-body govuk-!-margin-bottom-0">For example, advice on how to find and apply for jobs</p>
+              </div>
+     
+          </li>
+        </ul>
+      </li>
+
+
+      <li>
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">5. </span>Help improve this service
+        </h2>
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+              <div class="app-task-list__task-name app-task-list__task-name">
+                <a href="survey_question1">
+                  
+                  Take a quick survey and tell us about your experience
+                  <span class="app-step-nav__context">3 to 5 minutes</span>
+                </a>
+
+                <p class="govuk-body govuk-!-margin-bottom-0">This is a new service – your feedback will help us improve it</p>
+              
+              </div>
+     
+          </li>
+        </ul>
+      </li>
+
+
+
+        </ul>
+      </li>
+    </ol>
+
+  </div>
+
+
+  {% include "main/release2_e2e_v1/contact_us.html"%}
+    </div>
+</div>
+{% endblock %}
