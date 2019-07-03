@@ -28,7 +28,7 @@
           <a class="govuk-breadcrumbs__link" href="task_list.html">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="training_hub">Qualification question</a>
+        <a class="govuk-breadcrumbs__link" href="training_hub">Do you have a degree</a>
       </li>
   </ol>
 </div>
@@ -37,58 +37,41 @@
 
 {% block content %}
 
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+     
+      <h1 class="govuk-heading-l">
+      Do you have a degree?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-1" name="question2" type="radio" value="extremely-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          No, I do not have a degree
+        </label> </div>
 
-      <form action="/form-handler" method="post" novalidate>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-2" name="question2" type="radio" value="very-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          Yes, I have a degree
+        </label> </div>
 
-          <div class="govuk-form-group">
-            <fieldset class="govuk-fieldset">
-              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-                <h1 class="govuk-heading-l">
-                Do you have a degree?
-                </h1>
-              </legend>
-
-              <div class="govuk-radios">
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="yes">
-                  <label class="govuk-label govuk-radios__label" for="">
-                    Yes
-                  </label> </div>
-
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="" name="" type="radio" value="no">
-                  <label class="govuk-label govuk-radios__label" for="">
-                    No
-                  </label> </div>
-
-              
-              </div>
-
-            </fieldset>
-          </div>
-
-
-        </form>
-
-          
-          <a href="survey_question2"><button type="submit" class="govuk-button">
-            Continue
-          </button></a>
-
-
-</div>
-
-
-
-
-</div>
-
-
-
-      </div>
 
     </div>
-  </div>
+
+  </fieldset>
+
+
+</div>
+          <a href="#"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+</div>
+</div>
+</div>
+
 
      
 
