@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Get Help To Retrain
+Get Help To Retrain
 {% endblock %}
 
 {% block beforeContent %}
@@ -11,60 +11,58 @@
 
 {{ govukPhaseBanner({
   tag: {
-    text: "beta"
-  },
-  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-
 <div class="govuk-width-container">
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    
-        <li class="govuk-breadcrumbs__list-item">
-          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
-      </li>
-  </ol>
-</div>
-
-{% endblock %}
-
-{% block content %}
 
 
 
-  <h1 class="govuk-heading-xl">Find and apply to a training course near you</h1>
+      <div class="govuk-breadcrumbs">
+        <ol class="govuk-breadcrumbs__list">
+
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+          </li>
+          <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
+          </li>
+        </ol>
+      </div>
+
+      {% endblock %}
+
+      {% block content %}
 
   <div class="govuk-grid-row">
-      <div class="govuk-grid-column-full">
+    <div class="govuk-grid-column-two-thirds">
 
-  <p class="govuk-body-l">Call the Get help to retrain helpline to speak with an adviser and get free guidance. They'll be able to recommend training courses near you.</p>
-
-  <h2 class="govuk-heading-m">Why you need to retrain</h2>
-    <p class="">Even if you’re already employed, some training – for example, a free short course in maths or English – will improve your chances of accessing a broader range of jobs.</p>
-
-    <div class="govuk-inset-text">You’ll get personalised advice and support along the way, so you can find training that fits around your schedule and your personal needs – for example, with childcare or IT skills, or if you have not studied in a while and feel unsure about what you should do.</div>
-
-  <p class="govuk-heading-m govuk-!-margin-bottom-2">Get help to retrain helpline</p>
-    <p class="govuk-body-m govuk-!-margin-bottom-0">Telephone: <a href="tel:+44800123123" class="govuk-!-padding-left-1" style="text-decoration:none">0800 123 123</a></p>
-    <p class="govuk-body-m govuk-!-margin-bottom-0">Monday to Friday, 10am to 4pm</p>
-    <a href="task_list.html">Find out about call charges</a>
+        <h1 class="govuk-heading-xl">Find and apply to a training course near you</h1>
 
 
-</div>
-</div>
+
+        <p class="govuk-body-l">Call the Get help to retrain helpline to speak with an adviser and get free guidance. They'll be able to recommend training courses near you.</p>
+
+        <h2 class="govuk-heading-m">Why you need to retrain</h2>
+        <p class="">Even if you’re already employed, some training – for example, a free short course in maths or English – will improve your chances of accessing a broader range of jobs.</p>
+
+        <div class="govuk-inset-text">You’ll get personalised advice and support along the way, so you can find training that fits around your schedule and your personal needs – for example, with childcare or IT skills, or if you have not studied in a while and feel unsure about what you should do.</div>
+
+        <p class="govuk-heading-m govuk-!-margin-bottom-2">Get help to retrain helpline</p>
+        <p class="govuk-body-m govuk-!-margin-bottom-0">Telephone: <a href="tel:+44800123123" class="govuk-!-padding-left-1" style="text-decoration:none">0800 123 123</a></p>
+        <p class="govuk-body-m govuk-!-margin-bottom-0">Monday to Friday, 10am to 4pm</p>
+        <a href="task_list.html">Find out about call charges</a>
 
       </div>
 
-    </div>
+      {% include "main/release2_e2e_v1/next_steps_panel.html"%}
+      {% include "main/release2_e2e_v1/survey_panel.html"%}
+
   </div>
+</div>
 
-     
 
-{% endblock %}
+
+      {% endblock %}
