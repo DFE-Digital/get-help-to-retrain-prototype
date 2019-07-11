@@ -1,0 +1,60 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">No courses in your area</a>
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+   <div class="govuk-grid-row">
+        <h1 class="govuk-heading-xl">Explore your skills and career options</h1>
+        <p class="govuk-body-m">We’re a new service and currently do not offer any training courses in your area.</p>
+
+        <p class="govuk-body">You can continue using the Get help to retrain service to check your existing skills, explore the types of jobs you could apply to do and check the next steps in your job search.</p>
+
+        <a href="#"><button type="submit" class="govuk-button">
+            Continue
+        </button></a>
+
+
+
+      </div>
+</div>
+</div>
+
+</div>
+
+     
+
+{% endblock %}
