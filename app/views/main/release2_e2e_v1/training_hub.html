@@ -27,7 +27,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
             <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
           </li>
           <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
+            <a class="govuk-breadcrumbs__link" href="training_hub">Find training</a>
           </li>
         </ol>
       </div>
@@ -39,18 +39,22 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-        <h1 class="govuk-heading-xl">Find and apply to a training course near you</h1>
+        <h1 class="govuk-heading-xl">Find training that boosts your job options
+</h1>
 
 
 
-        <p class="govuk-body-l">Even if you’re already employed, some training – for example, a free short course in maths or English – will improve your chances of accessing a broader range of jobs.</p>
+        <p class="govuk-body-l">You could get a better job by adding to the skills you already have. Complete a short course in maths or English and you could find you have a wider range of job options. Many courses are free and offer flexible times to fit round your life.
+</p>
 
-        <h2 class="govuk-heading-m">Types of courses</h2>
+        <h2 class="govuk-heading-m">What’s on offer in your area?
+</h2>
         <h2 class="govuk-heading-m govuk-!-margin-bottom-1" style="color: #005ea5">Maths</h2>
-        <p class="govuk-body-m govuk-!-margin-bottom-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <a href="#" class="govuk-body-m">more information on maths courses</a><br>
+        <p class="govuk-body-m govuk-!-margin-bottom-1">Employers tell us they are looking for people who can show they have some maths skills. Completing a short maths course can really boost your job prospects in many different types of work. 
+</p>
+        <a href="maths_overview" class="govuk-body-m">More information on maths courses</a><br>
           
-          <a href="#">
+          <a href="maths_courses_near_me">
             <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
             Find a maths course
           </button></a>
@@ -58,18 +62,20 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
         <h2 class="govuk-heading-m govuk-!-margin-bottom-1" style="color: #005ea5">English</h2>
-        <p class="govuk-body-m govuk-!-margin-bottom-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</p>
-        <a href="#" class="govuk-body-m">more information on English courses</a><br>
+        <p class="govuk-body-m govuk-!-margin-bottom-1">Showing that you can communicate well at work is really important for your job prospects. English courses focus on giving you the skills you need to succeed in the workplace</p>
+        <a href="#" class="govuk-body-m">More information on English courses</a><br>
 
         <a href="#">
           <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
-            Find a English course
+            Find an English course
           </button></a>
 
           <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
 
       </div>
+        {% include "main/release2_e2e_v1/contact_us.html"%}
+
 
       {% include "main/release2_e2e_v1/next_steps_panel.html"%}
       {% include "main/release2_e2e_v1/survey_panel.html"%}
