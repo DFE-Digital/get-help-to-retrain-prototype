@@ -1,0 +1,85 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+         <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="existing_skills_search.html">Check your existing skills</a>
+      </li>
+        <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="existing_skills_search_results.html">Search results</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+          Your skills
+      </li>
+  </ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+    <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Your current skills</span>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Sales assistant</h1>
+
+       <p class="govuk-body-l">Sales assistants sell products and help customers.
+       </p>
+            <h2 class="govuk-heading-m">Skills you may have:</h2>
+
+          <ul class="govuk-list govuk-list--bullet">
+             <li>customer service skills</li>
+             <li>the ability to work well with others</li>
+             <li>patience and the ability to remain calm in stressful situations</li>
+             <li>to be thorough and pay attention to detail</li>
+             <li>sensitivity and understanding</li>
+             <li>the ability to use your initiative</li>
+             <li>excellent verbal communication skills</li>
+             <li>the ability to sell products and services</li>
+             <li>to be able to use a computer and the main software packages competently</li>
+
+           </ul>
+
+      <a href="explore_careers"><button type="submit" class="govuk-button">
+            Explore jobs you could do
+      </button></a>
+
+
+
+
+      </div>
+      {% include "main/release2_e2e_v2/contact_us.html"%}
+    </div>
+
+
+
+
+
+
+{% endblock %}
