@@ -1,0 +1,78 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Your qualifications</a>
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+     
+      <h1 class="govuk-heading-xl">
+      Do you have a degree?
+      </h1>
+    </legend>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-1" name="question2" type="radio" value="extremely-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          No, I do not have a degree
+        </label> </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-2" name="question2" type="radio" value="very-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          Yes, I have a degree
+        </label> </div>
+
+
+    </div>
+
+  </fieldset>
+
+
+</div>
+          <a href="location_eligibility"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+</div>
+</div>
+</div>
+
+
+     
+
+{% endblock %}
