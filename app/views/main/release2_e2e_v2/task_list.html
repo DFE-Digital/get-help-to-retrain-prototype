@@ -2,7 +2,7 @@
 {% extends "layout.html" %}
 
 {% block pageTitle %}
-  Get help to retrain: step by step
+Get help to retrain: step by step
 {% endblock %}
 
 
@@ -12,19 +12,19 @@
 
 {{ govukPhaseBanner({
   tag: {
-    text: "beta"
-  },
-  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
 <div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
   <ol class="govuk-breadcrumbs__list">
-      <li class="govuk-breadcrumbs__list-item" aria-current="false">
-          <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item" aria-current="false">
-          Get help to retrain
-      </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="false">
+      <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="false">
+      Get help to retrain
+    </li>
   </ol>
 </div>
 
@@ -38,22 +38,22 @@
       Get help to retrain
     </h1>
     <p class="govuk-!-margin-bottom-9">
-      Check what you need to do to retrain for another job. How long it takes you to complete the following steps will depend on your situation.
+      Here's what you need to do to retrain for another job.
     </p>
     
 
     <ol class="app-task-list">
-    <li>
+      <li>
 
         <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Check what you are good at 
+          <span class="app-task-list__section-number">1. </span> Check what you are good at 
         </h2>
 
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
             <div class="app-task-list__task-name app-task-list__task-name">
               <a href="existing_skills_search_current">
-              Check your existing skills <span class="app-step-nav__context">5 minutes</span>
+                Check your existing skills <span class="app-step-nav__context">5 minutes</span>
               </a>
               <p class="govuk-body govuk-!-margin-bottom-0">You’ll be surprised at what you already know.</p>
             </div>
@@ -64,97 +64,101 @@
 
 
 
-      <li>
+        <li>
           <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">2. </span> Explore the types of jobs you could do
+            <span class="app-task-list__section-number">2. </span> Explore the types of jobs you could do
           </h2>
-        <ul class="app-task-list__items">
-          <li class="app-task-list__item">
-            <div class="app-task-list__task-name app-task-list__task-name">
-              <a href="explore_careers">
-              Search for the types of jobs you could retrain to do <span class="app-step-nav__context">5 to 20 minutes</span>
-              </a>
-              <p class="govuk-body govuk-!-margin-bottom-0">These are not live jobs you can apply to – they’re the types of jobs you’ll be able to do with your existing skills or once you do some training.</p>
-            </div>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div class="app-task-list__task-name app-task-list__task-name">
+                <a href="related_jobs">
+                  See types of jobs that match your skills 
+                  <span class="app-step-nav__context">5 to 20 minutes</span>
+                </a>
+                <p class="govuk-body govuk-!-margin-bottom-0">You already have many of the skills to do these types of job. Find out what additional training you might need.
+                </p>
+              </div>
 
-          </li>
-        </ul>
-      </li>
-
-
-
-
+            </li>
+          </ul>
+        </li>
 
 
-      <li>
+
+
+
+
+        <li>
           <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">3. </span>Find training that's right for you
+            <span class="app-task-list__section-number">3. </span>Find training that's right for you
           </h2>
-        <ul class="app-task-list__items">
-          <li class="app-task-list__item">
-            <div class="app-task-list__task-name app-task-list__task-name">
-              <a href="training_hub">
-                Find a training course <span class="app-step-nav__context">10 to 20 minutes</span>
-              </a>
-              <p class="govuk-body govuk-!-margin-bottom-0">
-              Training can help you access a broader range of jobs and stay in secure work.</p>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div class="app-task-list__task-name app-task-list__task-name">
+                <a href="training_hub">
+                  Find a training course <span class="app-step-nav__context">10 to 20 minutes</span>
+                </a>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                Training can help you access a broader range of jobs and stay in secure work.</p>
 
-            </div>
+              </div>
 
-          </li>
-        </ul>
-      </li>
+            </li>
+          </ul>
+        </li>
 
 
-      <li>
-        <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">4. </span>Find out what you can do next
-        </h2>
-        <ul class="app-task-list__items">
-          <li class="app-task-list__item">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span>See what you can do next
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
               <div class="app-task-list__task-name app-task-list__task-name">
                 <a href="next_steps">
-                  Get more support to help you on your new career path
+                  Get more support to search for a new role
                 </a>
-                <p class="govuk-body govuk-!-margin-bottom-0">For example, advice on how to find and apply for jobs.</p>
+                <p class="govuk-body govuk-!-margin-bottom-0">Connecting you to further advice, ideas and help.
+                </p>
               </div>
-     
-          </li>
-        </ul>
-      </li>
+
+            </li>
+          </ul>
+        </li>
 
 
-      <li>
-        <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">5. </span>Help improve this service
-        </h2>
-        <ul class="app-task-list__items">
-          <li class="app-task-list__item">
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">5. </span>Help improve this service
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
               <div class="app-task-list__task-name app-task-list__task-name">
                 <a href="survey_question1">
-                  
-                  Take a quick survey and tell us about your experience
+
+                  Take a quick survey
                   <span class="app-step-nav__context">3 to 5 minutes</span>
                 </a>
 
-                <p class="govuk-body govuk-!-margin-bottom-0">This is a new service – your feedback will help us improve it.</p>
-              
+                <p class="govuk-body govuk-!-margin-bottom-0">Tell us about your experience using Get help to retrain.
+                </p>
+
               </div>
-     
-          </li>
-        </ul>
-      </li>
+
+            </li>
+          </ul>
+        </li>
 
 
 
-        </ul>
-      </li>
-    </ol>
+      </ul>
+    </li>
+  </ol>
 
-  </div>
+</div>
 
 
-  {% include "main/release2_e2e_v2/contact_us.html"%}
-    </div>
+{% include "main/release2_e2e_v2/contact_us.html"%}
+</div>
 </div>
 {% endblock %}
