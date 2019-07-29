@@ -43,24 +43,36 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
   <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0" >
 
-    <div class="govuk-grid-column-full govuk-!-padding-top-5 govuk-!-padding-bottom-4 govuk-!-margin-bottom-7" style="background-color: #005ea5">
-      <h1 class="govuk-heading-xl" style="color: #FFFFFF">Check your existing skills</h1>
 
-      <div class="govuk-form-group">
-        <label class="govuk-label" for="width-20">
-          <p class="govuk-body-l" style="color: #FFFFFF">Search for the job that you currently do to see what skills you already have </p>
-        </label>
-      </div>
+ <h1 class="govuk-heading-xl">Check what skills you already have</h1>
+        <p class="govuk-body-l">Tell us your current job title and we’ll suggest other types of jobs you could do using skills you already have or with a bit more training.
+</p>
 
-      <form method="post" action="existing_skills_search_results">
+<form method="post" action="existing_skills_search_results_current">
         <div class="govuk-form-group govuk-!-margin-bottom-0">
-          <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter your job title">
-          <button class="search-button" type="submit"></button>
+          <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter your current job title">
+          <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
         </div>
       </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
     </div>
-  </div>
+
 
   {% include "main/release2_e2e_v2/contact_us.html"%}
 </div>
 {% endblock %}
+  </div>
