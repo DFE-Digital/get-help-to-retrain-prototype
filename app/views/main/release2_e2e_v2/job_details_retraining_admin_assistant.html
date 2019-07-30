@@ -130,7 +130,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
         </div>
 
       </div>
-      
+
         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
 
 
@@ -222,13 +222,12 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-
-
-     <a href="training_hub.html">
-       <button type="submit" class="govuk-button govuk-!-margin-top-6  govuk-!-margin-bottom-9">
-         Find a training course
-       </button>
-     </a>
+      <form action="training_hub">
+        <input type="hidden" name="task-2" value="complete">
+        <button type="submit" class="govuk-button govuk-!-margin-top-6  govuk-!-margin-bottom-9">
+          Find a training course
+        </button>
+      </form>
    </div>
 
    {% include "main/release2_e2e_v2/contact_us.html"%}
