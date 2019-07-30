@@ -81,7 +81,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
              <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-7" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
 
 
-   
+
 
 
 
@@ -90,9 +90,12 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-                    <a href="related_jobs"><button type="submit" class="govuk-button govuk-!-margin-top-3">
-                      Find out what you can do with these skills
-                    </button></a>
+                    <form action="related_jobs" method="post">
+                        <input type="hidden" name="task-1" value="complete">
+                      <button type="submit" class="govuk-button govuk-!-margin-top-3">
+                        Find out what you can do with these skills
+                      </button>
+                    </form>
 
 
 
