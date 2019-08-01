@@ -1,0 +1,191 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      <li li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Your job matches
+      </li>
+
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+        <h1 class="govuk-heading-xl">Types of jobs that match your skills</h1>
+
+        <p class="govuk-body">You may already have many of the skills to do these types of job. Click into each job title to understand what additional training you might need. </p>
+                <p class="govuk-body">You’ll see information about whether job numbers have been growing or falling in recent years. If job numbers are growing it may mean you’re more likely to find work doing this job and it’s more likely to be secure.
+</p>
+
+
+                  
+                <ul class="govuk-list">
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_assistant" style="text-decoration:none">Admin assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;14,000 to &#163;30,000</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Strong</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Growing strongly</b></p>
+                           
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Local government administrative assistant</a></h3>
+                            <p class="result-description govuk-!-margin-bottom-3">Local government administrative assistants provide clerical support in council departments and give information to the public.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;15,500 to &#163;21,000</b></p>
+                               <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Strong</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Growing strongly</b></p>
+                           
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Court administrative assistant</a></h3>
+                            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales administration assistant, sales office clerk</p>
+                            <p class="result-description govuk-!-margin-bottom-3">Court administrative assistants help with the daily running of courts and their supporting offices.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;16,000 to &#163;21,000</b></p>
+                               <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Growing</b></p>
+                           
+                        </p>
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Airline customer service agent</a></h3>
+               
+                            <p class="result-description govuk-!-margin-bottom-3">Airline customer service agents make sure passengers and their luggage safely board the right aircraft at the right time.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;13,000 to &#163;40,000</b></p>
+                               <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Strong</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Growing</b></p>
+                           
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Pensions administrator</a></h3>
+                   
+                            <p class="result-description govuk-!-margin-bottom-3">Pensions administrators handle the day-to-day running of pension schemes and life insurance policies.</p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;15,000 to &#163;30,000</b></p>
+                               <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Growing</b></p>
+                         
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Financial services customer adviser</h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales adviser, contact centre agent</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Financial services customer advisers work in contact centres for banks, insurance, investment and credit companies.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;14,000 to &#163;60,000</b></p>
+                           <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Strong</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Stable</b></p>
+                       
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Patient transport service controller</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Patient transport service call handler</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Patient transport service controllers arrange transport to take frail or vulnerable people to and from medical appointments.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;18,813 to &#163;23,761</b></p>
+                           <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Stable</b></p>
+                      
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Human resources assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">HR assistant, personnel assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Human resources (HR) assistants provide admin support to the HR team in a company or organisation.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;15,000 to &#163;22,000</b></p>
+                               <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Fair</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Stable</b></p>
+                      
+                     </li>
+
+                    <li class="govuk-!-padding-bottom-1">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Personal assistant</a></h3>
+                        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">PA, executive secretary, executive assistant</p>
+                        <p class="result-description govuk-!-margin-bottom-3">Personal assistants carry out support tasks for individuals and managers including administration, diary management and event planning.</p>
+                      <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;18,000 to &#163;50,000</b></p>
+                           <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Strong</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Falling</b></p>
+                       
+                    </li>
+
+                    <li class="govuk-!-padding-bottom-3">
+                        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Receptionist</a></h3>
+                        <p class="result-description govuk-!-margin-bottom-3">Receptionists are the first point of contact for visitors to organisations.</p>
+                        <p class="govuk-body-s govuk-!-margin-bottom-1">Salary: <b>&#163;12,000 to &#163;21,000</b></p>
+                           <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Very weak</b></p>
+                            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job numbers: <b>Falling</b></p>
+                      
+                    </li>
+                </ul>
+                <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+                <div style="margin: 0 auto; width: 200px">
+                  <div style="float:left" class="govuk-body">
+                    <span class="govuk-!-margin-right-4" style="color:#6f777b">
+                      1
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        2
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        3
+                      </a>
+                    </span>
+                    <span class="govuk-!-margin-right-4">
+                      <a href="#" style="text-decoration:none">
+                        ...
+                      </a>
+                    </span>
+                    <span>
+                      <a href="#" style="text-decoration:none">
+                        10
+                      </a>
+                    </span>
+                  </div>
+                  </div>
+                  <div class="govuk-body" style="text-align:right">
+                    <a href="#" style="text-decoration:none">
+                      Next page &nbsp;
+                      <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;"/>
+                    </a>
+                  </div>
+
+      </div>
+      {% include "main/release2_e2e_v3/contact_us.html"%}
+      </div>
+
+    </div>
+            </div>
+
+
+
+{% endblock %}

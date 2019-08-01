@@ -1,0 +1,149 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_current.html">Check your existing skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_results_current.html">Search results</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Current job skills
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Customer service assistant skills</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          <p class=govuk-body-l>We’ll use this list to suggest other types of job you can do.</p>
+
+          <p class=govuk-hint>If you want to remove any of these skills, click the tick to remove it from the list.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses" checked="checked">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              customer service skills
+            </label> </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines" checked="checked">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                the ability to work well with others
+              </label> </div>
+
+              <div class="govuk-checkboxes__item">
+                <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                  to be thorough and pay attention to detail
+                </label> </div>
+
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                  <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                    sensitivity and understanding
+                  </label> </div>
+
+                  <div class="govuk-checkboxes__item">
+                    <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                    <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                      patience and the ability to remain calm in stressful situations
+
+                    </label> </div>
+
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                      <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                        the ability to accept criticism and work well under pressure
+                      </label> </div>
+
+                      <div class="govuk-checkboxes__item">
+                        <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                        <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                          excellent verbal communication skills
+                        </label> </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                            active listening skills
+                          </label> </div>
+
+                        <div class="govuk-checkboxes__item">
+                          <input class="govuk-checkboxes__input" id="waste-3" name="waste" type="checkbox" value="farm" checked="checked">
+                          <label class="govuk-label govuk-checkboxes__label" for="waste-3">
+                            to be able to use a computer and the main software packages competently
+                          </label> </div>
+
+
+
+
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+
+
+
+                    <a href="selected_skills"><button type="submit" class="govuk-button">
+                      Select these skills
+                    </button></a>
+
+
+
+
+                  </div>
+                  {% include "main/release2_e2e_v3/contact_us.html"%}
+                </div>
+
+
+
+
+
+
+                {% endblock %}
