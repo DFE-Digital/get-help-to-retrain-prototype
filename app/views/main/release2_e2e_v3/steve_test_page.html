@@ -1,0 +1,53 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-m">Get help to retrain</h1>
+        <p class="govuk-body">Use this service to discover your skills, explore jobs you could do and check training courses that will help you find a better job.</p>
+
+   <h1 class="govuk-heading-m">Get help to retrain</h1>
+        <p class="govuk-body">Use this service to discover your skills, explore jobs you could do and check training courses that will help you find a better job.</p>
+
+                  <a href="survey_question3"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </main>
+</div>
+
+{% endblock %}
