@@ -1,0 +1,122 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+
+<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Survey</a>
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+
+      <form action="/form-handler" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+                <span class="govuk-caption-xl">Question 6 of 7</span>
+                <h1 class="govuk-heading-l">
+                Overall, how do you feel about this service?
+                </h1>
+              </legend>
+
+              <div class="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="question-6" type="radio" value="very-satisfied">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Very satisfied
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="question-6" type="radio" value="satisfied">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Satisfied
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="question-6" type="radio" value="neither-satisfied-or-dissatisfied">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Neither satisfied or dissatisfied
+                  </label> </div>
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="question-6" type="radio" value="dissatisfied">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Dissatisfied
+                  </label> </div>
+     
+
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="" name="question-6" type="radio" value="very-dissatisfied">
+                  <label class="govuk-label govuk-radios__label" for="">
+                    Very dissatisfied
+                  </label> </div>
+              </div>
+
+            </fieldset>
+          </div>
+
+
+   
+      <div class="govuk-form-group">
+
+            <label class="govuk-label" for="more-detail">
+             Tell us more about your answer (optional)
+            </label>
+          <div class="govuk-character-count" data-module="character-count" data-maxlength="1500">
+            <textarea class="govuk-textarea js-character-count " id="label-as-page-heading" name="label-as-page-heading" rows="5"></textarea>
+          </div>
+
+          <span id="label-as-page-heading-info" class="govuk-hint govuk-character-count__message" aria-live="polite">
+          You can enter up to 1500 characters
+          </span>
+      </div>
+
+
+        </form>
+
+          <a href="survey_question7"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+
+
+</div>
+</div>
+
+      </div>
+
+    </div>
+  </div>
+
+     
+
+{% endblock %}
