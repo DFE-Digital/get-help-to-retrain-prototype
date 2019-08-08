@@ -1,0 +1,90 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Next steps
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Further help to find work
+      </h1>
+      <p class="govuk-body-l">Get advice and help in your search for a new role.</p>
+
+      <div>
+
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Advice on how to look for and apply for jobs</h3>
+        <span class="govuk-body">Use the <a href="https://nationalcareers.service.gov.uk/get-a-job">National Careers Service</a> to find out more about the different stages of job hunting, including CV-writing tips, cover letter guidance and interview advice.</span>
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Find a job</h3>
+        <span class="govuk-body">Use DWP's <a href="https://findajob.dwp.gov.uk/">Find a job service</a> to search for jobs available now in your local area.</span>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Find an apprenticeship</h3>
+        <p class="govuk-body">Use the <a href="https://www.gov.uk/apprenticeships-guide">National Apprenticeships Service</a> to find apprenticeships in your local area, offering opportunities to train on-the-job.</p>
+
+                <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        <h3 class="govuk-heading-m">On offer near you</h3>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">West Midlands</h3>
+        <p class="govuk-body">A local scheme is coming soon</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Liverpool</h3>
+        <p class="govuk-body">Use the <a href="https://be-more.info/">Be More</a> service to find apprenticeships in the Liverpool area.</p>
+
+      
+
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+      </div>
+
+
+    </div>
+    {% include "main/release3_e2e_v1/contact_us.html"%}
+    {% include "main/release3_e2e_v1/survey_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

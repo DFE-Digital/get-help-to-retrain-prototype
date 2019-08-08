@@ -2,27 +2,27 @@
 {% extends "layout.html" %}
 
 {% block header %}
-  {{ govukHeader({
-    homepageUrl: "/",
-    serviceName: "Get Help To Retrain",
-    serviceUrl: "#",
-    containerClasses: "govuk-width-container",
-    navigation: [
-      {
-        href: "help",
-        text: "Help",
-        active: true
-      },
-      {
-        href: "#",
-        text: "Getting Started"
-      }
-    ]
-  }) }}
+{{ govukHeader({
+  homepageUrl: "/",
+  serviceName: "Get Help To Retrain",
+  serviceUrl: "#",
+  containerClasses: "govuk-width-container",
+  navigation: [
+  {
+    href: "help",
+    text: "Help",
+    active: true
+  },
+  {
+    href: "#",
+    text: "Getting Started"
+  }
+  ]
+}) }}
 {% endblock %}
 
 {% block pageTitle %}
-  Get Help To Retrain Prototypes
+Get Help To Retrain Prototypes
 {% endblock %}
 
 {% block beforeContent %}
@@ -31,83 +31,85 @@
 
 {{ govukPhaseBanner({
   tag: {
-    text: "beta"
-  },
-  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
 }) }}
 
 
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-xl">
-        Get Help To Retrain Prototypes
-        
-      </h1>
-      <p class="govuk-body-l">
-        Prototype versions for the Get Help to Retrain team
-      </p>
-    </div>
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Get Help To Retrain Prototypes
+
+    </h1>
+    <p class="govuk-body-l">
+      Prototype versions for the Get Help to Retrain team
+    </p>
+
+</div>
+
+<div class="govuk-grid-column-one-half">
+
+    <h2 class="govuk-heading-m">
+      Phase 1
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="/main/release1_e2e_v1/">Version 1</a> (tested 19/06/19)</li>
+      <li><a href="/main/release1_e2e_v2/">Version 2</a> (tested 03/07/19)</li>
+    </ul>
 
 
-    <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-m">
-        End to End (old)
-      </h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/main/v1">Version 1</a></li>
-      </ul>
+    <h2 class="govuk-heading-m">
+      Phase 2
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="/main/release2_e2e_v1/">Version 1</a> (tested 17/07/19)</li>
+      <li><a href="/main/release2_e2e_v2/">Version 2</a> (tested 31/07/19)</li>
+      <li><a href="/main/release2_e2e_v3/">Version 3</a></li>
+    </ul>
 
+    <h2 class="govuk-heading-m">
+      Phase 3
+    </h2>
+    <ul class="govuk-list govuk-list--bullet">
+      <li><a href="/main/release3_e2e_v1/">Version 1</a></li>
+    </ul>
 
-
-      <h2 class="govuk-heading-m">
-        Phase 1 E-2-E
-      </h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/main/release1_e2e_v1/">Version 1</a> (tested 19/06/19)</li>
-        <li><a href="/main/release1_e2e_v2/">Version 2</a> (tested 03/07/19)</li>
-      </ul>
-
-
-      <h2 class="govuk-heading-m">
-        Phase 2 E-2-E
-      </h2>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/main/release2_e2e_v1/">Version 1</a> (tested 17/07/19)</li>
-        <li><a href="/main/release2_e2e_v2/">Version 2</a> (tested 31/07/19)</li>
-        <li><a href="/main/release2_e2e_v3/">Version 3</a></li>
-        
-
-    </div>
-
-
-
-
-
-    <div class="govuk-grid-column-one-half">
-      <h2 class="govuk-heading-m">
-        Exploration
-      </h2>
-      <h3 class="govuk-heading-s">
-        Phase 2 training hub exploration
-      </h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/main/training_exploration">Version 1</a></li>
-      </ul>
-
-
-
-
-
-<h3 class="govuk-heading-s">
-        Phase 2 eligibility exploration
-      </h3>
-      <ul class="govuk-list govuk-list--bullet">
-        <li><a href="/main/eligibility_exploration">Version 1</a></li>
-      </ul>
-      
-    </div>
   </div>
+
+
+
+
+
+
+
+
+<div class="govuk-grid-column-one-half">
+  <h2 class="govuk-heading-m">
+    Exploration
+  </h2>
+  <h3 class="govuk-heading-s">
+    Phase 2 training hub exploration
+  </h3>
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a href="/main/training_exploration">Version 1</a></li>
+  </ul>
+
+
+
+
+
+  <h3 class="govuk-heading-s">
+    Phase 2 eligibility exploration
+  </h3>
+  <ul class="govuk-list govuk-list--bullet">
+    <li><a href="/main/eligibility_exploration">Version 1</a></li>
+  </ul>
+
+</div>
+</div>
 {% endblock %}

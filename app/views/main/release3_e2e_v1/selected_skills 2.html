@@ -1,0 +1,146 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search.html">Check your existing skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_results.html">Search results</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Your skills
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your skills</h1>
+
+
+<h2 class="govuk-heading-m govuk-!-margin-bottom-1">Sales assistant</h2><div style="float: right;"><a class="govuk-link govuk-body" href="#">Change</a></div>
+<p class="goveuk-body">You gained these skills from working as a sales assistant</p>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+          <p class="goveuk-body">customer service skills</p>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to work well with others</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">patience and the ability to remain calm in stressful situations</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">to be thorough and pay attention to detail</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">sensitivity and understanding</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to use your initiative</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">excellent verbal communication skills</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to sell products and services</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">to be able to use a computer and the main software packages competently</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-7" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+
+
+             <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Admin assistant</h2><div style="float: right;"><a class="govuk-link govuk-body" href="#">Change</a></div>
+<p class="goveuk-body">You gained these skills from working as a admin assistant</p>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+          <p class="goveuk-body">customer service skills</p>
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to work well with others</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">patience and the ability to remain calm in stressful situations</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">to be thorough and pay attention to detail</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">sensitivity and understanding</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to use your initiative</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">excellent verbal communication skills</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to sell products and services</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">to be able to use a computer and the main software packages competently</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-7" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+
+   
+
+
+
+<a class="govuk-link govuk-body" href="existing_skills_search_previous">Add more skills from another role</a>
+
+
+
+
+                    <a href="explore_careers"><button type="submit" class="govuk-button govuk-!-margin-top-3">
+                      Find out what you can do with these skills
+                    </button></a>
+
+
+
+
+                  </div>
+                  {% include "main/release3_e2e_v1/contact_us.html"%}
+                </div>
+
+
+
+
+
+
+                {% endblock %}

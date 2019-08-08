@@ -1,0 +1,131 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+<div class="govuk-width-container">
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Maths courses near me</h1>
+
+      <p class="govuk-body-l">Apply for a course by calling the course provider or visiting their website.</p>
+
+      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
+        <label class="govuk-label" for="more-detail">
+         Postcode
+       </label>
+       <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="M8 6SJ">
+       <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #005ea5;" type="submit">
+       </button>
+     </div>
+
+
+    <div class="govuk-grid-column-full govuk-!-padding-0">
+     <h2 class="govuk-heading-m govuk-!-margin-bottom-0" style="color: #005ea5">Beginner to advanced Maths</h2>
+     <h3 class="govuk-heading-s govuk-!-margin-bottom-0" style="color: #6f777b">TQM College Manchester</h3>
+     <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>3 miles</b></p>
+     <p class="govuk-body govuk-!-margin-bottom-1">Cost: <b>Free</b></p>
+     <p class="govuk-body-s">
+
+    The Point Building, 173 Cheetham Hill Road<br>
+    Manchester, Greater Manchester<br>
+    M8 8LG</p>
+    <p class="govuk-body-s">Tel: <a href="tel:+448000510459" class="govuk-!-padding-left-1">0151 256 0193</a></p>
+
+    <a href="#" class="govuk-!-margin-bottom-1"><button type="submit" class="govuk-button">
+      Visit website
+    </button></a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-0">
+     <h2 class="govuk-heading-m govuk-!-margin-bottom-0" style="color: #005ea5">Functional Skills Maths</h2>
+     <h3 class="govuk-heading-s govuk-!-margin-bottom-0" style="color: #6f777b">The Manchester College</h3>
+     <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>4 miles</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Cost: <b>Free</b></p>
+
+     <p class="govuk-body-s">
+    St Johns Centre, Quay Street<br>
+    Manchester, Greater Manchester<br>
+    M3 3BE</p>
+
+    <p class="govuk-body-s">Tel: <a href="tel:+448000510459" class="govuk-!-padding-left-1">0800 068 8585</a></p>
+
+    <a href="#" class="govuk-!-margin-bottom-1"><button type="submit" class="govuk-button">
+      Visit website
+    </button></a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+  </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-0">
+     <h2 class="govuk-heading-m govuk-!-margin-bottom-0" style="color: #005ea5">Maths skills refresher
+</h2>
+     <h3 class="govuk-heading-s govuk-!-margin-bottom-0" style="color: #6f777b">Avenue International College</h3>
+     <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>7 miles</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Cost: <b>Free</b></p>
+
+     <p class="govuk-body-s">
+
+    40 Fountain Street<br>
+    Manchester, Greater Manchester<br>
+    M2 2BE</p>
+
+    <p class="govuk-body-s">Tel: <a href="tel:+448000510459" class="govuk-!-padding-left-1">0161 839 6243</a></p>
+
+    <a href="#" class="govuk-!-margin-bottom-1"><button type="submit" class="govuk-button">
+      Visit website
+    </button></a>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+  </div>
+
+
+  </div>
+  {% include "main/release3_e2e_v1/contact_us.html"%}
+  {% include "main/release3_e2e_v1/next_steps_panel.html"%}
+  {% include "main/release3_e2e_v1/survey_panel.html"%}
+</div>
+</div>
+
+
+
+{% endblock %}
