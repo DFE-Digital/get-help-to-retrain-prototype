@@ -220,35 +220,56 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
 
-     <a a class="govuk-link govuk-body" href="#">Back to top</a>
+     <h3 class="govuk-heading-l">What to do next</h3>
 
-   </div>
+     <h4 class="govuk-heading-m">Get maths and English training</h4>
+     <p class="govuk-body">Employers tell us they are more likely to employ people who have proven maths and English skills.</p>
+     <form action="training_hub">
+     <button type="submit" class="govuk-button govuk-!-margin-top-1  govuk-!-margin-bottom-6" style="">
+      Find a training course
+      </button>
+    </form>
 
-  <div class="govuk-grid-column-one-third">
-    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4">
-    </div>
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Boost your job prospects</h2>
-    <p class="govuk-body">Access free and flexible training that improves your job options.</p>
-           <form action="training_hub">
-        <input type="hidden" name="task-2" value="complete">
-        <button type="submit" class="govuk-button govuk-!-margin-top-1  govuk-!-margin-bottom-6" style="width: 100%">
-          Find a training course
-        </button>
-      </form>
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+    <h4 class="govuk-heading-m">Find jobs in your area</h4>
+    <p class="govuk-body"><b>15</b> jobs like this one are being advertised in your area. If you feel you’re ready to apply, have a look at jobs in your local area now.</p>
+    <form action="jobs_near_me">
+    <button type="submit" class="govuk-button govuk-!-margin-top-1  govuk-!-margin-bottom-6" style="">
+      Show jobs near me
+    </button>
+  </form>
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+    <h4 class="govuk-heading-m">Further help to change jobs</h4>
+
+    <p class="govuk-body">You can get help with</p>
+    <ul class="govuk-list govuk-list--bullet">
+
+      <li>finding work</li>
+
+      <li>Applying for jobs</li>
+
+      <li>training to prepare you for a job you want to do</li>
+
+      <li>getting on-the-job training to earn as you learn</li>
+
+
+    </ul>
+    
+    <form action="next_steps">
+    <button type="submit" class="govuk-button govuk-!-margin-top-1  govuk-!-margin-bottom-6" style="">
+      Get help changing jobs
+    </button>
+  </form>
+
+
+
   </div>
 
-  <div class="govuk-grid-column-one-third">
-    <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4">
-    </div>
-    <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Further help to find work</h2>
-    <p class="govuk-body">Support to move into a new role.</p>
-                <form action="next_steps">
-        <input type="hidden" name="task-2" value="complete">
-        <button type="submit" class="govuk-button govuk-!-margin-top-1  govuk-!-margin-bottom-6" style="width: 100%">
-          Other ways to change jobs
-        </button>
-      </form>
-  </div>
 
       {% include "main/release3_e2e_v1/create_account_panel.html"%}
       {% include "main/release3_e2e_v1/sign_in_panel.html"%}
