@@ -1,0 +1,178 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="existing_skills_search_previous.html">Check your existing skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Search results
+    </li>
+  </ol>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your previous job</h1>
+
+        <form method="post" action="">
+        <div class="govuk-form-group govuk-!-margin-bottom-0">
+          <input class="search-input govuk-input govuk-!-width-one-half" type="text" Value="Data entry clerk">
+          <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
+        </div>
+      </form>
+
+
+    <p class="govuk-body-l">Click the job title that best matches your previous role.</p>
+
+    <ul class="govuk-list">
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="existing_skills_results_previous" style="text-decoration:none">Data entry clerk</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Shop Audio typist, copy typist</p>
+        <p class="result-description govuk-!-margin-bottom-3">Data entry clerks type information into databases and systems and create letters, reports and other documents.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Health records clerk</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Medical records clerk</p>
+        <p class="result-description govuk-!-margin-bottom-3">Health records clerks keep people's medical records up to date.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Market research data analyst</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Salesperson, sales rep, sales executive, field sales executive</p>
+        <p class="result-description govuk-!-margin-bottom-3">Market research data analysts study statistics and information collected through surveys.</p>
+      </p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Barristers' clerk</a></h3>
+      <p class="result-description govuk-!-margin-bottom-3">Barristers' clerks deal with the admin in barristers' offices and organise the barristers' workload.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Data analyst-statistician</a></h3>
+      <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Statistics officer</p>
+      <p class="result-description govuk-!-margin-bottom-3">Data analyst-statisticians identify trends, create models, collect numerical information and present results.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Import-export clerk</a></h3>
+      <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Shipping agent, freight forwarder, import-export agent</p>
+      <p class="result-description govuk-!-margin-bottom-3">Import-export clerks ship goods to and from the UK by road, rail, air and sea.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Bookkeeper</h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Accounts clerk</p>
+        <p class="result-description govuk-!-margin-bottom-3">Bookkeepers keep financial records up to date and help prepare accounts.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Court legal adviser</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Court clerk, assistant to justices' clerk</p>
+        <p class="result-description govuk-!-margin-bottom-3">Court legal advisers are trained lawyers who advise magistrates and district judges about the law.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Payroll administrator</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Payroll clerk</p>
+        <p class="result-description govuk-!-margin-bottom-3">Payroll administrators make sure employees get paid the right amount on the right date.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-3">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#" style="text-decoration:none">Building site inspector</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Clerk of works, building site supervisor</p>
+        <p class="result-description govuk-!-margin-bottom-3">Building site inspectors check the quality and safety of construction work.</p>
+      </li>
+    </ul>
+    <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+    <div style="margin: 0 auto; width: 200px">
+      <div style="float:left" class="govuk-body">
+        <span class="govuk-!-margin-right-4" style="color:#6f777b">
+          1
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#" style="text-decoration:none">
+            2
+          </a>
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#" style="text-decoration:none">
+            3
+          </a>
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#" style="text-decoration:none">
+            ...
+          </a>
+        </span>
+        <span>
+          <a href="#" style="text-decoration:none">
+            10
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="govuk-body" style="text-align:right">
+      <a href="#" style="text-decoration:none">
+        Next page &nbsp;
+        <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;"/>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+      {% include "main/release3_e2e_v2/contact_us.html"%}
+      {% include "main/release3_e2e_v2/create_account_panel.html"%}
+      {% include "main/release3_e2e_v2/sign_in_panel.html"%}
+
+
+</div>
+
+</div>
+</div>
+
+
+
+{% endblock %}

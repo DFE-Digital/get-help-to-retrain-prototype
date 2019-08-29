@@ -1,0 +1,122 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_current.html">Check your existing skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_results_current.html">Search results</a>
+  </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="existing_skills_results_current.html">
+    Current job skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Your skills
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your skills</h1>
+
+<div style="float: right;"><a class="govuk-link govuk-body" href="existing_skills_results_current">edit these skills</a></div>
+<h2 class="govuk-heading-m govuk-!-margin-bottom-1">Customer service assistant</h2>
+<p class="goveuk-body">You gained these skills from working as a customer service assistant</p>
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+
+             <p class="goveuk-body">to be thorough and pay attention to detail</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to work well with others</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">sensitivity and understanding</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">patience and the ability to remain calm in stressful situations
+              </p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">the ability to accept criticism and work well under pressure</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">excellent verbal communication skills</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">active listening skills</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+             <p class="goveuk-body">to be able to use a computer and the main software packages competently</p>
+             <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-7" style="border-bottom-width: 2px; border-bottom-color: #0b0c0c ">
+
+
+
+
+
+
+<a class="govuk-link govuk-body" href="existing_skills_search_previous">Add more skills from another role</a>
+
+
+
+
+                    <form action="related_jobs" method="post">
+                        <input type="hidden" name="task-1" value="complete">
+                      <button type="submit" class="govuk-button govuk-!-margin-top-3">
+                        Find out what you can do with these skills
+                      </button>
+                    </form>
+
+
+
+
+                  </div>
+
+      {% include "main/release3_e2e_v2/contact_us.html"%}
+
+      {% include "main/release3_e2e_v2/create_account_panel.html"%}
+      {% include "main/release3_e2e_v2/sign_in_panel.html"%}
+
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}
