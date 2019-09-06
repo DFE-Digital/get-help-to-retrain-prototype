@@ -363,34 +363,17 @@ window.GOVUK.getCurrentLocation = function () {
       showCompleted ()
       function showCompleted () {
         if ($session['task_1'] == 'complete') {
-          $("#task-list-tag-1").attr('class', completedClass)
           $("#task-list-tag-2").attr('class', hiddenClass)
           $("#task-link-2").replaceWith($('<a href="related_jobs">' + $("#task-link-2").html() + '</a>'));
         }
 
         if ($session['task_2'] == 'complete') {
-          $("#task-list-tag-2").attr('class', completedClass)
-          $('#task-list-tag-2').html('Completed')
+          $("#task-list-tag-2").attr('class', hiddenClass)
           $("#task-list-tag-3, #task-list-tag-4, #task-list-tag-5").attr('class', hiddenClass)
 
           $("#task-link-3").replaceWith($('<a href="#" onclick="document.getElementById(\'form-3\').submit();">' + $("#task-link-3").html() + '</a>'));
           $("#task-link-4").replaceWith($('<a href="#" onclick="document.getElementById(\'form-4\').submit();">' + $("#task-link-4").html() + '</a>'));
           $("#task-link-5").replaceWith($('<a href="#" onclick="document.getElementById(\'form-5\').submit();">' + $("#task-link-5").html() + '</a>'));
-        }
-
-        if ($session['task_3'] == 'complete') {
-          $("#task-list-tag-3").attr('class', completedClass)
-          $('#task-list-tag-3').html('Completed')
-        }
-
-        if ($session['task_4'] == 'complete') {
-          $("#task-list-tag-4").attr('class', completedClass)
-          $('#task-list-tag-4').html('Completed')
-        }
-
-        if ($session['task_5'] == 'complete') {
-          $("#task-list-tag-5").attr('class', completedClass)
-          $('#task-list-tag-5').html('Completed')
         }
       }
     }
