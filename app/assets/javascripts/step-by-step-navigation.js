@@ -363,6 +363,7 @@ window.GOVUK.getCurrentLocation = function () {
       showCompleted ()
       function showCompleted () {
         if ($session['task_1'] == 'complete') {
+          $("#task-list-tag-2").attr('class', hiddenClass)
           $("#task-link-2").replaceWith($('<a href="related_jobs">' + $("#task-link-2").html() + '</a>'));
         }
 
