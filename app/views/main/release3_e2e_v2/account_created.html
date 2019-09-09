@@ -48,32 +48,24 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
 
-
       <h1 class="govuk-heading-xl">Your results have been saved
       </h1>
       <p class="govuk-body">We’ve sent an email to</p>
 
       <h3 class="govuk-heading-m">dave.smith@email.com</h3>
 
-       <p class="govuk-body">It’s a good idea to check you have received this email. If the email address is incorrect, you won’t be able to return to your results in future.
-</p>
+			<p class="govuk-body">
+				Check your email inbox to make sure you've received the email.
+				You may need to verify your email address by clicking a link in the email.
+			</p>
 
       <p class="govuk-body">If you haven’t received this email you can <a href="account_email_sent_again">send it again</a>.</p>
 
-
       <p class="govuk-body">If the email address above is incorrect, <a href="create_account">enter your email address again</a>.</p>
 
-
-        <button onclick="goBack()" type="submit" class="govuk-button">
-          Continue
-        </button>
-
-
-           
-           
-
-
-        
+      <button onclick="goBack()" type="submit" class="govuk-button">
+        Continue
+      </button>
 
     </div>
     {% include "main/release3_e2e_v2/contact_us.html"%}
