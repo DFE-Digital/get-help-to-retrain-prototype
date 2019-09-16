@@ -17,10 +17,7 @@
 }) }}
 
 <div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
 
-
-<div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     
@@ -28,7 +25,7 @@
           <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
       </li>
       <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="training_hub">No courses in your area</a>
+        <a class="govuk-breadcrumbs__link" href="training_hub">Not yet available</a>
       </li>
   </ol>
 </div>
@@ -37,9 +34,11 @@
 
 {% block content %}
 
-   <div class="govuk-grid-row">
-        <h1 class="govuk-heading-xl">No courses are available in your area yet</h1>
-        <p class="govuk-body-m">We’re a new service and currently do not offer any training courses in your area.</p>
+  <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-xl">This service isn’t available in your area yet</h1>
+        <p class="govuk-body-m">Get help to retrain is a new service and isn’t offering courses in your local area just yet.</p>
+        
+        <p class="govuk-body-m">You will find training and careers advice in your local area through the <a href="https://nationalcareers.service.gov.uk/">National Careers Service</a>.</p>
 
         <p class="govuk-body">You can continue using this service to check your existing skills and explore the types of jobs you could apply to do.</p>
 
@@ -50,8 +49,6 @@
 
 
       </div>
-</div>
-</div>
       {% include "main/release3_e2e_v3/contact_us.html"%}
 
       {% include "main/release3_e2e_v3/sign_in_panel.html"%}

@@ -25,7 +25,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
         <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
       </li>
       <li class="govuk-breadcrumbs__list-item" aria-current="page">
-        Link sent
+        Return to saved results
       </li>
     </ol>
   </div>
@@ -38,18 +38,27 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     <div class="govuk-grid-column-two-thirds">
 
 
-      <h1 class="govuk-heading-xl">Link sent
+      <h1 class="govuk-heading-xl">Return to saved results
       </h1>
-      <p class="govuk-body">We’ve sent an email to</p>
+      <p class="govuk-body">If you’ve already used this service before and saved your results, enter your email address. We’ll send you a link you can use to return to your saved results.</p>
 
-      <h3 class="govuk-heading-m">dave.smith@email.com</h3>
-
-       <p class="govuk-body">This email contains a link that will take you back to your saved information.</p>
-
-              <p class="govuk-body">The link expires after one hour.</p>
+      <p class="govuk-body">The link expires after one hour.</p>
 
 
-      <p class="govuk-body">If you haven’t received this email you can <a href="link_sent_again">send it again.</a></p>
+             <div class="govuk-form-group">
+      <label class="govuk-label" for="email">
+        Email
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email" type="email">
+    </div>
+
+      <a href="link_sent">
+        <button type="submit" class="govuk-button">
+          Send link
+        </button></a>
+
+
+
 
 
 
