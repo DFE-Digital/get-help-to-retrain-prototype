@@ -1,0 +1,199 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get help to retrain: step by step
+{% endblock %}
+{% block pageScripts %}
+  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+  <script type="text/javascript">
+    var $element = $('#step-by-step-navigation')
+    var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
+    stepByStepNavigation.start($element)
+    var taskListCompletion = new GOVUK.Modules.TaskListCompletion()
+    var $session = {
+      task_1: '{{ data['task-1'] }}',
+      task_2: '{{ data['task-2'] }}',
+      task_3: '{{ data['task-3'] }}',
+      task_4: '{{ data['task-4'] }}',
+      task_5: '{{ data['task-5'] }}'
+    }
+    taskListCompletion.start($session)
+  </script>
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="gem-c-breadcrumbs govuk-breadcrumbs " data-module="track-click">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item" aria-current="false">
+      <a data-track-category="homeLinkClicked" data-track-action="homeBreadcrumb" data-track-label="" data-track-options="{}" class="govuk-breadcrumbs__link" aria-current="false" href="/">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="false">
+      Get help to retrain
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">
+      Get help to retrain
+    </h1>
+    <p class="govuk-!-margin-bottom-9">
+      Here's what you need to do to retrain for another job.
+    </p>
+
+
+    <ol class="app-task-list">
+      <li>
+
+        <h2 class="app-task-list__section">
+          <span class="app-task-list__section-number">1. </span> Check what you are good at
+        </h2>
+
+        <ul class="app-task-list__items">
+          <li class="app-task-list__item">
+            <div class="app-task-list__task-name" style="width: 100%">
+            <strong class="govuk-tag app-task-list__task-completed--hidden" id="task-list-tag-1">
+              Completed
+            </strong>
+              <a href="existing_skills_search_current">
+                Check your existing skills
+              </a>
+              <p class="govuk-body govuk-!-margin-bottom-0">You’ll be surprised at what you already know.</p>
+            </div>
+          </li>
+        </ul>
+
+
+
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">2. </span> Explore the types of jobs you could do
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div  class="app-task-list__task-name" style="width: 100%">
+                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-2" style="margin-bottom: 10px">
+                  Can’t start yet
+                </strong>
+                <p id="task-link-2">
+                  See types of jobs that match your skills
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">You already have many of the skills to do these types of job. Find out what additional training you might need.
+                </p>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+
+
+
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">3. </span>Find training that's right for you
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div  class="app-task-list__task-name" style="width: 100%">
+                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-3" style="margin-bottom: 10px">
+                  Can’t start yet
+                </strong>
+                <form id="form-3" action="training_hub">
+                  <input type="hidden" name="task-3" value="complete">
+                </form>
+                <p id="task-link-3">
+                  Find a training course
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">
+                Training can help you access a broader range of jobs and stay in secure work.</p>
+
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">4. </span>Get help changing jobs
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div  class="app-task-list__task-name" style="width: 100%">
+                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-4" style="margin-bottom: 10px">
+                  Can’t start yet
+                </strong>
+                <form id="form-4" action="next_steps">
+                  <input type="hidden" name="task-4" value="complete">
+                <p id="task-link-4">
+                  Further help to find work
+                </p>
+                </form>
+                <p class="govuk-body govuk-!-margin-bottom-0">Get help writing a CV and cover letter and preparing for interview. See if on-the-job training is right for you and find local support.
+
+                </p>
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+        <li>
+          <h2 class="app-task-list__section">
+            <span class="app-task-list__section-number">5. </span>Help improve this service
+          </h2>
+          <ul class="app-task-list__items">
+            <li class="app-task-list__item">
+              <div  class="app-task-list__task-name" style="width: 100%">
+                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-5" style="margin-bottom: 10px">
+                  Can’t start yet
+                </strong>
+                <form id="form-5" action="#*">
+                  <input type="hidden" name="task-5" value="complete">
+                </form>
+                <p id="task-link-5">
+                  Take a quick survey
+                  
+                </p>
+                <p class="govuk-body govuk-!-margin-bottom-0">Tell us about your experience using Get help to retrain.
+                </p>
+
+              </div>
+            </li>
+          </ul>
+        </li>
+
+
+
+      </ul>
+    </li>
+  </ol>
+
+</div>
+
+
+      {% include "main/release3_e2e_v3/contact_us.html"%}
+      {% include "main/release3_e2e_v3/sign_in_panel.html"%}
+
+</div>
+</div>
+{% endblock %}
