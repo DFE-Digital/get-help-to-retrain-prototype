@@ -1,0 +1,86 @@
+ 
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+  Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+    text: "beta"
+  },
+  html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-grid-row">
+
+<div class="govuk-width-container">
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">English skills</a>
+      </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+  <div class="govuk-grid-column-two-thirds govuk-!-padding-left-0">
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+     
+      <h1 class="govuk-heading-xl">
+      Can you prove to employers you have English skills?
+      </h1>
+    </legend>
+    <p class="govuk-body-l">Employers tend to favour candidates who have qualifications to prove they have English skills. 
+</p>
+    <div class="govuk-radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-1" name="question2" type="radio" value="extremely-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          Yes, I need to prove my English skills
+        </label> </div>
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-2" name="question2" type="radio" value="very-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          No, I already have English qualifications
+
+        </label> </div>
+
+
+    </div>
+
+  </fieldset>
+
+
+</div>
+          <a href="#"><button type="submit" class="govuk-button">
+            Continue
+          </button></a>
+</div>
+
+    {% include "main/release3_e2e_v3/contact_us.html"%}
+    {% include "main/release3_e2e_v3/create_account_panel.html"%}
+</div>
+</div>
+
+
+
+
+
+
+     
+
+{% endblock %}
