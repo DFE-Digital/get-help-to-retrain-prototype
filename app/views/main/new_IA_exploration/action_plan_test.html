@@ -1,0 +1,94 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Action plan
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Your personal action plan
+      </h1>
+
+<p class="govuk-body-l">Your plan of action for finding a new, more secure job.</p>
+
+
+<div style="border-top: solid; border-bottom: solid; border-top-width: 2px; border-bottom-width: 2px">
+
+<h2 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your target jobs</h2>
+
+<p class="govuk-body govuk-!-margin-bottom-6">From all of your job matches you selected this role to target</p>
+
+
+<div style="border-top: solid; border-bottom: solid; border-top-width: 1px; border-bottom-width: 1px; border-bottom-color: #b1b4b6; border-top-color: #b1b4b6;">
+
+
+<div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+<h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-padding-top-4">Customer service admin</h3>
+
+</div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0"><a href="#*" >
+      <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Show jobs near me
+        </button></a>
+      </div>
+
+</div>
+
+<p class="govuk-body govuk-!-margin-bottom-6 govuk-!-margin-top-4">You can see even more jobs ideas if you <a href="#*"> add / edit your skills</a></p>
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release3_e2e_v2/contact_us.html"%}
+    {% include "main/release3_e2e_v2/create_account_panel.html"%}
+    {% include "main/release3_e2e_v2/survey_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
