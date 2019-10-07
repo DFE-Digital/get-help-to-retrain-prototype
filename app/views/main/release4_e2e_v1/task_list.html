@@ -5,7 +5,7 @@
 Get help to retrain: step by step
 {% endblock %}
 {% block pageScripts %}
-  <script src="/public/javascripts/step-by-step-navigation.js"></script>
+<!--   <script src="/public/javascripts/step-by-step-navigation.js"></script>
   <script type="text/javascript">
     var $element = $('#step-by-step-navigation')
     var stepByStepNavigation = new GOVUK.Modules.StepByStepNavigation()
@@ -19,7 +19,7 @@ Get help to retrain: step by step
       task_5: '{{ data['task-5'] }}'
     }
     taskListCompletion.start($session)
-  </script>
+  </script> -->
 {% endblock %}
 
 {% block beforeContent %}
@@ -62,15 +62,15 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
       <li>
 
         <h2 class="app-task-list__section">
-          <span class="app-task-list__section-number">1. </span> Check what you are good at
+          <span class="app-task-list__section-number">1. </span>Check what you are good at
         </h2>
 
         <ul class="app-task-list__items">
           <li class="app-task-list__item">
             <div class="app-task-list__task-name" style="width: 100%">
-            <strong class="govuk-tag app-task-list__task-completed--hidden" id="task-list-tag-1">
+          <!--   <strong class="govuk-tag app-task-list__task-completed--hidden" id="task-list-tag-1">
               Completed
-            </strong>
+            </strong> -->
               <a href="existing_skills_search_current">
                 Check your existing skills
               </a>
@@ -89,11 +89,11 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
           <ul class="app-task-list__items">
             <li class="app-task-list__item">
               <div  class="app-task-list__task-name" style="width: 100%">
-                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-2" style="margin-bottom: 10px">
+         <!--        <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-2" style="margin-bottom: 10px">
                   Can’t start yet
-                </strong>
-                <p id="task-link-2">
-                  See types of jobs that match your skills
+                </strong> -->
+                <!-- <p id="task-link-2"> --><p class="govuk-body"><a href="related_jobs">
+                  See types of jobs that match your skills</a>
                 </p>
                 <p class="govuk-body govuk-!-margin-bottom-0">You already have many of the skills to do these types of job. Find out what additional training you might need.
                 </p>
@@ -109,22 +109,22 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
         <li>
           <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">3. </span>Find training that's right for you
+            <span class="app-task-list__section-number">3. </span>Plan your next steps
           </h2>
           <ul class="app-task-list__items">
             <li class="app-task-list__item">
               <div  class="app-task-list__task-name" style="width: 100%">
-                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-3" style="margin-bottom: 10px">
+       <!--          <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-3" style="margin-bottom: 10px">
                   Can’t start yet
-                </strong>
+                </strong> -->
                 <form id="form-3" action="training_hub">
                   <input type="hidden" name="task-3" value="complete">
                 </form>
-                <p id="task-link-3">
-                  Find a training course
+                <!-- <p id="task-link-3"> --><p class="govuk-body"><a href="action_plan">
+                Personalised action plan</a>
                 </p>
                 <p class="govuk-body govuk-!-margin-bottom-0">
-                Training can help you access a broader range of jobs and stay in secure work.</p>
+                We'll give you a personalised action plan so you can take steps to change jobs.</p>
 
               </div>
             </li>
@@ -132,41 +132,19 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
         </li>
 
 
-        <li>
-          <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">4. </span>Get help changing jobs
-          </h2>
-          <ul class="app-task-list__items">
-            <li class="app-task-list__item">
-              <div  class="app-task-list__task-name" style="width: 100%">
-                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-4" style="margin-bottom: 10px">
-                  Can’t start yet
-                </strong>
-                <form id="form-4" action="next_steps">
-                  <input type="hidden" name="task-4" value="complete">
-                <p id="task-link-4">
-                  Further help to find work
-                </p>
-                </form>
-                <p class="govuk-body govuk-!-margin-bottom-0">Get help writing a CV and cover letter and preparing for interview. See if on-the-job training is right for you and find local support.
 
-                </p>
-              </div>
-            </li>
-          </ul>
-        </li>
 
 
         <li>
           <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">5. </span>Help improve this service
+            <span class="app-task-list__section-number">4. </span>Help improve this service
           </h2>
           <ul class="app-task-list__items">
             <li class="app-task-list__item">
               <div  class="app-task-list__task-name" style="width: 100%">
-                <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-5" style="margin-bottom: 10px">
+              <!--   <strong class="govuk-tag app-task-list__task-not-active" id="task-list-tag-5" style="margin-bottom: 10px">
                   Can’t start yet
-                </strong>
+                </strong> -->
                 <form id="form-5" action="#*">
                   <input type="hidden" name="task-5" value="complete">
                 </form>
@@ -191,8 +169,8 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 </div>
 
 
-      {% include "main/release3_e2e_v3/contact_us.html"%}
-      {% include "main/release3_e2e_v3/sign_in_panel.html"%}
+      {% include "main/release4_e2e_v1/contact_us.html"%}
+      {% include "main/release4_e2e_v1/sign_in_panel.html"%}
 
 </div>
 </div>

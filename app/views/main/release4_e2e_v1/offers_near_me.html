@@ -1,0 +1,64 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Offers near me
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Find local schemes and offers
+      </h1>
+      <p class="govuk-body-l">Here is a list of local schemes and offers</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Cambridge & Peterborough</h3>
+        <p class="govuk-body">The <a href="https://cambridgeshirepeterborough-ca.gov.uk/about-us/programmes/skills/star-hub/health-and-care-sector-work-academy/">Health and Care Sector Work Academy</a> helps you move into the health and care sector or progress further if you’re already working in this area.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Leeds</h3>
+        <p class="govuk-body">Information on changing careers from <a href="https://www.the-lep.com/for-individuals/">Leeds City Region Local Enterprise Partnership</a>.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Liverpool</h3>
+        <p class="govuk-body">Use the <a href="https://be-more.info/">Be More</a> service to find apprenticeships in the Liverpool area.</p>
+
+
+        
+
+    </div>
+    {% include "main/release3_e2e_v3/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

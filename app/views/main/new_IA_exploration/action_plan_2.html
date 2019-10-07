@@ -1,0 +1,214 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Action plan
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Your personal action plan
+      </h1>
+
+      <p class="govuk-body-l">Your plan of action for finding a new, more secure job.</p>
+
+
+      <div style="border-top: solid; border-top-width: 7px; border-top-color: #1d70b8; border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-6 govuk-!-margin-top-4">Here’s what you’ve done so far:
+        </h2>
+
+        <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#">Change target job</a></div>
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your target job</h3>
+
+
+        <p class="govuk-body govuk-!-margin-bottom-2">You’ve chosen to target this job.</p>
+
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4"><a href="#!" style="text-decoration:none">Customer service admin</a></h3>
+
+
+      </div>
+
+      <div style="border-bottom: solid; border-bottom-width: 7px; border-bottom-color: #1d70b8">
+
+
+        <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#">View / edit your skills</a></div>
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your skills</h3>
+
+
+        <p class="govuk-body">You added skills based on jobs you’ve already done.</p>
+
+        <p class="govuk-body govuk-!-margin-bottom-6">You can see different job ideas if you edit your skills.</p>
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-6 govuk-!-margin-top-4">Here’s what you need to do next:
+      </h2>
+
+      <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#">Edit your training plan</a></div>
+
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Find training</h3>
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Improve your chances of getting a job by completing training that employers value.</p>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">Maths course</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Find a maths course
+        </button></a>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">English course</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Find an English course
+        </button></a>
+      </div>
+
+
+
+
+      <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#">Edit what help you need</a></div>
+
+
+
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-padding-top-4">Get ready to change jobs</h3>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Prepare your CV and cover letter and brush up your interview skills so you’re all set to apply for jobs. 
+      </p>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">Your CV</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Get CV help
+        </button></a>
+      </div>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">Your cover letter</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Get cover letter help
+        </button></a>
+      </div>
+
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">Your interview skills</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Get interview help
+        </button></a>
+      </div>
+
+
+      <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#">Change target job</a></div>
+
+
+
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-padding-top-4">Apply for a job</h3>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Once you’re ready to apply, find jobs in your local area.
+ 
+      </p>
+
+      <div class="govuk-grid-column-two-thirds govuk-!-padding-right-0 govuk-!-padding-left-0">
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4 govuk-!-margin-top-4">Admin assistant</h3>
+
+      </div>
+
+      <div class="govuk-grid-column-one-third govuk-!-padding-right-0 govuk-!-padding-left-0 govuk-!-padding-top-3"><a href="#*" >
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary">
+          Show jobs near me
+        </button></a>
+      </div>
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release3_e2e_v2/contact_us.html"%}
+    {% include "main/release3_e2e_v2/create_account_panel.html"%}
+    {% include "main/release3_e2e_v2/survey_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
