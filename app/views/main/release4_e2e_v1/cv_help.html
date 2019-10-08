@@ -46,7 +46,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     <div class="govuk-form-group">
       <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
         <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
-          
+
           <!--  <p class=govuk-body-l>Employers tend to favour candidates who have qualifications to prove they have maths and English skills.</p> -->
 
           <p class=govuk-hint>If you think you need help with anything below, tick the relevant box.</p>
@@ -81,14 +81,15 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-<p class="govuk-body"><a href="action_plan">Skip this step</a> if you don't need any help with the above</p>
 
 
-                    <a href="action_plan"><button type="submit" class="govuk-button">
+                  <form action="action_plan" id="actionplan-form">
+                    <input type="hidden" name="task-2" value="complete">
+                    <p class="govuk-body"><a href="#" onclick="document.getElementById('actionplan-form').submit();">Skip this step</a> if you don't need any help with the above</p>
+                    <button type="submit" class="govuk-button">
                       Continue
-                    </button></a>
-
-
+                    </button>
+                  </form>
 
 
                   </div>

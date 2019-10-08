@@ -368,12 +368,10 @@ window.GOVUK.getCurrentLocation = function () {
         }
 
         if ($session['task_2'] == 'complete') {
-          $("#task-list-tag-2").attr('class', hiddenClass)
-          $("#task-list-tag-3, #task-list-tag-4, #task-list-tag-5").attr('class', hiddenClass)
+          $("#task-list-tag-3, #task-list-tag-4").attr('class', hiddenClass)
 
-          $("#task-link-3").replaceWith($('<a href="#" onclick="document.getElementById(\'form-3\').submit();">' + $("#task-link-3").html() + '</a>'));
-          $("#task-link-4").replaceWith($('<a href="#" onclick="document.getElementById(\'form-4\').submit();">' + $("#task-link-4").html() + '</a>'));
-          $("#task-link-5").replaceWith($('<a href="#" onclick="document.getElementById(\'form-5\').submit();">' + $("#task-link-5").html() + '</a>'));
+          $("#task-link-3").replaceWith($('<a href="action_plan">' + $("#task-link-3").html() + '</a>'));
+          $("#task-link-4").replaceWith($('<a href="#">' + $("#task-link-4").html() + '</a>'));
         }
       }
     }
