@@ -135,14 +135,17 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-<a class="govuk-link govuk-body" href="existing_skills_search_previous">Add more skills from another role</a>
+<a class="govuk-link govuk-body" href="#*">Add more skills from another role</a>
 
 
 
 
-                    <a href="related_jobs"><button type="submit" class="govuk-button govuk-!-margin-top-3">
-                      Find out what you can do with these skills
-                    </button></a>
+                    <form action="related_jobs" method="post">
+                        <input type="hidden" name="task-1" value="complete">
+                      <button type="submit" class="govuk-button govuk-!-margin-top-3">
+                        Find out what you can do with these skills
+                      </button>
+                    </form>
 
 
 
