@@ -1,0 +1,103 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Training choices
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Can you prove to employers you have maths and English skills?</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+          
+           <p class=govuk-body-l>Employers often say they want candidates with maths and English skills – and gaining a qualification is one way to show you have those skills.</p>
+
+           <p class=govuk-body>Lots of different courses are taught in your area that offer flexible learning and part time study to fit around your life. Many courses are available for free.</p>
+
+          <p class=govuk-hint>Tick the box if you feel you might need some training.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-5">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I need to prove my English skills
+            </label> </div>
+
+            <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I need to prove my maths skills
+              </label> </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+<p class="govuk-body"><a href="cv_help">Skip this step</a> if you already have maths and English qualifications</p>
+
+
+                    <a href="cv_help"><button type="submit" class="govuk-button">
+                      Continue
+                    </button></a>
+
+
+
+
+                  </div>
+
+      {% include "main/release4_e2e_v1/contact_us.html"%}
+      {% include "main/release4_e2e_v1/sign_in_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}
