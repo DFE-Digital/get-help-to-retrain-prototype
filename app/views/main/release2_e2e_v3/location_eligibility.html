@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,10 +6,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
     text: "beta"
   },
@@ -23,7 +20,7 @@
 <div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
       </li>
@@ -39,7 +36,7 @@
 
    <div class="govuk-grid-row">
         <h1 class="govuk-heading-xl">What is your postcode?</h1>
-        
+
 <p class="govuk-body-l">We'll use this to find training courses near you.</p>
 
   <div class="govuk-form-group">
@@ -58,7 +55,7 @@
             Continue
         </button></a>
 
- 
+
 
       </div>
 </div>
@@ -66,6 +63,6 @@
 
 </div>
 
-     
+
 
 {% endblock %}

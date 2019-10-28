@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,10 +6,7 @@ Get Help To Retrain
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
   text: "beta"
 },
@@ -50,10 +47,10 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
         <h2 class="govuk-heading-m">What’s on offer in your area?
 </h2>
         <h2 class="govuk-heading-m govuk-!-margin-bottom-1" style="color: #005ea5">Maths</h2>
-        <p class="govuk-body-m govuk-!-margin-bottom-1">Employers tell us they are looking for people who can show they have some maths skills. Completing a short maths course can really boost your job prospects in many different types of work. 
+        <p class="govuk-body-m govuk-!-margin-bottom-1">Employers tell us they are looking for people who can show they have some maths skills. Completing a short maths course can really boost your job prospects in many different types of work.
 </p>
         <a href="maths_overview" class="govuk-body-m">More information on maths courses</a><br>
-          
+
           <a href="maths_courses_near_me">
             <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
             Find a maths course

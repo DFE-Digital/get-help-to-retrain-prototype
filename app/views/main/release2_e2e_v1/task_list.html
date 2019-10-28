@@ -7,10 +7,7 @@
 
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
     text: "beta"
   },
@@ -40,13 +37,13 @@
     <p class="govuk-!-margin-bottom-9">
       Check what you need to do to retrain for another job. How long it takes you to complete the following steps will depend on your situation.
     </p>
-    
+
 
     <ol class="app-task-list">
     <li>
 
         <h2 class="app-task-list__section">
-            <span class="app-task-list__section-number">1. </span> Check what you are good at 
+            <span class="app-task-list__section-number">1. </span> Check what you are good at
         </h2>
 
         <ul class="app-task-list__items">
@@ -118,7 +115,7 @@
                 </a>
                 <p class="govuk-body govuk-!-margin-bottom-0">For example, advice on how to find and apply for jobs.</p>
               </div>
-     
+
           </li>
         </ul>
       </li>
@@ -132,15 +129,15 @@
           <li class="app-task-list__item">
               <div class="app-task-list__task-name app-task-list__task-name">
                 <a href="survey_question1">
-                  
+
                   Take a quick survey and tell us about your experience
                   <span class="app-step-nav__context">3 to 5 minutes</span>
                 </a>
 
                 <p class="govuk-body govuk-!-margin-bottom-0">This is a new service – your feedback will help us improve it.</p>
-              
+
               </div>
-     
+
           </li>
         </ul>
       </li>

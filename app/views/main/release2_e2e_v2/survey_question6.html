@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,10 +6,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
     text: "beta"
   },
@@ -23,7 +20,7 @@
 <div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
       </li>
@@ -73,7 +70,7 @@
                   <label class="govuk-label govuk-radios__label" for="">
                     Dissatisfied
                   </label> </div>
-     
+
 
                 <div class="govuk-radios__item">
                   <input class="govuk-radios__input" id="" name="question-6" type="radio" value="very-dissatisfied">
@@ -86,7 +83,7 @@
           </div>
 
 
-   
+
       <div class="govuk-form-group">
 
             <label class="govuk-label" for="more-detail">
@@ -117,6 +114,6 @@
     </div>
   </div>
 
-     
+
 
 {% endblock %}

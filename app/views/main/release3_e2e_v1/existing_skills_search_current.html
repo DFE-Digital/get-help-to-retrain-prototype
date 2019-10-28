@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% set mainClasses = "govuk-!-padding-top-1" %}
@@ -8,10 +8,7 @@ Get Help To Retrain
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
   text: "beta"
 },

@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,10 +6,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
     text: "beta"
   },
@@ -21,7 +18,7 @@
 <div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
       </li>
@@ -38,18 +35,18 @@
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-     
+
       <h1 class="govuk-heading-xl">
       Need help writing cover letters?
       </h1>
     </legend>
-    <p class="govuk-body-l">Knowing how to write a cover letter will help you apply for jobs. 
+    <p class="govuk-body-l">Knowing how to write a cover letter will help you apply for jobs.
 </p>
     <div class="govuk-radios">
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="question2-1" name="question2" type="radio" value="extremely-helpful">
         <label class="govuk-label govuk-radios__label" for="question-2">
-          Yes, help me write cover letters 
+          Yes, help me write cover letters
         </label> </div>
 
       <div class="govuk-radios__item">
@@ -79,6 +76,6 @@
 
 
 
-     
+
 
 {% endblock %}

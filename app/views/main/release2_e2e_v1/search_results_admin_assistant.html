@@ -6,10 +6,7 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
-{{ govukPhaseBanner({
+ {{ govukPhaseBanner({
   tag: {
     text: "beta"
   },
@@ -56,10 +53,10 @@
                 <div class="govuk-inset-text">
                   Select a role from the results below to find out what it involves, and what skills and training are required. These are job profiles, not live jobs you can apply for.
 
-              
+
                 </div>
 
-                  
+
                 <ul class="govuk-list">
                     <li class="govuk-!-padding-bottom-1">
                         <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_assistant" style="text-decoration:none">Admin assistant</a></h3>
