@@ -72,7 +72,7 @@
   margin-top: govuk-spacing(2);
   margin-bottom: govuk-spacing(1);
   color: govuk-colour("white");
-  background-color: govuk-colour("grey-1");
+  background-color: govuk-colour("dark-grey");
 
   @include govuk-media-query($from: 450px) {
     float: right;
@@ -104,7 +104,7 @@ li.task-item .task-item-header .heading-medium .task-list-section-number {
 }
 
 li.task-unavailable {
-background-color: #bfc1c3;
+background-color: #b1b4b6;
 color: #0b0c0c;
 float: left;
 margin-bottom: 10px;
