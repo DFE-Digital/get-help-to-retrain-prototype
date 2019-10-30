@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,8 +6,6 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
 
 {{ govukPhaseBanner({
   tag: {
@@ -23,7 +21,7 @@
 <div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="task_list.html">Home</a>
       </li>
@@ -40,7 +38,7 @@
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset">
     <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-     
+
       <h1 class="govuk-heading-xl">
       Do you have a degree?
       </h1>
@@ -73,6 +71,6 @@
 </div>
 
 
-     
+
 
 {% endblock %}
