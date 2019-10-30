@@ -23,9 +23,6 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
 {{ govukPhaseBanner({
   tag: {
     text: "beta"
@@ -35,7 +32,7 @@
 
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
             <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
         </li>
@@ -349,7 +346,7 @@
   <aside class="govuk-related-items job-categories_list">
     {% include "main/release1_e2e_v1/contact_us.html"%}
     <div class="govuk-grid-column-one-third">
-      <div style="border-top:10px solid #005ea5;" class="govuk-related-items govuk-!-margin-bottom-4">
+      <div style="border-top:10px solid #1d70b8;" class="govuk-related-items govuk-!-margin-bottom-4">
       </div>
       <h2 class="govuk-heading-m">Other job categories</h2>
         <ul class="govuk-list">

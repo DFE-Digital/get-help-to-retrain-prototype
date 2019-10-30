@@ -1,4 +1,4 @@
- 
+
 {% extends "layout.html" %}
 
 {% block pageTitle %}
@@ -6,9 +6,6 @@
 {% endblock %}
 
 {% block beforeContent %}
-
-{% from 'phase-banner/macro.njk' import govukPhaseBanner %}
-
 {{ govukPhaseBanner({
   tag: {
     text: "beta"
@@ -23,7 +20,7 @@
 <div class="govuk-width-container">
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
-    
+
         <li class="govuk-breadcrumbs__list-item">
           <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
       </li>
@@ -55,6 +52,6 @@
 
 </div>
 
-     
+
 
 {% endblock %}
