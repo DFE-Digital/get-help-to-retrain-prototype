@@ -1,0 +1,231 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Action plan
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Your personal action plan
+      </h1>
+
+      <p class="govuk-body-l">Your plan of action for finding a new, more secure type of work.</p>
+
+
+      <div style="border-top: solid; border-top-width: 7px; border-top-color: #1d70b8; border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-6 govuk-!-margin-top-4">Here’s what you’ve done so far:
+        </h2>
+
+        <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#*">Change target type of work</a></div>
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your target type of work</h3>
+
+
+        <p class="govuk-body govuk-!-margin-bottom-2">You’ve chosen to target this this type of work.</p>
+
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-4"><a href="#!" style="text-decoration:none">Admin assistant</a></h3>
+
+
+      </div>
+
+      <div style="border-bottom: solid; border-bottom-width: 7px; border-bottom-color: #1d70b8">
+
+
+        <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#*">View / edit your skills</a></div>
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your skills</h3>
+
+
+        <p class="govuk-body">You added skills based on jobs you’ve already done.</p>
+
+        <p class="govuk-body govuk-!-margin-bottom-6">You can see different types of work ideas if you edit your skills.</p>
+
+
+      </div>
+
+
+
+
+
+
+
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-6 govuk-!-margin-top-4">Here’s what you need to do next:
+      </h2>
+
+      <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#*">Edit your Training choices</a></div>
+
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Find training</h3>
+
+      <p class="govuk-body govuk-!-margin-bottom-3">You chose to look for some training. Employers value these skills so this can improve your chances of getting a job. You can search for other job-related courses on the National Service’s <a href="https://nationalcareers.service.gov.uk/find-a-course">Find a course</a> service.</p>
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3" href="maths_courses_near_me">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
+          Find a maths course
+        </button></a>
+      </div>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4">Maths course</h3>
+
+
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3" href="english_courses_near_me">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary">
+          Find an English course
+        </button></a>
+      </div>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4 govuk-!-padding-top-1">English course</h3>
+
+
+
+   <div class="govuk-!-margin-top-0 govuk-!-margin-bottom-5" style="border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+     </div>
+
+
+
+
+      <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#*">Edit what help you need</a></div>
+
+
+
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2">Get ready to change types of work</h3>
+
+
+
+      <p class="govuk-body govuk-!-margin-bottom-3">You chose to get help with your job hunting skills. Getting this kind of advice can improve your chances of finding work. 
+
+      </p>
+
+
+
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3" href="leaving_service">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
+          Update CV
+        </button></a>
+      </div>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4">Your CV</h3>
+
+
+            <div style="float: right;"><a class="govuk-!-padding-top-3" href="leaving_service">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
+          Write cover letter
+        </button></a>
+      </div>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4">Your cover letter</h3>
+
+
+
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3" href="leaving_service">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary">
+          Prepare for interview
+        </button></a>
+      </div>
+
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4 govuk-!-padding-top-1">Your interview skills</h3>
+
+
+
+   <div class="govuk-!-margin-top-0 govuk-!-margin-bottom-5" style="border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+     </div>
+
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-2">Explore on the job training</h3>
+
+    <p class="govuk-body govuk-!-margin-bottom-3">Find an adult apprenticeship that lets you earn and learn at your chosen level.
+      </p>
+
+    <p class="govuk-body"><a href="leaving_service">Find an apprenticeship</a></p>
+
+       <div class="govuk-!-margin-top-0 govuk-!-margin-bottom-5" style="border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+       </div>
+
+
+    <h3 class="govuk-heading-m govuk-!-margin-bottom-2">Find local schemes and offers</h3>
+
+    <p class="govuk-body govuk-!-margin-bottom-3">Check if there are any local training and employment schemes in your area.
+      </p>
+
+    <p class="govuk-body"><a href="offers_near_me">Show me local offers</a></p>
+
+       <div class="govuk-!-margin-top-0 govuk-!-margin-bottom-5" style="border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+       </div>
+
+
+
+
+  <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="#*">Change target types of work</a></div>
+
+  <h3 class="govuk-heading-m govuk-!-margin-bottom-2">Apply for a job</h3>
+
+    <p class="govuk-body govuk-!-margin-bottom-3">Once you’re ready to apply, find jobs in your local area.
+      </p>
+
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3" href="jobs_near_me">
+        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
+          Show jobs near me
+        </button></a>
+      </div>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4">Admin assistant</h3>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release5_e2e_v1/contact_us.html"%}
+    {% include "main/release5_e2e_v1/create_account_panel.html"%}
+    {% include "main/release5_e2e_v1/survey_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
