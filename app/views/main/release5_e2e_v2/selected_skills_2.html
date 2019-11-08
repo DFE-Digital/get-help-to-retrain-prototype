@@ -1,0 +1,125 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_previous.html">Check your existing skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item">
+    <a class="govuk-breadcrumbs__link" href="existing_skills_search_results_previous.html">Search results</a>
+  </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="existing_skills_results_previous.html">
+    Previous job skills</a>
+  </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Your skills
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+
+
+    <h1 class="govuk-heading-xl">You’ve selected skills from the following jobs</h1>
+
+<div style="border-top: solid; border-top-width: 1px; border-top-color: #b1b4b6; border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-top-2">
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Customer service assistant</h2>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-4">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="existing_skills_results_current">edit these skills</a></div>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-4 govuk-!-padding-right-0">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="selected_skills_blank">remove this role</a></div><br>
+  </div>
+
+  <p class="govuk-body">10 skills selected</p>
+
+</div>
+
+
+<div style="border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-left-0 govuk-!-padding-top-2">
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Data entry clerk</h2>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-0">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="existing_skills_results_previous">edit these skills</a></div>
+  </div>
+
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-0 govuk-!-padding-right-0">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="#*">remove this role</a></div><br>
+  </div>
+
+  <p class="govuk-body">10 skills selected</p>
+
+</div>
+
+
+
+
+<div class="govuk-body govuk-!-margin-top-6"><a class="govuk-link" href="existing_skills_search_previous">Add more skills from another role</a></div>
+
+
+
+                    <form action="related_jobs" method="post">
+                        <input type="hidden" name="task-1" value="complete">
+                      <button type="submit" class="govuk-button govuk-!-margin-top-3">
+                        Find out what you can do with these skills
+                      </button>
+                    </form>
+
+
+
+
+                  </div>
+
+       {% include "main/release5_e2e_v2/contact_us.html"%}
+     {% include "main/release5_e2e_v2/create_account_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}

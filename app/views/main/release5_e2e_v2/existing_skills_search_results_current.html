@@ -1,0 +1,174 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="existing_skills_search_current.html">Check your existing skills</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Search results
+    </li>
+  </ol>
+</div>
+
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl">Your current job</h1>
+
+        <form method="post" action="">
+        <div class="govuk-form-group govuk-!-margin-bottom-0">
+          <input class="search-input govuk-input govuk-!-width-one-half" type="text" Value="Customer services assistant">
+          <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
+        </div>
+      </form>
+
+
+    <p class="govuk-body-l">Select the job title that best matches what you do now. If you can’t see your job title, try searching with different words - for example, checkout operator instead of cashier.</p>
+
+    <ul class="govuk-list">
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="existing_skills_results_current">Customer service assistant</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Customer service adviser</p>
+        <p class="result-description govuk-!-margin-bottom-3">Customer service assistants deal with customers' queries, purchases and complaints.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#">Post Office customer service assistant</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Post Office counter clerk</p>
+        <p class="result-description govuk-!-margin-bottom-3">Post Office customer service assistants help customers in post offices and at counters in shops.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#">Banking customer service adviser</a></h3>
+        <p class="result-description govuk-!-margin-bottom-3">Banking customer service advisers provide a face-to-face service in banks and building societies.</p>
+      </p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#">Customer services manager</a></h3>
+      <p class="result-description govuk-!-margin-bottom-3">Customer services managers develop service standards, deal with customer enquiries and manage customer service teams.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#">Counter service assistant</a></h3>
+      <p class="result-description govuk-!-margin-bottom-3">Counter service assistants greet, serve and take payment from customers buying food and drink.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#">Airline customer service agent</a></h3>
+
+      <p class="result-description govuk-!-margin-bottom-3">Airline customer service agents make sure passengers and their luggage safely board the right aircraft at the right time.</p>
+    </li>
+
+    <li class="govuk-!-padding-bottom-1">
+      <h3 class="govuk-!-margin-bottom-0"><a href="#">Financial services customer adviser</h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales adviser, contact centre agent</p>
+        <p class="result-description govuk-!-margin-bottom-3">Financial services customer advisers work in contact centres for banks, insurance, investment and credit companies.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#">Pharmacy assistant</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Chemist’s assistant, dispensing assistant</p>
+        <p class="result-description govuk-!-margin-bottom-3">Pharmacy assistants serve customers and patients in chemists and hospital dispensaries.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-1">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#">Sales assistant</a></h3>
+        <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Shop assistant, sales person, store assistant, retail assistant, retail sales assistant</p>
+        <p class="result-description govuk-!-margin-bottom-3">Sales assistants sell products and help customers.</p>
+      </li>
+
+      <li class="govuk-!-padding-bottom-3">
+        <h3 class="govuk-!-margin-bottom-0"><a href="#">Museum assistant</a></h3>
+          <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Visitor experience assistant</p>
+        <p class="result-description govuk-!-margin-bottom-3">Museum assistants take care of customers and security in museums and galleries..</p>
+      </li>
+    </ul>
+    <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+    <div style="margin: 0 auto; width: 200px">
+      <div style="float:left" class="govuk-body">
+        <span class="govuk-!-margin-right-4" style="color:#6f777b">
+          1
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#">
+            2
+          </a>
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#">
+            3
+          </a>
+        </span>
+        <span class="govuk-!-margin-right-4">
+          <a href="#">
+            ...
+          </a>
+        </span>
+        <span>
+          <a href="#">
+            10
+          </a>
+        </span>
+      </div>
+    </div>
+    <div class="govuk-body" style="text-align:right">
+      <a href="#">
+        Next page &nbsp;
+        <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;"/>
+      </a>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+      {% include "main/release5_e2e_v2/contact_us.html"%}
+      {% include "main/release5_e2e_v2/sign_in_panel.html"%}
+
+</div>
+
+</div>
+</div>
+
+
+
+{% endblock %}

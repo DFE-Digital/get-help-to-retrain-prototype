@@ -1,0 +1,311 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block pageScripts %}
+<script>
+
+  function myFunction() {
+    var x = document.getElementById("myDIV");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+    } else {
+      x.style.display = "none";
+    }
+  }
+
+
+</script>
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      <li li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Your job matches
+      </li>
+
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Types of jobs that match your skills</h1>
+
+      <p class="govuk-body-l">You may already have many of the skills for these types of work. Select a job title to find out if you need to do more training.</p>
+
+      <p class="govuk-body">You’ll see information on whether job numbers for this type of work have  grown or fallen in recent years. If job numbers have grown it may mean you’re more likely to find jobs in this type of work and it’s more likely to be secure.</p>
+
+   <p class="govuk-body govuk-!-margin-bottom-6">If you want to search for a specific type of work you can use this link. <a href="specific_job_search">Search for a specific type of work</a></p>
+
+
+      <ul class="govuk-list">
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_assistant">Admin assistant</a></h3>
+          <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p>
+          <p class="result-description govuk-!-margin-bottom-3">Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Excellent</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Growing strongly</b></p>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does growing strongly mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, employers have been hiring a lot more people for types of work like this. If this continues it could mean you’re likely to find work.
+            </div>
+          </details>
+
+        </li>
+
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="#!">Local government administrative assistant</a></h3>
+          <p class="result-description govuk-!-margin-bottom-3">Local government administrative assistants provide clerical support in council departments and give information to the public.</p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Excellent</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Growing strongly</b></p>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does growing strongly mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, employers have been hiring a lot more people for types of work like this. If this continues it could mean you’re likely to find work.
+            </div>
+          </details>
+
+        </li>
+
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="#!">Court administrative assistant</a></h3>
+          <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales administration assistant, sales office clerk</p>
+          <p class="result-description govuk-!-margin-bottom-3">Court administrative assistants help with the daily running of courts and their supporting offices.</p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Excellent</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Growing</b></p>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does growing mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, employers have been hiring more people for types of work like this. If this continues it could mean you’re likely to find work.
+            </div>
+          </details>
+        </li>
+
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="#!">Airline customer service agent</a></h3>
+
+          <p class="result-description govuk-!-margin-bottom-3">Airline customer service agents make sure passengers and their luggage safely board the right aircraft at the right time.</p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Excellent</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Growing</b></p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does growing mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, employers have been hiring more people for types of work like this. If this continues it could mean you’re likely to find work.
+            </div>
+          </details>
+
+        </li>
+
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="#!">Pensions administrator</a></h3>
+
+          <p class="result-description govuk-!-margin-bottom-3">Pensions administrators handle the day-to-day running of pension schemes and life insurance policies.</p>
+
+          <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+          <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job growth: <b>Growing</b></p>
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does growing mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, employers have been hiring more people for types of work like this. If this continues it could mean you’re likely to find work.
+            </div>
+          </details>
+
+        </li>
+
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="#!">Financial services customer adviser</h3>
+            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Sales adviser, contact centre agent</p>
+            <p class="result-description govuk-!-margin-bottom-3">Financial services customer advisers work in contact centres for banks, insurance, investment and credit companies.</p>
+
+            <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Stable</b></p>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What does stable mean?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                In the last few years, employers haven't really changed how many people they hire for types of work like this. This could mean you’ve got an average chance of finding work.
+              </div>
+            </details>
+
+          </li>
+
+          <li class="govuk-!-padding-bottom-1">
+            <h3 class="govuk-!-margin-bottom-0"><a href="#!">Patient transport service controller</a></h3>
+            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Patient transport service call handler</p>
+            <p class="result-description govuk-!-margin-bottom-3">Patient transport service controllers arrange transport to take frail or vulnerable people to and from medical appointments.</p>
+
+            <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Good</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Stable</b></p>
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What does stable mean?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                In the last few years, employers haven't really changed how many people they hire for types of work like this. This could mean you’ve got an average chance of finding work.
+              </div>
+            </details>
+
+          </li>
+
+          <li class="govuk-!-padding-bottom-1">
+            <h3 class="govuk-!-margin-bottom-0"><a href="#!">Human resources assistant</a></h3>
+            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">HR assistant, personnel assistant</p>
+            <p class="result-description govuk-!-margin-bottom-3">Human resources (HR) assistants provide admin support to the HR team in a company or organisation.</p>
+            <p class="govuk-body-s govuk-!-margin-bottom-1" style="font-weight:bold">
+
+             <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Reasonable</b></p>
+             <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Stable</b></p>
+             <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What does stable mean?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                In the last few years, employers haven't really changed how many people they hire for types of work like this. This could mean you’ve got an average chance of finding work.
+              </div>
+            </details>
+
+          </li>
+
+          <li class="govuk-!-padding-bottom-1">
+            <h3 class="govuk-!-margin-bottom-0"><a href="#!">Personal assistant</a></h3>
+            <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">PA, executive secretary, executive assistant</p>
+            <p class="result-description govuk-!-margin-bottom-3">Personal assistants carry out support tasks for individuals and managers including administration, diary management and event planning.</p>
+
+            <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Reasonable</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Falling</b></p>
+
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What does falling mean?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+                In the last few years, there hasn't been as much work available for people in this type of work. You might find it hard to get work.
+              </div>
+            </details>
+
+          </li>
+
+          <li class="govuk-!-padding-bottom-3">
+            <h3 class="govuk-!-margin-bottom-0"><a href="#!">Receptionist</a></h3>
+            <p class="result-description govuk-!-margin-bottom-3">Receptionists are the first point of contact for visitors to organisations.</p>
+
+            <p class="govuk-body-s govuk-!-margin-bottom-1">Skills match: <b>Low</b></p>
+            <p class="govuk-body-s govuk-!-margin-bottom-1">Recent job growth: <b>Falling</b></p>
+            <p class="govuk-body-s govuk-!-margin-bottom-1"><a id="link-10" class="govuk-link" href="#!" onclick="$('#DIV10').toggle()">What does falling mean?</a>
+              <div class="govuk-inset-text" id="DIV10" style="display: none">In the last few years, there hasn't been as much work available for people in this type of work. You might find it hard to get work.
+
+              </div>
+
+
+
+            </li>
+          </ul>
+
+
+
+          <hr style="height:1px; color:#b7b9bb" class="govuk-!-margin-bottom-6" />
+          <div style="margin: 0 auto; width: 200px">
+            <div style="float:left" class="govuk-body">
+              <span class="govuk-!-margin-right-4" style="color:#6f777b">
+                1
+              </span>
+              <span class="govuk-!-margin-right-4">
+                <a href="#!">
+                  2
+                </a>
+              </span>
+              <span class="govuk-!-margin-right-4">
+                <a href="#!">
+                  3
+                </a>
+              </span>
+              <span class="govuk-!-margin-right-4">
+                <a href="#!">
+                  ...
+                </a>
+              </span>
+              <span>
+                <a href="#!">
+                  10
+                </a>
+              </span>
+            </div>
+          </div>
+          <div class="govuk-body" style="text-align:right">
+            <a href="#!">
+              Next page &nbsp;
+              <img src="{{ asset_path }}images/arrow_right.png" style="vertical-align:middle; padding:1px;"/>
+            </a>
+          </div>
+
+        </div>
+        {% include "main/release5_e2e_v2/contact_us.html"%}
+        {% include "main/release5_e2e_v2/create_account_panel.html"%}
+      </div>
+
+    </div>
+  </div>
+
+
+
+  {% endblock %}
