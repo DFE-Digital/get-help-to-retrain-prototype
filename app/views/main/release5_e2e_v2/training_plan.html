@@ -40,7 +40,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
   <div class="govuk-grid-column-two-thirds">
 
-    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">First step: check your maths and English skills</h1>
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Check your maths and English skills</h1>
 
 
     <div class="govuk-form-group">
@@ -57,18 +57,39 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
         </legend>
         <div class="govuk-checkboxes">
-          <div class="govuk-checkboxes__item govuk-!-margin-bottom-5">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
             <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
             <label class="govuk-label govuk-checkboxes__label" for="waste-1">
               I need to improve my English skills
             </label> </div>
 
-            <div class="govuk-checkboxes__item">
+            <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What will you learn on an English skills course?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              On an English adult learning course you'll improve your confidence with reading and writing. This will help you with everyday tasks in work like looking up information, answering questions and selecting the right words to communicate clearly.
+            </div>
+          </details>
+
+            <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
               <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
               <label class="govuk-label govuk-checkboxes__label" for="waste-2">
                 I need to improve my maths skills
               </label> </div>
 
+              <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What will you learn on a maths skills course?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              On an maths adult learning course you'll improve your confidence with numbers. This will help you with everyday tasks in work like using dates, reading timetables and measuring things.
+            </div>
+          </details>
                         </div>
                       </fieldset>
                     </div>
@@ -77,7 +98,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-<p class="govuk-body">If you do not need any help just leave the boxes blank and select continue.</p>
+<p class="govuk-body">If none of these apply to you, just leave the boxes blank and select continue.</p>
 
 
                     <a href="cv_help"><button type="submit" class="govuk-button">
@@ -89,8 +110,8 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
                   </div>
 
-      {% include "main/release5_e2e_v2/contact_us.html"%}
-      {% include "main/release5_e2e_v2/sign_in_panel.html"%}
+      {% include "main/release5_e2e_v1/contact_us.html"%}
+      {% include "main/release5_e2e_v1/sign_in_panel.html"%}
 
 
                 </div>
