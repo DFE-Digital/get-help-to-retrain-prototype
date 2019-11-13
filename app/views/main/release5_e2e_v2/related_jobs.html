@@ -57,7 +57,23 @@ html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a>
 
       <p class="govuk-body">You’ll see information on whether job numbers for this type of work have  grown or fallen in recent years. If job numbers have grown it may mean you’re more likely to find jobs in this type of work and it’s more likely to be secure.</p>
 
-   <p class="govuk-body govuk-!-margin-bottom-6">You can also <a href="specific_job_search">search for a job title</a> and find out how well your skills match to it.</p>
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+   <p class="govuk-body govuk-!-margin-bottom-1">If you have a clear idea of a job you would like to do, you can find out how well your skills match to it.</p> <p class="govuk-!-margin-top-1"><a href="specific_job_search">Search for a job title</a></p>
+
+   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-bottom-6">
+
+   <div class="govuk-form-group">
+  <label class="govuk-label" for="sort">
+    Sort by
+  </label>
+  <select class="govuk-select" id="sort" name="sort">
+    <option value="published">Skills match</option>
+    <option value="updated" selected>Recent job growth</option>
+  </select>
+</div>
+
 
 
       <ul class="govuk-list">
