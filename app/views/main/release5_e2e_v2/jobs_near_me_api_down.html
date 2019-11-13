@@ -18,22 +18,6 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="related_jobs.html">Action plan</a>
-      </li>
-
-      <li class="govuk-breadcrumbs__list-item" aria-current="page">
-        Jobs near me
-      </li>
-    </ol>
-  </div>
-
 
   {% endblock %}
 
@@ -48,15 +32,15 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 <p class="govuk-body">The <a href="*">Find a job</a> GOV.UK service is not working at the moment. Our service links to <a href="*">Find a job</a> to show the job vacancies they advertise, so none will show until it's working again. You could try back later, when we hope it will be fixed. You could also search on other job sites.</p>
 
 
-
+<a href="action_plan">
+        <button type="submit" class="govuk-button">
+          Continue
+        </button></a>
 
 
 
   </div>
 
-      {% include "main/release5_e2e_v2/contact_us.html"%}
-      {% include "main/release5_e2e_v2/create_account_panel.html"%}
-      {% include "main/release5_e2e_v2/survey_panel.html"%}
 </div>
 
 
