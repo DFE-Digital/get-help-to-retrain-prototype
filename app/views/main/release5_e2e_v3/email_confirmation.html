@@ -1,0 +1,68 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Link sent
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Link sent
+      </h1>
+      <p class="govuk-body">We’ve sent an email to</p>
+
+      <h3 class="govuk-heading-m">dave.smith@email.com</h3>
+
+       <p class="govuk-body">This email contains a link that will take you back to your saved information.</p>
+
+      <p class="govuk-body">If you haven’t received this email you can <a href="*">send it again.</a></p>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release5_e2e_v3/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

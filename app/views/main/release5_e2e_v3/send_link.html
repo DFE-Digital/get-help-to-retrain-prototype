@@ -1,0 +1,80 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Return to saved results
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Return to saved results
+      </h1>
+      <p class="govuk-body">If you’ve already used this service before and saved your results, enter your email address. We’ll send you a link you can use to return to your saved results.</p>
+
+      <p class="govuk-body">The link expires after one hour.</p>
+
+
+             <div class="govuk-form-group">
+      <label class="govuk-label" for="email">
+        Email
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="email" name="email" type="email">
+    </div>
+
+      <a href="link_sent">
+        <button type="submit" class="govuk-button">
+          Send link
+        </button></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release5_e2e_v3/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

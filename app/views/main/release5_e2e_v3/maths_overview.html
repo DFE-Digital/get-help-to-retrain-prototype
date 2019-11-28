@@ -1,0 +1,93 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="maths_overview">Find training</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="maths_overview">Benefits of maths</a>
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds" style="margin-bottom: 400px !important">
+
+      <h1 class="govuk-heading-xl">Benefits of doing a maths course</h1>
+
+      <p class="govuk-body-l">Maths courses are offered for free as part of the National Retraining Scheme.</p>
+
+
+      <h2 class="govuk-heading-m">How will a maths course help my career ?
+      </h2>
+
+
+      <p class="govuk-body-m">Employers often say they want candidates with maths skills – and having a qualification is one way to show you have those skills.
+      </p>
+
+      <p class="govuk-body-m">Doing a maths course as an adult isn’t the same as learning it at school. You can find a course that focuses on using maths in your everyday job.
+      </p>
+
+      <p class="govuk-body-m">Doing a maths course can improve your confidence and help show employers you’re able to use numbers at work. This can really boost your job prospects.
+      </p>
+
+      <h2 class="govuk-heading-m">The right course for you
+      </h2>
+
+
+      <p class="govuk-body-m">Lots of different maths courses are taught in your area, so you’ll be able to find a course at the right level for your needs. The course provider will help assess what level of course is right for you. You can also find courses that offer flexible learning and part time study to fit around your life.
+      </p>
+
+      <p class="govuk-body-m">Many courses are available for free in your area.
+
+      </p>
+
+
+      <a href="maths_courses_near_me">
+        <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
+          Find a maths course
+        </button></a>
+
+
+
+      </div>
+      {% include "main/release5_e2e_v3/contact_us.html"%}
+      {% include "main/release5_e2e_v3/create_account_panel.html"%}
+      {% include "main/release5_e2e_v3/next_steps_panel.html"%}
+      {% include "main/release5_e2e_v3/survey_panel.html"%}
+
+    </div>
+  </div>
+
+
+
+  {% endblock %}

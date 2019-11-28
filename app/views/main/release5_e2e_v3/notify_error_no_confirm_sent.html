@@ -1,0 +1,76 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Results saved
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Your results have been saved
+      </h1>
+      <p class="govuk-body">We’ve saved your results using the email address
+</p>
+
+      <h3 class="govuk-heading-m">dave.smith@email.com</h3>
+
+
+       <p class="govuk-body">We can’t send you a confirmation email right now because of an error with our system. Your results are still saved.</p>
+
+              <p class="govuk-body">To see your saved skills and job matches in future, just return to the service and enter your email address. You will then be sent a link so you can return to your saved results.</p>
+
+      <p class="govuk-body">If the email address above is incorrect, <a href="create_account">enter your email address again</a>.</p>
+
+      <button onclick="goBack()" type="submit" class="govuk-button">
+        Continue
+      </button>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/release5_e2e_v3/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
