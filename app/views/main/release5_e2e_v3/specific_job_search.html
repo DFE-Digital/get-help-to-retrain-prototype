@@ -1,0 +1,83 @@
+
+{% extends "layout.html" %}
+
+{% set mainClasses = "govuk-!-padding-top-1" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+    </li>
+
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Search for a type of work
+    </li>
+  </ol>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+
+<div class="govuk-grid-column-two-thirds" style="margin-bottom: 400px !important;
+">
+
+
+
+   <h1 class="govuk-heading-xl">Search for a type of work
+</h1>
+   <p class="govuk-body-l">Enter a job title to find out how well your skills match to it
+   </p>
+
+   <form method="post" action="specific_job_search_results">
+    <div class="govuk-form-group govuk-!-margin-bottom-0">
+      <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter a job title">
+      <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
+    </div>
+  </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+      {% include "main/release5_e2e_v3/contact_us.html"%}
+{% include "main/release5_e2e_v3/sign_in_panel.html"%}
+
+</div>
+
+
+{% endblock %}

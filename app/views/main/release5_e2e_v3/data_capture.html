@@ -1,0 +1,154 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="index.html">Home</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Your information
+      </li>
+  </ol>
+</div>
+
+
+{% endblock %}
+
+{% block content %}
+
+
+
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <h1 class="govuk-heading-xl">Your information</h1>
+    <p class="govuk-body">We use this information to improve our service and make sure it's effective.</p>
+
+    <p class="govuk-body">We will share this information with other government departments.</p>
+
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="first-name">
+        First name
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="first-name" name="first-name" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="last-name">
+        Last name
+      </label>
+      <input class="govuk-input govuk-!-width-two-thirds" id="last-name" name="last-name" type="text">
+    </div>
+
+
+    <div class="govuk-form-group">
+      <label class="govuk-label" for="address-postcode">
+        Postcode
+      </label>
+      <input class="govuk-input govuk-input--width-10" id="address-postcode" name="address-postcode" type="text">
+    </div>
+
+    <div class="govuk-form-group">
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-0">
+        Date of birth
+      </h3>
+      <span id="passport-issued-hint" class="govuk-hint">
+        For example, 12 11 1980
+      </span>
+      <div class="govuk-date-input" id="passport-issued">
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-day">
+              Day
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-day" name="passport-issued-day" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-month">
+              Month
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="passport-issued-month" name="passport-issued-month" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+
+        <div class="govuk-date-input__item">
+          <div class="govuk-form-group">
+            <label class="govuk-label govuk-date-input__label" for="passport-issued-year">
+              Year
+            </label>
+            <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="passport-issued-year" name="passport-issued-year" type="number" pattern="[0-9]*">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="govuk-radios">
+      <h3 class="govuk-heading-m govuk-!-margin-bottom-2">
+        Gender
+      </h3>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-1" name="question2" type="radio" value="extremely-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          Male
+        </label>
+      </div>
+
+
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="question2-2" name="question2" type="radio" value="very-helpful">
+        <label class="govuk-label govuk-radios__label" for="question-2">
+          Female
+        </label>
+      </div>
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="question2-2" name="question2" type="radio" value="very-helpful">
+          <label class="govuk-label govuk-radios__label" for="question-2">
+            Prefer not to say
+          </label>
+        </div>
+    </div>
+
+
+
+        <p class="govuk-body govuk-!-margin-top-8">By continuing you agree to allow us to use your information as explained in our <a href="*">privacy policy</a>.</p>
+
+
+      <a href="task_list">
+        <button type="submit" class="govuk-button govuk-!-margin-top-0 govuk-button govuk-!-margin-bottom-2">
+          Continue
+        </button></a>
+
+  </div>
+            {% include "main/release5_e2e_v3/contact_us.html"%}
+
+      {% include "main/release5_e2e_v3/sign_in_panel.html"%}
+
+
+
+</div>
+
+    {% endblock %}
