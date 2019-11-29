@@ -1,0 +1,105 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Computer skills training
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Computer skills training</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+           <p class=govuk-body-m>The jobs of the future will need computer skills. Keep your IT skills up to date and you’ll have more job options.</p>
+
+        <p class="govuk-body">Do not worry if you have not used a computer before – the IT skills course we offer is for beginners and covers the basics like switching on the computer. You can also learn how to:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+
+        <li>use the internet</li>
+
+        <li>find a job online</li>
+
+        <li>use common office programs</li>
+
+        <li>access public services online</li>
+
+      </ul>
+
+          <p class=govuk-hint>Tick the box if it applies to you</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-5">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I need to improve my IT skills
+            </label> </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+                  <form action="apprenticeship_question" id="actionplan-form">
+                    <input type="hidden" name="task-2" value="complete">
+                    <p class="govuk-body">If this does not apply to you, leave the box blank and select continue.</p>
+                    <button type="submit" class="govuk-button">
+                      Continue
+                    </button>
+                  </form>
+
+
+                  </div>
+
+      {% include "main/release5_e2e_v3/contact_us.html"%}
+      {% include "main/release5_e2e_v3/sign_in_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}
