@@ -1,0 +1,79 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Offers near me
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Find local schemes and offers
+      </h1>
+      <p class="govuk-body">Some areas have local schemes that can offer you more ideas and opportunities.</p>
+
+       <p class="govuk-body">If you don’t see anything listed below for your area, try calling the number below. The adviser may be able to point you to schemes in your area.</p>
+
+        <p class="govuk-!-margin-bottom-3">
+          Call <a href="tel:+448000510459" class="govuk-!-padding-left-1">0800 051 0459</a>
+        </p>
+        <p class="govuk-body-s" style="color: #6f777b">Monday to Friday, 9am to 5pm<p>
+
+                <p class="govuk-body govuk-!-margin-bottom-3">Selecting one of these links will take you to another website. 
+
+      </p>
+
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Cambridge & Peterborough</h3>
+        <p class="govuk-body">The <a href="https://cambridgeshirepeterborough-ca.gov.uk/about-us/programmes/skills/star-hub/health-and-care-sector-work-academy/">Health and Care Sector Work Academy</a> helps you move into the health and care sector or progress further if you’re already working in this area.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Leeds</h3>
+        <p class="govuk-body">Information on changing careers from <a href="https://futuregoals.co.uks/">Leeds City Region Local Enterprise Partnership</a>.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Liverpool</h3>
+        <p class="govuk-body">Use the <a href="https://be-more.info/">Be More</a> service to find apprenticeships in the Liverpool area.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">West Midlands</h3>
+        <p class="govuk-body">The<a href="https://www.wmca.org.uk/what-we-do/productivity-skills/">West Midlands Combined Authority</a>  runs projects that can help you get the general skills many employers ask for and the technical skills most needed in the local area. </p>
+
+
+
+
+    </div>
+    {% include "main/releaseX_e2e_v1/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
