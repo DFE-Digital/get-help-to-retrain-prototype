@@ -1,0 +1,267 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="related_jobs.html">Your job matches</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Job profile details
+      </li>
+    </ol>
+  </div>
+
+
+
+  {% endblock %}
+
+  {% block content %}
+
+
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-xl govuk-!-margin-bottom-2" >How to become an admin assistant</h1>
+
+
+      <p class="govuk-body-l">Admin assistants give support to offices by organising meetings, typing documents and updating computer records.</p>
+
+            <p class="govuk-body-l" style="color: #6f777b">Other similar jobs include: office administrator, clerical assistant, administrative assistant</p>
+
+
+      <div class="govuk-grid-row">
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6 govuk-!-padding-left-0">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-!-margin-bottom-1">
+              <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/pound.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+            </div>
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-left-0">
+              <h4 class="govuk-heading-s govuk-!-margin-top-5 govuk-!-margin-bottom-1">Typical salary</h4>
+              <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+              <ul class="govuk-list">
+                <li>
+                  £<span id="traineeSalary">14,000</span> – £<span id="salary">30,000</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+<!--         <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-!-margin-bottom-1">
+              <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/time.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+            </div>
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-left-0">
+              <h4 class="govuk-heading-s govuk-!-margin-top-5 govuk-!-margin-bottom-1">Typical hours</h4>
+              <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+              <ul class="govuk-list">
+                <li>
+                  <p class="govuk-body"><span id="hours">38-40</span> a week</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+<!--
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6 govuk-!-padding-left-0">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-!-margin-bottom-1">
+              <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/cal.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+            </div>
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-left-0">
+              <h4 class="govuk-heading-s govuk-!-margin-top-5 govuk-!-margin-bottom-1">You could work</h4>
+              <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+              <ul class="govuk-list">
+                <li>
+                  <p class="govuk-body"><span id="hours">Between 8am and 6pm</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+
+
+        <div class="govuk-grid-column-one-half govuk-!-margin-bottom-6">
+          <div class="govuk-grid-row">
+            <div class="govuk-grid-column-one-quarter govuk-!-margin-top-6 govuk-!-margin-bottom-1">
+              <span style="width:55px; height: 55px; background:url('{{ asset_path }}images/growing_strongly.svg'); background-position: center; display: flex; background-repeat: no-repeat;"></span>
+            </div>
+            <div class="govuk-grid-column-three-quarters govuk-!-padding-left-0">
+              <h4 class="govuk-heading-s govuk-!-margin-top-5 govuk-!-margin-bottom-1">Recent job growth</h4>
+              <hr class="govuk-section-break govuk-section-break--visible govuk-!-margin-bottom-2">
+
+              <ul class="govuk-list">
+                <li>
+                  <p class="govuk-body"><span id="hours">Growing strongly</span></p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+
+      <h2 class="govuk-heading-m">Skills and knowledge</h2>
+      <p class="govuk-body-m">Employers may ask for these skills for this type of work.
+      </p>
+      <h3 class="govuk-heading-s">Skills you have</h3>
+      <ul class="govuk-list govuk-list--bullet">
+        
+        <li>to be thorough and pay attention to detail</li>
+<li>the ability to work well with others</li>
+<li>sensitivity and understanding</li>
+<li>excellent verbal communication skills</li>
+<li>the ability to come up with new ways of doing things</li>
+<li>the ability to work on your own</li>
+<li>customer service skills</li>
+
+      </ul>
+
+      <h3 class="govuk-heading-s">Skills you may need to develop</h3>
+      <ul class="govuk-list govuk-list--bullet">
+   
+<li>active listening skills</li>
+<li>to be able to carry out basic tasks on a computer or hand-held device</li>
+ 
+      </ul>
+
+      <p class="govuk-body">You may not need all of these skills to apply for this type of work - you could develop some of them while you are in the job or you could take a course. If you need help with your maths and English skills, this service can help with this when you create your action plan.</p>
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+      <h2 class="govuk-heading-m">Day-to-day tasks</h2>
+      <p class="govuk-body-m">In this role you could be:</p>
+      <ul class="govuk-list govuk-list--bullet">
+
+        <li>talking to customers about their needs and helping them choose flowers and plants
+<li>taking orders in person, on the phone and online</li>
+<li>keeping flowers in perfect condition</li>
+<li>preparing arrangements for weddings, celebrations and funerals</li>
+<li>learning floristry skills like wiring and presentation</li>
+<li>giving plant care advice</li>
+<li>setting up flower displays at events</li>
+<li>cleaning vases and keeping the shop tidy</li>
+
+     </ul>
+
+     <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+     <h2 class="govuk-heading-m">Working environment</h2>
+
+
+     <p class="govuk-body-m">You could work on a market stall, at a store or in a workshop.</p>
+
+<p class="govuk-body-m">Your working environment may be cool.</p>
+
+
+
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+    <h2 class="govuk-heading-m">Direct application</h2>
+
+    <p class="govuk-body-m">You could apply directly to become an admin assistant.</p>
+
+    <p class="govuk-body-m">Some employers may expect you to have:</p>
+
+    <ul class="govuk-list govuk-list--bullet">
+     <li>GCSEs at grades 9 to 4 (A* to C) or equivalent, including English and maths
+     </li>
+     <li>telephone, typing or IT skills
+     </li>
+   </ul>
+
+   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+   <h2 class="govuk-heading-m">Apprenticeship</h2>
+
+  <p class="govuk-body-m">You can do an apprenticeship at any age. You may be able to earn the same money and work at the same level as you do now.</p>
+
+  <p class="govuk-body-m">You could get into this job through an intermediate apprenticeship in business administration or a business administrator advanced apprenticeship.</p>
+
+
+
+   <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+   <h2 class="govuk-heading-m">Career path and progression</h2>
+
+   <p class="govuk-body-m">With experience, you could start your own business or become a freelance floral decorator, doing exhibition work, demonstrations and teaching.</p>
+
+
+
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+     <h4 class="govuk-heading-m">Jobs in your area </h4>
+   <p class="govuk-body">At least <b>15 vacancies</b> in this type of work are being advertised near you. Get ready to start applying by preparing your CV and cover letter and exploring any training you’ll need.</p>
+
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+
+<h4 class="govuk-heading-m">Select type of work</h4>
+
+<p class="govuk-body">Select this as your target type of work and we’ll add it to your personal action plan. We will start by checking if you need any maths and English training or job hunting advice.</p>
+
+
+<p class="govuk-body">If you change your mind, you can choose a different type of work on your personal action plan.</p>
+
+   <form action="training_plan">
+    <!-- <input type="hidden" name="task-2" value="complete"> -->
+    <button type="submit" class="govuk-button govuk-!-margin-top-2  govuk-!-margin-bottom-2" style="">
+      Target this type of work
+    </button>
+  </form>
+
+  <div class="govuk-body govuk-!-margin-top-2"><a class="govuk-link" href="specific_job_search_results">Back to your search results</a></div>
+
+
+
+
+</div>
+
+
+{% include "main/releaseX_e2e_v1/contact_us.html"%}
+{% include "main/releaseX_e2e_v1/create_account_panel.html"%}
+
+</div>
+</div>
+
+
+
+
+{% endblock %}

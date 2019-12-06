@@ -1,0 +1,112 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+
+
+            <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="job_details_retraining_admin_assistant.html">Action plan</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Apprenticeships near me
+      </li>
+    </ol>
+  </div>
+
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Admin assistant apprenticeships near me</h1>
+
+      <p class="govuk-body">These apprenticeships within 20 miles of your postcode are currently being advertised in the <a href="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">Find an apprenticeship</a> service, run by the Education and Skills Funding Agency.</p>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Selecting one of these apprenticeships will take you to another government service. 
+
+      </p>
+
+
+      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
+        <label class="govuk-label" for="more-detail">
+         Postcode
+       </label>
+       <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="M8 6SJ">
+       <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8;" type="submit">
+       </button>
+     </div>
+
+
+    <h2 class="govuk-heading-m govuk-!-margin-bottom-2" style="color: #1d70b8"><a href="#*">Administration Assistant Apprenticeship with Seadrill</a></h2>
+    <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>10 miles</b></p>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Possible start date: <b>6 January 2020</b></h3>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Closing date: <b>20 December 2020</b></h3>
+     <p class="govuk-body govuk-!-margin-bottom-0"><b>Seadrill Management Ltd</b> - Peterborough, LS12 2NB</p>
+     <p class="govuk-body">Acting as support to the Executive Assistant, the role holder will provide general and PA type support to SVPs, VPs, Directors and Corporate teams in Seadrill’s Corporate London office. The Admin Assistant will also form part of the office support team for the Corporate head office functions.</p>
+
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2" style="color: #1d70b8"><a href="#*">Apprentice Administration Assistant</a></h2>
+    <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>12 miles</b></p>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Possible start date: <b>6 January 2020</b></h3>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Closing date: <b>15 December 2019</b></h3>
+     <p class="govuk-body govuk-!-margin-bottom-0"><b>Sp Law Llp</b> - Peterborough, LS12 2NB</p>
+     <p class="govuk-body">Exciting role for an Apprentice Administration Assistant to join a local, reputable law firm.</p>
+
+
+         <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-2" style="color: #1d70b8"><a href="#*">Admin Assistant Apprentice</a></h2>
+    <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>14 miles</b></p>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Possible start date: <b>6 January 2020</b></h3>
+      <h3 class="govuk-body govuk-!-margin-bottom-0 govuk-!-padding-top-0">Closing date: <b>15 December 2019</b></h3>
+     <p class="govuk-body govuk-!-margin-bottom-0"><b>NWN BLUE SQUARED Limited</b> - Peterborough, LS12 2NB</p>
+     <p class="govuk-body">Admin Assistant Apprentice required to efficiently undertake basic administration and clerical duties.</p>
+
+
+
+
+
+
+
+  </div>
+
+      {% include "main/releaseX_e2e_v1/contact_us.html"%}
+      {% include "main/releaseX_e2e_v1/create_account_panel.html"%}
+      {% include "main/releaseX_e2e_v1/survey_panel.html"%}
+</div>
+
+
+
+{% endblock %}

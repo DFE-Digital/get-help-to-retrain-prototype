@@ -1,0 +1,113 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Further help
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Get help changing jobs
+      </h1>
+
+      <div>
+
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Find advertised jobs</h3>
+        <p class="govuk-body">Find what jobs are available in your area using the <a href="https://findajob.dwp.gov.uk/">Find a job</a> service from the Department for Work and Pensions.</p>
+
+        <p class="govuk-body">The <a href="https://nationalcareers.service.gov.uk/get-a-job">National Careers Service</a> also has information on where and how to find work.</p>
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Prepare to apply</h3>
+
+
+        <p class="govuk-body">Learn how to <a href="https://nationalcareers.service.gov.uk">write an effective CV</a>.</p>
+
+        <p class="govuk-body">Learn how to <a href="https://nationalcareers.service.gov.uk/get-a-job/covering-letter">write a covering letter</a>.</p>
+
+        <p class="govuk-body">Find out how to <a href="https://nationalcareers.service.gov.uk/get-a-job/interview-advice">prepare for interviews</a>.</p>
+
+
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">Find other training</h3>
+        <p class="govuk-body">Training can help you access a broader range of jobs and stay in secure work. Use the National Careers Service site to find <a href="https://nationalcareers.service.gov.uk/find-a-course">training</a> in your area for specific jobs and to raise your general employability.</p>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        <h3 class="govuk-heading-m govuk-!-margin-bottom-1">On-the-job training</h3>
+
+        <p class="govuk-body">If you have existing experience and want to stay in work as you learn, it’s a great idea to train on-the-job in a new type of role. There’s no age limit for these opportunities and you can often work and learn at your existing level of seniority. <a href="https://www.gov.uk/apprenticeships-guide">Find an opportunity in your area</a></p>
+
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+        <h3 class="govuk-heading-m">On offer near you</h3>
+
+
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Cambridge & Peterborough</h3>
+        <p class="govuk-body">The <a href="https://cambridgeshirepeterborough-ca.gov.uk/about-us/programmes/skills/star-hub/health-and-care-sector-work-academy/">Health and Care Sector Work Academy</a> helps you move into the health and care sector or progress further if you’re already working in this area.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Leeds</h3>
+        <p class="govuk-body">Information on changing careers from <a href="https://www.the-lep.com/for-individuals/">Leeds City Region Local Enterprise Partnership</a>.</p>
+
+        <h3 class="govuk-heading-s govuk-!-margin-bottom-1">Liverpool</h3>
+        <p class="govuk-body">Use the <a href="https://be-more.info/">Be More</a> service to find apprenticeships in the Liverpool area.</p>
+
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+      </div>
+
+
+    </div>
+    {% include "main/releaseX_e2e_v1/contact_us.html"%}
+    {% include "main/releaseX_e2e_v1/create_account_panel.html"%}
+    {% include "main/releaseX_e2e_v1/survey_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

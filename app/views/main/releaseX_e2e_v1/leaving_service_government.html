@@ -1,0 +1,70 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Leaving the service
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">You are now going to another government service
+      </h1>
+      <p class="govuk-body">Select ‘continue’ to leave the Get help to retrain service or ‘back’ to return to it.</p>
+
+      <p class="govuk-body"><a class="govuk-link" href="action_plan">Back to action plan</a></p>
+
+
+
+     <a href="#*">
+        <button type="submit" class="govuk-button">
+          Continue
+        </button></a>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/releaseX_e2e_v1/contact_us.html"%}
+     {% include "main/releaseX_e2e_v1/create_account_panel.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}

@@ -1,0 +1,88 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block pageScripts %}
+
+<script>
+function goBack() {
+  window.history.go(-3);
+}
+</script>
+
+
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Link sent
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Email sent again
+      </h1>
+      <p class="govuk-body">We’ve re-sent this email to</p>
+
+      <h3 class="govuk-heading-m">dave.smith@email.com</h3>
+
+
+      <p class="govuk-body">If you haven’t received this email</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+        <li>check the email address you entered is correct</li>
+
+        <li>check your junk mail</li>
+
+
+      </ul>
+
+        <button onclick="goBack()" type="submit" class="govuk-button">
+          Continue
+        </button>
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/releaseX_e2e_v1/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
