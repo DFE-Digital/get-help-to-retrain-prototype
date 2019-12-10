@@ -29,7 +29,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     <a class="govuk-breadcrumbs__link" href="existing_skills_search_results_current.html">Job profile details</a>
   </li>
   <li class="govuk-breadcrumbs__list-item" aria-current="page"><a class="govuk-breadcrumbs__link" href="existing_skills_results_current.html">
-  Your targetted job</a>
+  Your targeted type of work</a>
 </li>
 <li class="govuk-breadcrumbs__list-item" aria-current="page">
   Your skills
@@ -52,7 +52,7 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 
-    <h1 class="govuk-heading-xl">You’ve targetted the following job</h1>
+    <h1 class="govuk-heading-xl">Your targeted type of work</h1>
 
 
 <div style="border-top: solid; border-top-width: 1px; border-top-color: #b1b4b6; border-bottom: solid; border-bottom-width: 1px; border-bottom-color: #b1b4b6">
@@ -61,23 +61,35 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
     <h2 class="govuk-heading-m govuk-!-margin-bottom-0">Customer service assistant</h2>
   </div>
 
-
-  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-4 govuk-!-padding-right-0">
-    <div style="text-align: center;"><a class="govuk-link govuk-body" href="selected_skills_blank">select a different job type</a></div><br>
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-4">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="existing_skills_results_current"></a></div>
   </div>
 
+  <div class="govuk-grid-column-one-third govuk-!-padding-top-3 govuk-!-padding-bottom-4 govuk-!-padding-right-0">
+    <div style="text-align: center;"><a class="govuk-link govuk-body" href="selected_skills_blank">change type of work</a></div><br>
+  </div>
+
+  <p class="govuk-body">x</p>
 
 </div>
 
 
 
-<p class="govuk-body">Some text here about questions we will ask you, training, job hunting, apprenticeships etc</p>
+
+
+
+
+
+
+<div class="govuk-body">Select this as your target type of work and we’ll add it to your personal action plan. We will start by checking if you need any maths and English training or job hunting advice.</div>
+
+
 
 
 <form action="related_jobs" method="post">
   <input type="hidden" name="task-1" value="complete">
   <button type="submit" class="govuk-button govuk-!-margin-top-3">
-  Continue 
+  Continue
   </button>
 </form>
 
@@ -92,10 +104,5 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 
 
 </div>
-
-
-
-
-
 
 {% endblock %}
