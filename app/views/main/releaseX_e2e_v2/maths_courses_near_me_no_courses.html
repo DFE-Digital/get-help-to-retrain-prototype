@@ -1,0 +1,95 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+  <div class="govuk-grid-row">
+
+<div class="govuk-width-container">
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Maths courses near me</h1>
+
+      <p class="govuk-body-l">Apply for a course by calling the course provider or visiting their website.</p>
+
+
+
+      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
+        <label class="govuk-label" for="more-detail">
+         Postcode
+       </label>
+       <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="M8 6SJ">
+       <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8;" type="submit">
+       </button>
+     </div>
+
+     <p class="govuk-body">0 courses found</p>
+
+           <p class="govuk-body">Get help to retrain isn’t offering courses in your local area yet.</p>
+
+      <p class="govuk-body">Find training in your local area using the <a href="https://nationalcareers.service.gov.uk/find-a-course">Find a course service</a> from the National Careers Service.</p>
+
+     <h3 class="govuk-heading-s">Try again using a different postcode</h3>
+
+             <p class="govuk-body">You could try:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+        <li>double checking your postcode</li>
+
+        <li>using a different postcode</li>
+
+
+
+      </ul>
+
+
+
+
+
+
+  </div>
+
+
+  </div>
+
+      {% include "main/releaseX_e2e_v2/contact_us.html"%}
+      {% include "main/releaseX_e2e_v2/create_account_panel.html"%}
+      {% include "main/releaseX_e2e_v2/survey_panel.html"%}
+
+</div>
+
+
+
+{% endblock %}
