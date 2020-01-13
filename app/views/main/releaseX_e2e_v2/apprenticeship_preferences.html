@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+       <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Action plan</a>
+   </li>
+  <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Edit your apprecticeship choices
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Edit your apprenticeship choice</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+           <p class=govuk-body-l>Edit your apprenticeship choice to add or remove it from your action plan.</p>
+
+          <p class=govuk-hint>Tick or untick the box if it applies to you.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I want to view apprenticeship vacancies for my target type of work
+            </label> </div>
+
+  
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+
+                  <form action="action_plan" id="actionplan-form">
+                    <input type="hidden" name="task-2" value="complete">
+                    <button type="submit" class="govuk-button">
+                      Continue
+                    </button>
+                  </form>
+
+
+                  </div>
+
+      {% include "main/releaseX_e2e_v2/contact_us.html"%}
+        {% include "main/releaseX_e2e_v2/create_account_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}
