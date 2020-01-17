@@ -1,0 +1,92 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<a href="Q2_IT_skills_training" class="govuk-back-link">Back</a>
+
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+    <span class="govuk-caption-xl">Step 3 of 4</span>
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Explore on-the-job training</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+           <p class=govuk-body>On an apprenticeship you learn new skills and earn a wage while you are employed. You can do an apprenticeship at any age and choose a level to suit you.</p>
+
+           <p class=govuk-body>You may be able to earn the same amount of money as you do now.</p>
+
+          <p class=govuk-hint>Tick the box if it applies to you. You’ll get a personal action plan based on what you choose.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I want to view apprenticeship vacancies for my target type of work
+            </label> </div>
+
+  
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+<p class="govuk-body">If this does not apply to you, leave the box blank and select continue.</p>
+
+
+                    <a href="Q4_cv_help"><button type="submit" class="govuk-button">
+                      Continue
+                    </button></a>
+
+
+
+
+                  </div>
+
+{% include "main/releaseX_e2e_v3/contact_us.html"%}
+        {% include "main/releaseX_e2e_v3/create_account_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}
