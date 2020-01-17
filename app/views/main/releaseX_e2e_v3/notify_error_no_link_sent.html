@@ -1,0 +1,67 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Link not sent
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Sorry, there is a problem with the service
+      </h1>
+      <p class="govuk-body">Unfortunately we weren’t able to send you a link to your saved results at this time.</p>
+
+          <p class="govuk-body">You could try again later.</p>
+
+
+      <p class="govuk-body"><a href="#">Return to previous page</a></p>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    {% include "main/releaseX_e2e_v3/contact_us.html"%}
+  </div>
+</div>
+
+
+
+{% endblock %}
