@@ -55,23 +55,21 @@ html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a>
 
 
 <div class="govuk-tabs" data-module="govuk-tabs">
-  <h2 class="govuk-tabs__title">
-    test
-  </h2>
+
   <ul class="govuk-tabs__list">
-    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
-      <a class="govuk-tabs__tab" href="#past-day">
+    <li class="govuk-tabs__list-item">
+      <a class="govuk-tabs__tab" href="related_jobs">
         Your matches
       </a>
     </li>
-    <li class="govuk-tabs__list-item">
+    <li class="govuk-tabs__list-item govuk-tabs__list-item--selected">
       <a class="govuk-tabs__tab" href="#related_jobs_search_results">
         Search by job title
       </a>
     </li>
    
   </ul>
-  <section class="govuk-tabs__panel" id="past-day">
+  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="past-day">
 
       <p class="govuk-body">Here are some types of work you could do using many of your current skills.</p>
 
@@ -332,7 +330,7 @@ html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a>
   </section>
 
 
-  <section class="govuk-tabs__panel govuk-tabs__panel--hidden" id="related_jobs_search_results">
+  <section class="govuk-tabs__panel" id="#related_jobs_search_results">
 
 
    <p class="govuk-body">Enter any job title to find out how well your skills match to it.
@@ -340,12 +338,12 @@ html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a>
 
    <form>
     <div class="govuk-form-group govuk-!-margin-bottom-0">
-      <input class="search-input govuk-input govuk-!-width-one-half" type="text" placeholder="Enter a job title">
-      <a href="related_jobs_search_results#related_jobs_search_results"class="govuk-button govuk-!-margin-left-3" type="submit">Search</a>
+      <input class="search-input govuk-input govuk-!-width-one-half" type="text" value="Florist">
+      <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
     </div>
   </form>
 
-   <div id="searchResults" style="display:none"> <p class="govuk-body">1 result found</p>
+   <div id="searchResults"> <p class="govuk-body">1 result found</p>
 
 
    <p class="govuk-body">Select the job title that best matches what you’re looking for.</p>
@@ -356,7 +354,7 @@ html: 'This is a new service - your <a href="#!" class="govuk-link">feedback</a>
   <ul class="govuk-list">
         <li class="govuk-!-padding-bottom-1">
           <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_florist.html">Florist</a></h3>
-<!--           <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p> -->
+
           <p class="result-description govuk-!-margin-bottom-3">Florists sell flowers and design bouquets for weddings, funerals and special occasions.</p>
 
           <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Poor</b></p>
