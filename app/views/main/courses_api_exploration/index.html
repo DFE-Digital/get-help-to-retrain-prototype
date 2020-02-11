@@ -1,0 +1,221 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+<div class="govuk-width-container">
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+
+            <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="action_plan">Action plan</a>
+      </li>
+
+        
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        Training courses near you
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">English courses near me</h1>
+
+<!--       <p class="govuk-body-l">Apply for a course by calling the course provider or visiting their website. The course provider will also be able to tell you what funding support you can get.</p> -->
+
+
+<div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+  <div class="govuk-accordion__section ">
+    <div class="govuk-accordion__section-header">
+      <h2 class="govuk-accordion__section-heading">
+        <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+          Filters
+        </span>
+      </h2>
+    </div>
+    <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-!-padding-top-0" aria-labelledby="accordion-default-heading-1">
+      
+    <div class="govuk-grid-column-one-half govuk-!-padding-left-0">  
+
+        <div class="">
+          <label class="govuk-label" for="more-detail">
+           Postcode
+         </label>
+         <input style="float: left; z-index: 1; width: calc(100% - 40px);" class="govuk-input govuk-!-margin-bottom-3" type="text" value="M8 6SJ">
+         <button style="float: right;border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8; z-index: 2" type="submit">
+         </button>
+       </div>
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Course type
+        </label>
+        <select style="width: 100%" class="govuk-select" id="sort" name="sort">
+          <option value="default" selected="">All</option>
+          <option value="published">Classroom based</option>
+          <option value="updated">Distance learning</option>
+          <option value="views">Online</option>
+          <option value="comments">Work based</option>
+        </select>
+      </div>
+
+          <a href="#*" class="govuk-!-margin-bottom-0"><button type="submit" class="govuk-button">
+      Apply filters
+    </button></a>
+
+      </div>
+
+    <div class="govuk-grid-column-one-half govuk-!-padding-right-0">  
+
+
+      <div class="govuk-form-group govuk-!-margin-bottom-3">
+        <label class="govuk-label" for="sort">
+          Distance
+        </label>
+        <select style="width: 100%" class="govuk-select govuk-!-padding-bottom-0" id="sort" name="sort">
+          <option value="published">Up to 10 miles</option>
+          <option value="updated" selected>Up to 20 miles</option>
+          <option value="views">Up to 30 miles</option>
+          <option value="comments">Up to 40 miles</option>
+        </select>
+      </div>
+
+
+
+      <div class="govuk-form-group">
+        <label class="govuk-label" for="sort">
+          Course hours
+        </label>
+        <select style="width: 100%" class="govuk-select" id="sort" name="sort">
+          <option value="" selected="">All</option>
+          <option value="">Full time</option>
+          <option value="">Part time</option>
+          <option value="">Flexible</option>
+        </select>
+      </div>
+    </div>
+  </div>
+ 
+  </div>
+</div>
+
+
+
+
+     <div class="govuk-grid-column-full govuk-!-padding-0">
+       <h2 class="govuk-heading-m govuk-!-margin-bottom-0"><a href="#*">Functional Skills English</a></h2>
+       <h3 class="govuk-heading-s govuk-!-margin-bottom-0">TQM College Manchester</h3>
+       <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>3 miles</b></p>
+      <p class="govuk-body govuk-!-margin-bottom-0">Course type:<b>Classroom based</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-2">Course hours:<b>Full time</b></p>
+
+
+
+       <p class="govuk-body-s">
+
+        The Point Building, 173 Cheetham Hill Road<br>
+        Manchester, Greater Manchester<br>
+      M8 8LG</p>
+
+
+
+      <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+    </div>
+
+    <div class="govuk-grid-column-full govuk-!-padding-0">
+     <h2 class="govuk-heading-m govuk-!-margin-bottom-0"><a href="#*">Functional Skills English</a></h2>
+     <h3 class="govuk-heading-s govuk-!-margin-bottom-0">The Manchester College</h3>
+     <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>4 miles</b></p>
+           <p class="govuk-body govuk-!-margin-bottom-0">Course type:<b>Classroom based</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-2">Course hours:<b>Part time</b></p>
+
+
+     <p class="govuk-body-s">
+      St Johns Centre, Quay Street<br>
+      Manchester, Greater Manchester<br>
+    M3 3BE</p>
+
+
+
+    <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+  </div>
+
+  <div class="govuk-grid-column-full govuk-!-padding-0">
+   <h2 class="govuk-heading-m govuk-!-margin-bottom-0"><a href="#*">Functional Skills English</a></h2>
+   <h3 class="govuk-heading-s govuk-!-margin-bottom-0">The Manchester College (online learning)</h3>
+   <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>4 miles</b></p>
+         <p class="govuk-body govuk-!-margin-bottom-0">Course type:<b>Classroom based</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-2">Course hours:<b>Flexible</b></p>
+
+
+   <p class="govuk-body-s">
+    St Johns Centre, Quay Street<br>
+    Manchester, Greater Manchester<br>
+  M3 3BE</p>
+
+
+
+  <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+</div>
+
+<div class="govuk-grid-column-full govuk-!-padding-0">
+ <h2 class="govuk-heading-m govuk-!-margin-bottom-0"><a href="#*">Functional Skills English</a>
+ </h2>
+ <h3 class="govuk-heading-s govuk-!-margin-bottom-0">Avenue International College</h3>
+ <p class="govuk-body govuk-!-margin-bottom-0">Distance: <b>7 miles</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-0">Course type:<b>Classroom based</b></p>
+            <p class="govuk-body govuk-!-margin-bottom-2">Course hours:<b>Full time</b></p>
+ 
+
+ <p class="govuk-body-s">
+
+  40 Fountain Street<br>
+  Manchester, Greater Manchester<br>
+M2 2BE</p>
+
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible govuk-!-margin-top-0">
+
+</div>
+
+
+</div>
+{% include "main/releaseX_e2e_v3/contact_us.html"%}
+{% include "main/releaseX_e2e_v3/create_account_panel.html"%}
+{% include "main/releaseX_e2e_v3/survey_panel.html"%}
+</div>
+</div>
+
+
+
+{% endblock %}
