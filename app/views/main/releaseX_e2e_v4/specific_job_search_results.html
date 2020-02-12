@@ -1,0 +1,115 @@
+
+{% extends "layout.html" %}
+
+{% set mainClasses = "govuk-!-padding-top-1" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+    </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="related_jobs">Your job matches</a>
+    </li>
+
+    <li class="govuk-breadcrumbs__list-item" aria-current="page">
+      Search for a type of work
+    </li>
+  </ol>
+</div>
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+
+<div class="govuk-grid-column-two-thirds" style="margin-bottom: 400px !important;
+">
+
+
+ <h1 class="govuk-heading-xl">Search for a type of work you’re interested in
+</h1>
+   <p class="govuk-body-l">Enter a job title to find out how well your skills match to it.
+   </p>
+
+   <form method="post" action="specific_job_search_results">
+    <div class="govuk-form-group govuk-!-margin-bottom-0">
+      <input class="search-input govuk-input govuk-!-width-one-half" type="text" value="Florist">
+      <button class="govuk-button govuk-!-margin-left-3" type="submit">Search</button>
+    </div>
+  </form>
+
+  <p class="govuk-body">Select the job title that best matches what you’re looking for.</p>
+<p class="govuk-body">If you can’t see the job title you’re looking for, try searching with different words - for example, checkout operator instead of cashier.</p>
+
+
+  <p class="govuk-body">1 result found</p>
+
+  <ul class="govuk-list">
+        <li class="govuk-!-padding-bottom-1">
+          <h3 class="govuk-!-margin-bottom-0"><a href="job_details_retraining_admin_florist.html">Florist</a></h3>
+<!--           <p class="govuk-body-s govuk-!-margin-bottom-2" style="color:#6f777b">Office administrator, clerical assistant, administrative assistant</p> -->
+          <p class="result-description govuk-!-margin-bottom-3">Florists sell flowers and design bouquets for weddings, funerals and special occasions.</p>
+
+          <p class="govuk-body govuk-!-margin-bottom-1">Skills match: <b>Poor</b></p>
+          <p class="govuk-body govuk-!-margin-bottom-1">Recent job growth: <b>Falling</b></p>
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What does falling mean?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              In the last few years, there hasn't been as much work available for people in this type of work. You might find it hard to get work.
+            </div>
+          </details>
+
+        </li>
+      </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+  {% include "main/releaseX_e2e_v4/contact_us.html"%}
+  {% include "main/releaseX_e2e_v4/create_account_panel.html"%}
+
+</div>
+
+
+{% endblock %}
