@@ -1,0 +1,127 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<a href="job_details_retraining_admin_assistant" class="govuk-back-link">Back</a>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-xl">Step 1 of 4</span>
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Maths and English skills</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+          <p class=govuk-body>It’s easier to find work if you have a maths and English qualification. There’s no need to be worried about going back into training because:</p>
+
+          <ul class="govuk-list govuk-list--bullet">
+
+
+          <li>courses are usually free</li>
+
+          <li>flexible, part time study fits round your life</li>
+
+          <li>adult learning classes are relaxed and positive</li>
+
+
+        </ul>
+
+
+          <p class=govuk-hint>Tick all boxes that apply to you. You’ll get a personal action plan based on what you choose.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I need to improve my English skills
+            </label> </div>
+
+            <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What will you learn on an English skills course?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+On an adult learning English course you'll improve your confidence with reading and writing. Completing this course shows employers that you can communicate clearly at work in all kinds of situations.
+            </div>
+          </details>
+
+            <div class="govuk-checkboxes__item govuk-!-margin-bottom-3">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I need to improve my maths skills
+              </label> </div>
+
+              <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What will you learn on a maths skills course?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              On an adult learning maths course you'll improve your confidence with numbers. Completing this course shows employers that you can use maths at work.
+            </div>
+          </details>
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+<p class="govuk-body">If none of these apply to you, just leave the boxes blank and select continue.</p>
+
+
+                    <a href="Q2_IT_skills_training"><button type="submit" class="govuk-button">
+                      Continue
+                    </button></a>
+
+
+
+
+                  </div>
+
+      {% include "main/releaseX_e2e_v4/contact_us.html"%}
+        {% include "main/releaseX_e2e_v4/create_account_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}

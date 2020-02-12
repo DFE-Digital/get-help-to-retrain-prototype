@@ -1,0 +1,135 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+<div class="govuk-width-container">
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>      </li>
+
+            <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="action_plan">Action plan</a></li>
+
+                  <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="action_plan">Training courses near you</a></li>
+
+      <li class="govuk-breadcrumbs__list-item">
+       Course details
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Functional Skills Maths</h1>
+
+      <h2 class="govuk-heading-m">Course details</h2>
+
+      <table class="govuk-table">
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Qualification name</th>
+      <td class="govuk-table__cell">Functional Skills Maths</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Qualification level</th>
+      <td class="govuk-table__cell">Level 1</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Course hours</th>
+      <td class="govuk-table__cell">Part time</td>
+    </tr>
+        <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Course type</th>
+      <td class="govuk-table__cell">Classroom based</td>
+              <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Course start date</th>
+      <td class="govuk-table__cell">15 March 2020</td>
+              <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Attendance pattern</th>
+      <td class="govuk-table__cell">Evening</td>
+    </tr>
+  </tbody>
+</table>
+
+      <h2 class="govuk-heading-m">Course description</h2>
+
+      <p class="govuk-body">Functional mathematics is all about maths in real-life situations. It involves taking mathematical skills you have already learned and applying them in everyday contexts, as well as in new and challenging situations. The course can range from Entry 1, Entry 2, Entry 3, Level 1 and Level 2.</p>
+
+<hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+      <h2 class="govuk-heading-m">Provider details</h2>
+
+
+            <table class="govuk-table">
+
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Name</th>
+      <td class="govuk-table__cell">TQM College Manchester</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Address</th>
+      <td class="govuk-table__cell">173 Cheetham Hill Rd<br>
+      Cheetham Hill<br>Manchester<br>M8 8LG</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Phone</th>
+      <td class="govuk-table__cell"><a href="">0161 327 2514</a></td>
+    </tr>
+        <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header">Email</th>
+      <td class="govuk-table__cell"><a href="">info@tqmcollege.co.uk</a></td>
+              <tr class="govuk-table__row">
+   
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+</div>
+{% include "main/releaseX_e2e_v3/contact_us.html"%}
+{% include "main/releaseX_e2e_v3/create_account_panel.html"%}
+{% include "main/releaseX_e2e_v3/survey_panel.html"%}
+</div>
+</div>
+
+
+
+{% endblock %}

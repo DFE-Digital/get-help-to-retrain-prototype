@@ -1,0 +1,73 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+<div class="govuk-width-container">
+
+<a href="action_plan" class="govuk-back-link">Back</a>
+
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+
+      <h1 class="govuk-heading-xl">Free training and help with training costs
+      </h1>
+      
+
+      <p class="govuk-body">You may be able to do free training or get money to help you train.</p>
+
+      <div class="govuk-inset-text">
+      There’s lots of different funding support available. It’s usually best to talk to your course provider to find out what support you can get.
+      </div>
+
+      <h2 class="govuk-heading-m">Free training</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>Many people can study maths and English for free.</li>
+        <li>You can study computer skills online for free on the <a href="#*">Learn my Way</a> website.</li>
+      </ul>
+
+      <p class="govuk-body">Other free courses are available. Speak to a local advisor to find out what’s available in your area. Call free on <a href="#*">0800 051 0459</a> Monday to Friday from 9am to 5pm.</p>
+
+      <h2 class="govuk-heading-m">Help with training costs</h2>
+
+      <ul class="govuk-list govuk-list--bullet">
+        <li>You may be able to get funding to do courses that you need to pay for. This includes grants and bursaries, which you may not need to pay back.</li>
+         <li>If you’re facing financial hardship you could get extra help including funding foryour travel and accommodation costs, course materials and equipment, and childcare costs.</li>
+      </ul>
+
+      <p class="govuk-body">To find out more about funding support, find a course that suits your needs and then speak to the training provider to find out what funding you could get.</p>
+
+
+
+
+    </div>
+    {% include "main/releaseX_e2e_v4/contact_us.html"%}
+    {% include "main/releaseX_e2e_v4/create_account_panel.html"%}
+
+  </div>
+</div>
+
+
+
+{% endblock %}
