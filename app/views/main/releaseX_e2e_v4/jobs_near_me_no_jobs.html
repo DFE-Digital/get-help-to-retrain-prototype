@@ -1,0 +1,156 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+
+
+            <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="action_plan">Action plan</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Jobs near me
+      </li>
+    </ol>
+  </div>
+
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Admin assistant jobs near me</h1>
+
+
+            <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+        <div class="govuk-accordion__section ">
+          <div class="govuk-accordion__section-header">
+            <h2 class="govuk-accordion__section-heading">
+              <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                Filters
+              </span>
+            </h2>
+          </div>
+          <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-!-padding-top-0" aria-labelledby="accordion-default-heading-1">
+
+          <div class="govuk-grid-row govuk-!-padding-left-3 govuk-!-padding-right-3">
+
+
+              <div class="govuk-grid-column-one-half govuk-!-padding-left-0">  
+
+                <div class="">
+                  <label class="govuk-label" for="more-detail">
+                   Postcode
+                 </label>
+                 <input style="float: left; z-index: 1; width: calc(100% - 40px);" class="govuk-input govuk-!-margin-bottom-3" type="text" value="M8 6SJ">
+                 <button style="float: right;border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8; z-index: 2" type="submit">
+                 </button>
+               </div>
+
+
+              <a href="#*" class="govuk-!-margin-bottom-0"><button type="submit" class="govuk-button">
+                Apply filters
+              </button></a>
+
+            </div>
+
+            <div class="govuk-grid-column-one-half govuk-!-padding-right-0">  
+
+
+              <div class="govuk-form-group govuk-!-margin-bottom-3">
+                <label class="govuk-label" for="sort">
+                  Distance
+                </label>
+                <select style="width: 100%" class="govuk-select govuk-!-padding-bottom-0" id="sort" name="sort">
+                  <option value="published">Up to 10 miles</option>
+                  <option value="updated" selected>Up to 20 miles</option>
+                  <option value="views">Up to 30 miles</option>
+                  <option value="comments">Up to 40 miles</option>
+                </select>
+              </div>
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+
+<!-- <p class="govuk-body">These jobs are currently being advertised in the <a href="https://findajob.dwp.gov.uk/">Find a job</a> service from the Department for Work and Pensions.</p>
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Selecting one of these jobs will take you to another government service. 
+
+      </p> -->
+
+
+      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
+    
+     </div>
+
+
+     <p class="govuk-body">0 job vacancies found on the Find a job service</p>
+
+           <h3 class="govuk-heading-s">This service only looks for jobs advertised on the Find a job service from the Department for Work and Pensions. To find admin assistant jobs you may need to search elsewhere.</h3>
+
+
+             <p class="govuk-body">You could try:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+        <li>using a different postcode</li>
+
+        <li>using the filters to search a wider local area</li>
+
+        <li>using other job sites</li>
+
+        <li>entering a different name for this job on the <a href="https://findajob.dwp.gov.uk/">Find a job</a> service</li>
+
+
+
+      </ul>
+
+
+
+
+
+
+
+  </div>
+
+      {% include "main/releaseX_e2e_v4/contact_us.html"%}
+      {% include "main/releaseX_e2e_v4/create_account_panel.html"%}
+      {% include "main/releaseX_e2e_v4/survey_panel.html"%}
+</div>
+
+
+
+{% endblock %}
