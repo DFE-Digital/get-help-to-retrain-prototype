@@ -1,0 +1,100 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<a href="Q3_apprenticeship_question" class="govuk-back-link">Back</a>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+        <span class="govuk-caption-xl">Building your action plan</span>
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Get help with your job hunting skills</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+           <p class=govuk-body-l>Get ready to apply for jobs by creating your CV, writing cover letters or getting ready for interview.</p>
+
+          <p class=govuk-hint>Tick all boxes that apply to you. You’ll get a personal action plan based on what you choose.</p>
+
+
+
+        </legend>
+        <div class="govuk-checkboxes">
+          <div class="govuk-checkboxes__item govuk-!-margin-bottom-5">
+            <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+            <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+              I want advice on creating or updating a CV
+            </label> </div>
+
+            <div class="govuk-checkboxes__item govuk-!-margin-bottom-5">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I want advice on writing a cover letter
+              </label> </div>
+
+               <div class="govuk-checkboxes__item">
+              <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+              <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+                I want advice on preparing for interviews
+              </label> </div>
+
+                        </div>
+                      </fieldset>
+                    </div>
+
+
+
+
+
+
+
+                  <form action="action_plan" id="actionplan-form">
+                    <input type="hidden" name="task-2" value="complete">
+                    <p class="govuk-body">If none of these apply to you, just leave the boxes blank and select continue.</p>
+                    <button type="submit" class="govuk-button">
+                      Continue
+                    </button>
+                  </form>
+
+
+                  </div>
+
+      {% include "main/releaseX_e2e_v5/contact_us.html"%}
+        {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
+
+
+                </div>
+
+
+
+
+
+
+                {% endblock %}

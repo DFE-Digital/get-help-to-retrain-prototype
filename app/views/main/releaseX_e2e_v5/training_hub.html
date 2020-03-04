@@ -1,0 +1,126 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-width-container">
+
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="training_hub">Find training</a>
+      </li>
+    </ol>
+  </div>
+
+  {% endblock %}
+
+  {% block content %}
+
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Find training that boosts your job options
+      </h1>
+
+
+
+      <p class="govuk-body-l">You could get a better job by adding to the skills you already have. Complete a short course in maths or English and you could find you have a wider range of job options. Many courses are free and offer flexible times to fit round your life.</p>
+
+      <p class="govuk-body">This is a new scheme - a wider range of courses will be added in future.
+
+      </p>
+
+      <p class="govuk-body">You can also find on-the-job training that lets you earn while you learn.</p>
+
+
+      <h2 class="govuk-heading-l">What’s on offer?
+      </h2>
+      <h2 class="govuk-heading-m govuk-!-margin-bottom-1">Maths</h2>
+      <p class="govuk-body-m govuk-!-margin-bottom-1">Employers tell us they are looking for people who can show they have some maths skills. Completing a free maths course can really boost your job prospects in many different types of work.
+      </p>
+      <a href="maths_overview" class="govuk-body-m">More information on maths courses</a><br>
+
+      <a href="maths_courses_near_me">
+        <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
+          Find a maths course
+        </button></a>
+
+        <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+        <h2 class="govuk-heading-m govuk-!-margin-bottom-1">English</h2>
+        <p class="govuk-body-m govuk-!-margin-bottom-1">Showing that you can communicate well at work is really important for your job prospects. English courses focus on giving you the skills you need to succeed in the workplace.</p>
+        <a href="english_overview" class="govuk-body-m">More information on English courses</a><br>
+
+        <a href="english_courses_near_me">
+          <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
+            Find an English course
+          </button></a>
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">On-the-job training
+          </h2>
+          <p class="govuk-body-m govuk-!-margin-bottom-1">Gain skills and experience while continuing to earn. There’s no age limit and different levels of study are available. This means on-the-job-training is suitable for experienced older workers wanting to stay in work as they learn.
+          </p>
+
+
+          <a href="https://www.gov.uk/apprenticeships-guide">
+            <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
+              Find an opportunity
+            </button></a>
+
+
+
+
+          <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+          <h2 class="govuk-heading-m govuk-!-margin-bottom-1">More help to change jobs
+          </h2>
+          <p class="govuk-body-m govuk-!-margin-bottom-1">Get support to find and apply for jobs, or find other ways to move into a new role.
+          </p>
+
+          <a href="next_steps">
+            <button type="submit" class="govuk-button govuk-!-margin-top-5 govuk-button govuk-!-margin-bottom-2">
+              Other ways to change jobs
+            </button></a>
+
+
+
+
+            <hr class="govuk-section-break govuk-section-break--m govuk-section-break--visible">
+
+
+
+          </div>
+        {% include "main/releaseX_e2e_v5/contact_us.html"%}
+        {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
+        {% include "main/releaseX_e2e_v5/survey_panel.html"%}
+
+        </div>
+      </div>
+
+
+
+      {% endblock %}
