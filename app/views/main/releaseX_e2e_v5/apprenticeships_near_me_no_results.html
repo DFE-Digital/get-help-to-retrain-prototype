@@ -1,0 +1,103 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+
+  <div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+
+      <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+      </li>
+
+
+            <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="job_details_retraining_admin_assistant.html">Action plan</a>
+      </li>
+
+      <li class="govuk-breadcrumbs__list-item" aria-current="page">
+        Apprenticeships near me
+      </li>
+    </ol>
+  </div>
+
+
+  {% endblock %}
+
+  {% block content %}
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+
+      <h1 class="govuk-heading-xl">Admin assistant apprenticeships near me</h1>
+
+      <p class="govuk-body">These apprenticeships within 20 miles of your postcode are currently being advertised in the <a href="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">Find an apprenticeship</a> service, run by the Education and Skills Funding Agency.</p>
+
+
+      <p class="govuk-body govuk-!-margin-bottom-3">Selecting one of these apprenticeships will take you to another government service. 
+
+      </p>
+
+
+      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
+        <label class="govuk-label" for="more-detail">
+         Postcode
+       </label>
+       <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="M8 6SJ">
+       <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8;" type="submit">
+       </button>
+     </div>
+
+
+    <p class="govuk-body">0 apprenticeships found</p>
+
+           <h3 class="govuk-heading-s">There are no vacancies for this type of apprenticeship in your area.</h3>
+
+
+             <p class="govuk-body">You could try:</p>
+        <ul class="govuk-list govuk-list--bullet">
+
+        <li>searching a wider area on the <a href="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">Find an apprenticeship</a> service</li>
+
+        <li>browsing by category on the <a href="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">Find an apprenticeship</a> service</li>
+
+        <li>entering a different name for this job on the <a href="https://www.findapprenticeship.service.gov.uk/apprenticeshipsearch">Find an apprenticeship</a> service</li>
+
+        <li>checking your postcode is correct or using a different postcode</li>
+
+
+
+      </ul>
+
+
+
+
+
+
+
+  </div>
+
+      {% include "main/releaseX_e2e_v5/contact_us.html"%}
+      {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
+      {% include "main/releaseX_e2e_v5/survey_panel.html"%}
+</div>
+
+
+
+{% endblock %}
