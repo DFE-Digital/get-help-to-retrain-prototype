@@ -1,0 +1,212 @@
+
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Get Help To Retrain
+{% endblock %}
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+function showFunction() {
+  var x = document.getElementById("hidDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+{% endblock %}
+
+
+
+{% block beforeContent %}
+
+
+
+{{ govukPhaseBanner({
+  tag: {
+  text: "beta"
+},
+html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> will help us to improve it.'
+}) }}
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+
+    <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item">
+     <a class="govuk-breadcrumbs__link" href="task_list.html">Action plan</a>
+   </li>
+   <li class="govuk-breadcrumbs__list-item" aria-current="page">
+    Edit your training choices
+  </li>
+</ol>
+</div>
+
+
+
+
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-grid-row">
+
+  <div class="govuk-grid-column-two-thirds">
+
+
+    <h1 class="govuk-heading-xl govuk-!-margin-bottom-3">Edit your training choices</h1>
+
+
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--m">
+
+         <p class=govuk-body-l>Add or remove the kind of training you need.</p>
+
+         <p class=govuk-hint>Tick or untick the boxes to add or remove these from your action plan.</p>
+
+
+
+       </legend>
+       <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item govuk-!-margin-bottom-7">
+          <input onclick="showFunction()" class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-1">
+            Show English course
+          </label>
+
+
+        </div>
+
+        
+
+<div id="hidDIV" style="display: none ;border-top: solid; border-top-width: 2px; border-top-color: #b1b4b6; border-bottom: solid; border-bottom-width: 2px; border-bottom-color: #b1b4b6;">
+
+
+
+<div class="govuk-radios">
+      <div class="govuk-radios__item govuk-!-margin-top-5">
+        <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+          Enlish courses
+        </label>
+      </div>
+
+<details class="govuk-details" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What will you get from an English courses?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class="govuk-body">Completing an adult learning English course shows employers that you can communicate clearly at work.</p>
+<p class="govuk-body">If English isn’t your main language, you can choose to do an English course aimed at speakers of other languages.</p>
+        </details>
+
+
+      <div class="govuk-radios__item  govuk-!-margin-bottom-2">
+        <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+        <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+           English for speakers of other languages (ESOL)
+        </label>
+      </div>
+
+  <details class="govuk-details govuk-!-margin-bottom-4" data-module="govuk-details">
+          <summary class="govuk-details__summary">
+            <span class="govuk-details__summary-text">
+              What will you get from an ESOL course?
+            </span>
+          </summary>
+          <div class="govuk-details__text">
+            <p class="govuk-body">If English isn’t your main language, an ESOL course will help you improve your speaking, writing, listening and reading skills.</p>
+            <p class="govuk-body">Completing an ESOL course shows employers that you can communicate clearly at work.</p>
+
+          </div>
+        </details>
+
+    </div>
+
+
+
+      
+
+</div>
+
+        <div class="govuk-checkboxes__item govuk-!-margin-bottom-2 govuk-!-margin-top-5">
+          <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-2">
+            Maths course
+          </label> </div>
+
+
+          <details class="govuk-details" data-module="govuk-details">
+            <summary class="govuk-details__summary">
+              <span class="govuk-details__summary-text">
+                What will you get from a maths course?
+              </span>
+            </summary>
+            <div class="govuk-details__text">
+              Completing an adult learning maths course shows employers you are confident using numbers at work.
+            </div>
+          </details>
+
+
+
+          <div class="govuk-checkboxes__item  govuk-!-margin-bottom-2">
+            <input class="govuk-checkboxes__input" id="comp" name="comp" type="checkbox" value="comp">
+            <label class="govuk-label govuk-checkboxes__label" for="comp">
+              Digital skills course
+            </label> </div>
+
+
+            <details class="govuk-details" data-module="govuk-details">
+              <summary class="govuk-details__summary">
+                <span class="govuk-details__summary-text">
+                  What will you get from digital skills courses?
+                </span>
+              </summary>
+              <div class="govuk-details__text">
+              Completing some short digital skills courses online will help you show employers you are confident using a computer and the internet at work.
+              </div>
+            </details>
+
+
+          </div>
+        </fieldset>
+      </div>
+
+
+
+
+
+
+
+      <form action="action_plan" id="actionplan-form">
+        <input type="hidden" name="task-2" value="complete">
+        <button type="submit" class="govuk-button">
+          Continue
+        </button>
+      </form>
+
+
+    </div>
+
+    {% include "main/releaseX_e2e_v5/contact_us.html"%}
+    {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
+
+
+  </div>
+
+
+
+
+
+
+  {% endblock %}
