@@ -17,58 +17,128 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
 }) }}
 
 
+<div class="govuk-grid-row">
 
-  <div class="govuk-grid-row">
-
-<div class="govuk-width-container">
-
-
-  <div class="govuk-breadcrumbs">
-    <ol class="govuk-breadcrumbs__list">
-
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
-      </li>
-      <li class="govuk-breadcrumbs__list-item">
-        <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
-      </li>
-    </ol>
-  </div>
-
-  {% endblock %}
-
-  {% block content %}
-    <div class="govuk-grid-column-two-thirds">
-
-      <h1 class="govuk-heading-xl">Maths courses near me</h1>
-
-      <p class="govuk-body-l">Apply for a course by calling the course provider or visiting their website.</p>
+  <div class="govuk-width-container">
 
 
+    <div class="govuk-breadcrumbs">
+      <ol class="govuk-breadcrumbs__list">
 
-      <div class="govuk-grid-column-full govuk-!-padding-0 govuk-!-margin-bottom-5">
-        <label class="govuk-label" for="more-detail">
-         Postcode
-       </label>
-       <input style="float: left;" class="govuk-input govuk-!-width-one-half" type="text" value="M8 6SJ">
-       <button style="float: left; border: 0; width:40px; height:40px; background:url('{{ asset_path }}images/search_icon.svg') 50% 50%/20px no-repeat #1d70b8;" type="submit">
-       </button>
-     </div>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="task_list.html">Home: Get help to retrain</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="training_hub">Find and apply to training courses near you</a>
+        </li>
+      </ol>
+    </div>
 
-     <p class="govuk-body">0 courses found</p>
+    {% endblock %}
 
-           <p class="govuk-body">Get help to retrain isn’t offering courses in your local area yet.</p>
+    {% block content %}
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
 
-      <p class="govuk-body">Find training in your local area using the <a href="https://nationalcareers.service.gov.uk/find-a-course">Find a course service</a> from the National Careers Service.</p>
+        <h1 class="govuk-heading-xl">Maths courses near you</h1>
 
-     <h3 class="govuk-heading-s">Try again using a different postcode</h3>
+        <!--       <p class="govuk-body-l">Apply for a course by calling the course provider or visiting their website. The course provider will also be able to tell you what funding support you can get.</p> -->
 
-             <p class="govuk-body">You could try:</p>
-        <ul class="govuk-list govuk-list--bullet">
 
-        <li>double checking your postcode</li>
+      <div class="govuk-accordion" data-module="govuk-accordion" id="accordion-default">
+          <div class="govuk-accordion__section ">
+            <div class="govuk-accordion__section-header">
+              <h2 class="govuk-accordion__section-heading">
+                <span class="govuk-accordion__section-button" id="accordion-default-heading-1">
+                  Filters
+                </span>
+              </h2>
+            </div>
+            <div id="accordion-default-content-1" class="govuk-accordion__section-content govuk-!-padding-top-0" aria-labelledby="accordion-default-heading-1">
 
-        <li>using a different postcode</li>
+              <div class="govuk-grid-row govuk-!-padding-left-3 govuk-!-padding-right-3">
+
+
+              <div class="govuk-grid-column-one-half govuk-!-padding-left-0">  
+
+                  <div class="">
+                    <label class="govuk-label" for="more-detail">
+                     Postcode
+                   </label>
+                   <input style="float: left; z-index: 1; width: 100%;" class="govuk-input govuk-!-margin-bottom-3" type="text" value="M8 6SJ">
+                  </div>
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Course type
+                  </label>
+                  <select style="width: 100%" class="govuk-select" id="sort" name="sort">
+                    <option value="default" selected="">All</option>
+                    <option value="published">Classroom based</option>
+                    <option value="updated">Distance learning</option>
+                    <option value="views">Online</option>
+                    <option value="comments">Work based</option>
+                  </select>
+                </div>
+
+                <a href="#*" class="govuk-!-margin-bottom-0"><button type="submit" class="govuk-button">
+                  Apply filters
+                </button></a>
+
+              </div>
+
+              <div class="govuk-grid-column-one-half govuk-!-padding-right-0">  
+
+
+                <div class="govuk-form-group govuk-!-margin-bottom-3">
+                  <label class="govuk-label" for="sort">
+                    Distance
+                  </label>
+                  <select style="width: 100%" class="govuk-select govuk-!-padding-bottom-0" id="sort" name="sort">
+                    <option value="published">Up to 10 miles</option>
+                    <option value="updated" selected>Up to 20 miles</option>
+                    <option value="views">Up to 30 miles</option>
+                    <option value="comments">Up to 40 miles</option>
+                  </select>
+                </div>
+
+
+
+                <div class="govuk-form-group">
+                  <label class="govuk-label" for="sort">
+                    Course hours
+                  </label>
+                  <select style="width: 100%" class="govuk-select" id="sort" name="sort">
+                    <option value="" selected="">All</option>
+                    <option value="">Full time</option>
+                    <option value="">Part time</option>
+                    <option value="">Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+
+            </div>
+
+          </div>
+
+          </div>
+      </div>
+
+      <p class="govuk-body">0 courses found</p>
+
+      <p class="govuk-body">Get help to retrain isn’t offering courses in your local area yet.</p>
+
+      <p class="govuk-body">Find other training in your local area using the <a href="https://nationalcareers.service.gov.uk/find-a-course">Find a course service</a> from the National Careers Service.</p>
+
+<!--       <h3 class="govuk-heading-s">Try again using a different postcode</h3>
+ -->
+      <p class="govuk-body">You could try:</p>
+      <ul class="govuk-list govuk-list--bullet">
+
+        <li>searching for a different type of course</li>
+
+        <li>searching a wider area</li>
 
 
 
@@ -82,11 +152,12 @@ html: 'This is a new service - your <a href="#" class="govuk-link">feedback</a> 
   </div>
 
 
-  </div>
 
-      {% include "main/releaseX_e2e_v5/contact_us.html"%}
-      {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
-      {% include "main/releaseX_e2e_v5/survey_panel.html"%}
+
+
+  {% include "main/releaseX_e2e_v5/contact_us.html"%}
+  {% include "main/releaseX_e2e_v5/create_account_panel.html"%}
+  {% include "main/releaseX_e2e_v5/survey_panel.html"%}
 
 </div>
 
