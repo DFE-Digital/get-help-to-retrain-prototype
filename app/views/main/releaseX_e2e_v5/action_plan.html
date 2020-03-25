@@ -4,6 +4,45 @@
 Get Help To Retrain
 {% endblock %}
 
+
+{% block pageScripts %}
+
+<script type="text/javascript">
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the span element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on span (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+{% endblock %}
+
+
+
+
+
 {% block beforeContent %}
 
 
@@ -119,6 +158,7 @@ Edit your skills to see different ideas for types of work you can do.</p>
       <h2 class="govuk-heading-m govuk-!-margin-bottom-6 govuk-!-margin-top-4">Here’s what you need to do next:
       </h2>
 
+ 
       <div class="govuk-!-padding-top-1" style="float: right;"><a class="govuk-link govuk-body" href="training_preferences">Edit your training choices</a></div>
 
       <h3 class="govuk-heading-m govuk-!-margin-bottom-2 govuk-!-margin-top-4">Your training choices</h3>
@@ -138,11 +178,11 @@ Edit your skills to see different ideas for types of work you can do.</p>
 
       <div style="float: right;"><a class="govuk-!-padding-top-3" href="english_courses_near_me">
         <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary">
-          Find an ESOL course
+          Find an English course
         </button></a>
       </div>
 
-      <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4 govuk-!-padding-top-1">English for speakers of other languages</h3>
+      <h3 class="govuk-heading-s govuk-!-margin-bottom-7 govuk-!-margin-top-4 govuk-!-padding-top-1">English course</h3>
 
            <div style="float: right;"><a class="govuk-!-padding-top-3 govuk-!-margin-bottom-0" href="https://www.learnmyway.com/">
         <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
@@ -154,11 +194,48 @@ Edit your skills to see different ideas for types of work you can do.</p>
 
 
 
-      <p class="govuk-body govuk-!-margin-top-8">You can find other types of training by searching on Find a course, run by the National Careers Service. This button will take you to another government service.</p>
+      <p class="govuk-body govuk-!-margin-top-8">You can find other types of training by searching on Find a course, run by the National Careers Service.</p>
 
 
-      <div style="float: right;"><a class="govuk-!-padding-top-3 govuk-!-margin-bottom-0" href="https://nationalcareers.service.gov.uk/find-a-course">
-        <button style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
+
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close govuk-body"><a href="#*">close</span></a>
+    <h3 class="govuk-heading-m govuk-!-padding-top-0">You are leaving this service</h3>
+    <p class="govuk-body">If you haven’t saved your progress yet, you may want to go back and save your progress before you leave.</p>
+           <div style=""><a class="" href="#*">
+        <button style="width: 100%" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-4">
+          Return
+        </button></a>
+      </div>
+
+ <a href="#*" class=""><button type="submit" class="govuk-button govuk-!-margin-bottom-0" style="width: 100%">
+    Leave
+  </button></a>
+
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+<!-- href="https://nationalcareers.service.gov.uk/find-a-course"
+ -->
+
+      
+
+
+      <div style="float: right;"><a class="govuk-!-padding-top-3 govuk-!-margin-bottom-0" href="#*">
+        <button id="myBtn" style="width: 210px" type="submit" class="govuk-button govuk-button--secondary govuk-!-margin-bottom-0">
           Find other courses
         </button></a>
       </div>
